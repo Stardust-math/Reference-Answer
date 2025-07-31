@@ -1,2 +1,4 @@
+*.tex linguist-detectable=true
+*.md linguist-detectable=true
 *.tex linguist-language=TeX
 *.md linguist-language=Markdown
