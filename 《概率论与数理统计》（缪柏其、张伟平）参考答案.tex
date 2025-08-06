@@ -13,6 +13,7 @@
 \usepackage{threeparttable}
 \usepackage{multirow}
 \usepackage{diagbox}
+\usepackage{textcomp}
 
 \setmainfont{Times New Roman}
 
@@ -7951,6 +7952,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem 
+为试验某种胶水的胶合能力, 做了10次试验, 把两块胶合在一起的木板断开的力(单位: N)分别为
+$$561,\ 459,\ 534,\ 601,\ 476,\ 516,\ 522,\ 490,\ 480,\ 550$$
+求胶合后断开木板的平均用力, 在正态假定下求置信系数为90\%的置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -7965,6 +7969,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+令$(X_1,X_2,\cdots,X_{10})$是从$N(\mu,4)$中抽取的简单随机样本, 假设样本均值$\overline{X}=48$, 求$\mu$的95\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -7979,6 +7984,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+在某一商学院毕业的某届硕士生中随机抽取了40位, 调查得知他们的平均起薪是8000元, 样本标准差是900元, 求这一届毕业生平均起薪的95\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -7993,6 +7999,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+随机从一批钉子中抽取9枚, 测得其长度(单位:cm)为
+$$2.15,\ 2.13,\ 2.10,\ 2.14,\ 2.15,\ 2.16,\ 2.12,\ 2.11,\ 2.13$$
+假设钉子长度服从正态分布, 分别在下列两种情况下, 求出总体均值的90\%置信区间:
+
+(1) $\sigma=0.01$; \qquad (2) $\sigma$未知.
     \end{shaded}
     \end{bbox}
 
@@ -8007,6 +8018,23 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+从某一小学的一年级学生中随机选了9名男生和9名女生, 测量他们的身高(单位:cm)如下, 假设身高服从正态分布:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{15pt}
+\begin{tabular}{c|ccccccccc}
+    \hline
+    男孩 & 126 & 131 & 120 & 125 & 116 & 126 & 117 & 130 & 117\\
+    \hline
+    女孩 & 122 & 123 & 124 & 125 & 125 & 118 & 120 & 120 & 114\\
+    \hline
+\end{tabular}
+\end{center}
+(1) 求这所小学一年级学生平均身高的95\%置信区间;
+
+(2) 求这所小学一年级男孩平均身高的95\%置信区间;
+
+(3) 求这所小学一年级女孩平均身高的95\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8021,6 +8049,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$(X_1,X_2,\cdots,X_n)$为来自正态总体$N(3,5^2)$的简单随机样本. 若要求其样本均值位于区间$(1, 5)$的概率不小于0.95, 问样本容量$n$至少应取多大?
     \end{shaded}
     \end{bbox}
 
@@ -8035,6 +8064,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设一个测量仪器的误差$X$服从正态分布$N(0,\sigma^2)$, 其标准差$\sigma = 10$. 若测量仪器无系统误差, 问至少重复测量几次, 才能以99\%的把握保证平均误差的绝对值小于2?
     \end{shaded}
     \end{bbox}
 
@@ -8049,6 +8079,10 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设$(0.4,2.5,1.8,0.7)$是来自总体$X$的简单随机样本. 己知$Y = \ln X$ 服从正态$N(\mu,1)$.
+(1) 求$X$的数学期望$a = E(X)$;
+(2) 求$\mu$的95\%和90\%置信区间;
+(3) 求$a$的95\%和90\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8063,6 +8097,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+一个无线通信公司, 考虑改变按分钟收费为包月不限时间. 公司预计新的策略会增加顾客每个月的通话时间. 为了验证这个结论, 公司随机抽取了 900 个包月客户, 其一个月平均使用时间是 220 $\min$, 样本标准差是 90 $\min$. 同时也随机抽取了 800 个按流量收费的客户, 其一个月平均使用时间和标准差分别为 160 $\min$ 和 80 $\min$, 假设使用时间服从正态分布.
+
+(1) 求包月客户平均使用时间的 95\% 置信区间;
+
+(2) 求按流量收费的客户平均使用时间的 95\% 置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8077,6 +8116,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+试求第9题中,
+
+(1) 包月客户使用时间方差的 95\% 置信区间;
+
+(2) 按流量收费的客户使用时间方差的 95\% 置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8091,6 +8135,23 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+一家企业更换了领导, 采取了新的经营策略. 随机选取公司 11 种商品, 更换经营策略前后一个季度的销量 (单位: 万元) 如下, 假设销量服从正态分布:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{8.5pt}
+\begin{tabular}{c|ccccccccccc}
+    \hline
+    前 & 69.3 & 38.0 & 131.4 & 123.1 & 127.3 & 57.7 & 95.7 & 89.4 & 93.8 & 102.0 & 73.3\\
+    \hline
+    后 & 72.5 & 33.5 & 132.1 & 129.8 & 121.2 & 54.0 & 104.6 & 92.6 & 119.4 & 84.7 & 85.1\\
+    \hline
+\end{tabular}
+\end{center}
+(1) 求更换经营策略前平均销量的 95\% 置信区间;
+
+(2) 求更换经营策略后平均销量的 95\% 置信区间;
+
+(3) 求更换经营策略前后平均销量差异的 95\% 置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8105,6 +8166,13 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+试求第 11 题中,
+
+(1) 更换经营策略前销量方差的 95\% 置信区间;
+
+(2) 更换经营策略后销量方差的 95\% 置信区间;
+
+(3) 更换经营策略前后销量差方差的 95\% 置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8119,26 +8187,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
+设$(1.7,\ 4,\ 2.3,\ 3.2)$是从正态总体$N(2.5,\sigma^2)$中抽取的随机样本, 求$\sigma^2$的 95\% 置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8153,6 +8202,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$(X_1,X_2,\cdots,X_9)$是从正态总体$N(\mu,\sigma^2)$中抽取的随机样本, 假设样本均值$\overline{X}=48$, 样本方差$S^2=64$.
+
+(1) 求$\mu$的95\%置信区间;
+
+(2) 求$\sigma^2$的95\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8167,6 +8221,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某金属的密度测量值 (单位: g/cm$^3$) 服从正态分布$N(\mu,\sigma^2)$, 如果观测 25 次, 算得样本均值为 3.2, 样本标准差为0.031.
+
+(1) 求该金属密度$\mu$均值的 95\% 置信区间;
+
+(2) 求该金属密度$\sigma$标准差的 95\% 置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8181,6 +8240,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+一批零件的长度$X \sim N(\mu,\sigma^2)$, 从这批零件中随机抽取 10 件, 测得长度 (单位: mm) 分别为
+$$49.5,\ 50.4,\ 49.7,\ 51.1,\ 49.4,\ 49.7,\ 50.8,\ 49.9,\ 50.3,\ 50.0$$
+在下列两种情况下求这批零件长度总体方差$\sigma^2$的 95\% 置信区间:
+
+(1) $\mu = 50$mm; \qquad (2) $\mu$未知.
     \end{shaded}
     \end{bbox}
 
@@ -8195,6 +8259,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设用机器包装精盐的质量服从正态分布$N(\mu,\sigma^2)$. 现从生产线上随机抽取 10 袋, 测得其质量 (单位: g) 为
+$$501.5,\ 500.7,\ 492.0,\ 504.7,\ 483.0,\ 512.8,\ 504.0,\ 490.3,\ 486.0,\ 520.0$$
+试在下列两种情况下分别求总体方差的 95\% 和 90\% 置信区间:
+
+(1) $\mu=500$g; \qquad (2) $\mu$未知.
     \end{shaded}
     \end{bbox}
 
@@ -8209,6 +8278,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+随机抽取 16 发子弹做试验, 测得子弹速度的样本标准差为$S = 12$, 假设子弹速度服从正态分布$N(\mu,\sigma^2)$, 分别求$\sigma$和$\sigma^2$的 95\% 置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8223,6 +8293,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$(X_1,X_2,\cdots,X_n)$为来自均匀分布总体$U(0,\theta)$的简单随机样本. 对任给的$\alpha \in (0,1)$, 求常数$c_n$, 使得$\left[\max\left\{X_1,X_2,\cdots,X_n\right\},\ c_n \max\left\{X_1,X_2,\cdots,X_n\right\}\right]$为$\theta$的$1-\alpha$置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8237,6 +8308,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$(X_1,X_2,\cdots,X_n)$为来自指数分布总体$\exp(\lambda)$的简单随机样本. 对任给的$\alpha\in(0,1)$,
+
+(1) 证明$\sum\limits_{i=1}^{n}2\lambda X_i$服从$\chi_{2n}^{2}$分布;
+
+(2) 求$\lambda$的$1-\alpha$置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8251,6 +8327,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+在一次出租车涨价的听证会上, 当有关方阐述了涨价的理由后, 记者在场外随机采访了50位居民, 询问他们对涨价的态度. 其中有34人认为物价涨了, 出租车费用上涨合理, 有16人反对涨价. 试对赞成涨价的居民百分数作90\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8265,6 +8342,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+从一批产品中随机抽取 120 件来检验次品率, 结果发现有 9 件次品.
+
+(1) 求这批产品次品率$p$的点估计和95\%置信区间;
+
+(2) 试求次品率$p$的95\%置信上限.
     \end{shaded}
     \end{bbox}
 
@@ -8279,6 +8361,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+由于互联网的迅速发展, 网上购物已被大家接受. 某调查公司对 200 人的网购消费进行了调查, 发现 145 人线上消费占消费者消费总额的75\%以上, 172人线上消费占消费者消费总额的60\%以上.
+
+(1) 求线上消费占消费者消费总额的75\%以上比例的95\%置信区间;
+
+(2) 求线上消费占消费者消费总额的$60\%\sim75\%$比例的95\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8293,6 +8380,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某大学招生就业办公室称该校的就业率至少为90\%, 先从该校随机抽查105人, 发现其中有85人就业. 问该校招生就业办公室的说法正确吗? ($\alpha=0.05$及$\alpha=0.1$)
     \end{shaded}
     \end{bbox}
 
@@ -8307,6 +8395,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设顾客到一商场有$p$的概率购买商品, 现随机抽取了 500 个顾客, 其中 15 个购买了商品. 求$p$的95\%和90\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8321,6 +8410,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设某一生产线上商品的次品率为$p$, 现随机抽取了1000个商品, 其中 5 个为次品. 求$p$的95\%置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8335,6 +8425,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设湖中有$N$尾鱼($N$很大), 现钓出$r$尾鱼, 做上标记后放回湖中. 一段时间后, 再钓出$s$尾鱼(设$s$远大于$r$), 结果其中有$t$尾鱼标有记号($s$, $t$已知).
+
+(1) 若$r$, $N$未知, 求$r/N$的$1-\alpha$置信区间;
+
+(2) 若只有$N$未知, 求$N$的$1 - \alpha$置信区间.
     \end{shaded}
     \end{bbox}
 
@@ -8349,6 +8444,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$(X_1,X_2,\cdots,X_n)$为来自均匀分布$U(\theta,0)$的简单样本. 对任给的$\alpha \in (0,1)$, 采用$\theta$的最大似然估计, 构造$\theta$的一个置信系数为$1-\alpha$的置信下限和置信上限.
     \end{shaded}
     \end{bbox}
 
@@ -8363,6 +8459,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设一农作物的单位面积产量服从正态分布$N(80,\sigma^2)$, 其标准差$\sigma=5$, 问至少需要几块试验田, 才能有99\%的把握保证这些试验田的单位面积平均产量大于75?
     \end{shaded}
     \end{bbox}
 
@@ -8377,6 +8474,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+试求第3题中, 这一届毕业生平均起薪的95\%置信下限.
     \end{shaded}
     \end{bbox}
 
@@ -8391,6 +8489,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+求第 4 题中, 分别在下列两种情况下, 这批钉子总体标准差的95\%置信上限:
+
+(1) $\mu=2.12$; \qquad (2) $\mu$未知.
     \end{shaded}
     \end{bbox}
 
@@ -8405,6 +8506,13 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+求第 5 题中,
+
+(1) 这所小学一年级学生平均身高的95\%置信下限;
+
+(2) 这所小学一年级男孩平均身高的95\%置信下限;
+
+(3) 这所小学一年级女孩平均身高的95\%置信下限.
     \end{shaded}
     \end{bbox}
 
@@ -8419,6 +8527,28 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为研究某种轮胎的磨损情况, 随机选取了 9 个轮胎, 每个轮胎行驶到磨坏为止. 记录所行驶的路程(单位: km)如下:
+$$42350,\ 40297,\ 43176,\ 41010,\ 42657,\ 44210,\ 41879,\ 39678,\ 43520$$
+假设这些数据服从正态分布, 求这种轮胎平均行驶路程的95\%置信下限.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem
+为了了解一批灯泡的使用寿命, 共测试了 16 个灯泡的寿命, 得到寿命的均值为1600h, 样本标准差为15h. 假设寿命服从正态分布$N(\mu,\sigma^2)$.
+
+(1) 求$\mu$的95\%置信下限;
+
+(2) 求$\sigma^2$的95\%置信上限.
     \end{shaded}
     \end{bbox}
 
@@ -8437,7 +8567,189 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
 \begin{qitems}
     \begin{bbox}
     \begin{shaded}
-        \qitem 
+        \qitem
+设$\left(X_1, X_2, \cdots, X_{16}\right)$是正态分布$N(\mu, 0.16)$的一个简单随机样本. 考察假设
+\[
+H_0: \; \mu = 0.5 \quad \longleftrightarrow \quad H_1: \; \mu > 0.5,
+\]
+显著性水平为$0.05$.
+
+(1) 检验的拒绝域是什么?
+
+(2) 当$\mu = 0.65$时, 犯第二类错误的概率是多少?
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox} 
+    \begin{shaded}
+        \qitem
+产品检验时, 原假设$H_0$: 产品合格. 为了减少次品混入正品的可能性, 在样本量$n$固定的条件下, 显著性水平$\alpha$应取大些还是小些, 为什么?
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox} 
+    \begin{shaded}
+        \qitem
+假设$\left(X_1, X_2, \cdots, X_{16}\right)$是来自正态总体$N(\mu, 1)$的一个简单随机样本. 检验问题
+\[
+H_0: \; \mu = 0 \quad \longleftrightarrow \quad H_1: \; \mu = 1,
+\]
+样本均值为$\bar X$, $u_{\alpha}$为标准正态分布的上$\alpha$分位数. 现有4个拒绝域:
+\[
+V_1 = \{4|\overline{X}| \ge u_{0.05}\}, \quad
+V_2 = \{4|\overline{X}| \le u_{0.45}\}, \quad
+V_3 = \{4\overline{X} \ge u_{0.10}\}, \quad
+V_4 = \{4\overline{X} \le -u_{0.10}\}.
+\]
+
+(1) 这4个拒绝域中犯第一类错误的概率分别是多少?
+
+(2) 比较哪个拒绝域犯第二类错误的概率最小.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox} 
+    \begin{shaded}
+        \qitem
+假设随机变量$X$的概率密度函数为$f(x) = (1 + \theta)x^{\theta},\ 0 < x < 1$. 现考察假设检验问题
+\[
+H_0: \; \theta = 5 \quad \longleftrightarrow \quad H_1: \; \theta = 3.
+\]
+拒绝域为$\{X > 1/2\}$. 试求该检验问题犯第一类和第二类错误的概率, 以及$\theta = 2$时的功效函数值.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox} 
+    \begin{shaded}
+        \qitem
+设样本$X_1$, $X_2$, $\cdots$, $X_n$是来自参数为$\lambda$的泊松分布总体, 对检验问题
+\[
+H_0: \; \lambda = \displaystyle\frac{1}{2} \quad \longleftrightarrow \quad H_1: \; \lambda \neq \displaystyle\frac{1}{2}.
+\]
+取检验的拒绝域为$\left\{\left(X_1,X_2,\cdots,X_n\right): \displaystyle\sum\limits_{i=1}^{10}X_{i} \leq 1 \text{或} \geq 12\right\}$
+
+(1) 求此检验在$\lambda=0.25,\ 0.5,\ 1$时的功效函数值, 并求出该检验的水平;
+
+(2) 求犯第一类错误的概率及在$\lambda=0.25,\ 0.75$时犯第二类错误的概率.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox} 
+    \begin{shaded}
+        \qitem
+设总体为均匀分布$U(0, \theta)$, $\left(X_1,X_2,\cdots, X_n\right)$是一组样本. 考虑检验问题
+\[
+H_0: \; \theta \ge 3 \quad \longleftrightarrow \quad H_1: \; \theta < 3;
+\]
+拒绝域取为$W = \left\{X_{(n)} = \max\left\{X_1,X_2,\cdots,X_n\right\} \leq 2.5\right\}$.
+
+(1) 求此检验的功效函数和显著性水平;
+
+(2) 为使显著性水平达到0.05, 样本量$n$至少应取多大?
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox} 
+    \begin{shaded}
+        \qitem
+令$\left(X_1,X_2,\cdots,X_{10}\right)$是从正态总体$N(\mu, 16)$中抽取的随机样本, 假设样本均值$\overline{X} = 4.8$. 在显著性水平$5\%$下, 检验
+
+(1) $H_0: \; \mu = 7 \quad \longleftrightarrow \quad H_1: \; \mu \neq 7$;
+
+(2) $H_0': \; \mu \ge 7 \quad \longleftrightarrow \quad H_1': \; \mu < 7$;
+
+(3) $H_0'': \; \mu \le 2 \quad \longleftrightarrow \quad H_1'': \; \mu > 2$.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox} 
+    \begin{shaded}
+        \qitem
+为检验一批灯泡是否合格, 即灯泡寿命的均值$\mu > 1550$ h, 共测试了16个灯泡的寿命, 得到寿命的平均为1600 h, 样本标准差为$S = 15$ h. 假设寿命服从正态分布, 在显著性水平$5\%$下, 检验这批灯泡是否合格.
+    \end{shaded}
+    \end{bbox}
+
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem
+2015 年全国人口调查中男女性别比例为 $\mu = 105.02$ (女 = 100), 为检验这一比例, 随机抽取了 8 个省份的男女性别比例如下, 假设各省份的性别比服从正态分布.
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{14pt}
+\begin{tabular}{cccccccc}
+\hline
+北京市 & 内蒙古 & 辽宁 & 安徽 & 河南 & 海南 & 重庆 & 宁夏 \\
+\hline
+109.45 & 104.32 & 100.45 & 104.90 & 103.99 & 110.47 & 100.60 & 106.16 \\
+\hline
+\end{tabular}
+\end{center}
+在显著性水平 5\% 下, 检验 $H_0 : \mu = 105.02 \longleftrightarrow H_1 : \mu \neq 105.02$.
     \end{shaded}
     \end{bbox}
 
@@ -8452,6 +8764,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设会考成绩服从正态分布, 在某市的一次高中数学会考中, 全市的平均分为 80 分, 标准差为 9 分. 某一高中 180 名学生平均分为 82 分, 该校历年来会考成绩高于全市成绩, 问此次会考该校是否仍然显著高于全市平均成绩($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8466,6 +8779,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+用传统工艺加工的某种水果罐头中每瓶维生素 C 的含量平均为 19 mg, 现采用一种新的加工工艺, 试图减少在加工过程中对维生素 C 的破坏. 抽查了 16 瓶罐头, 测得维生素 C 的含量(单位: mg)为
+$$23, \;\; 20.5, \;\; 21, \;\; 20, \;\; 22.5, \;\; 19, \;\; 20, \;\; 23, \;\; 20.5, \;\; 18.8, \;\; 20, \;\; 19.5, \;\; 22, \;\; 18, \;\; 23, \;\; 22.$$
+已知水果罐头中维生素 C 的含量服从正态分布. 在方差未知的情况下, 问新工艺下维生素 C 的含量是否比旧工艺有所提高($\alpha=0.01$)?
     \end{shaded}
     \end{bbox}
 
@@ -8480,6 +8796,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某机器制造出来的肥皂厚度为 5 cm. 今欲了解机器性能是否良好, 随机抽取 10 块肥皂为样本, 测得平均厚度为 5.3 cm, 标准差为 0.3 cm, 设肥皂厚度服从正态分布, 试分别在显著性水平 0.05, 0.01 下检验机器是否工作良好.
     \end{shaded}
     \end{bbox}
 
@@ -8494,6 +8811,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+令 1.7, 4, 2.3, 3.2 是从$N(2.5,\sigma^2)$中抽取的随机样本, 在显著性水平5\%下, 检验 $H_0 : \sigma^2=1 \longleftrightarrow H_1 : \sigma^2 \neq 1$.
     \end{shaded}
     \end{bbox}
 
@@ -8508,6 +8826,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+$(X_1, X_2, \cdots, X_9)$ 是从正态总体 $N(\mu, \sigma^2)$ 中抽取的随机样本, 假设样本均值 $\overline{X} = 48$, 样本方差 $\sigma^2 = 64$, 在显著性水平 5\% 下, 检验
+
+(1) $H_0 : \mu \leq 40 \longleftrightarrow H_1 : \mu > 40$;
+
+(2) $H_0^{'} : \sigma^2 \geq 70 \longleftrightarrow H_1^{'} : \sigma^2 < 70$.
     \end{shaded}
     \end{bbox}
 
@@ -8522,6 +8845,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某金属的密度测量值 (单位: g/cm$^3$) 服从正态分布, 如果观测 25 次, 算得样本均值为 3.2, 样本标准差为 0.031, 在显著性水平 5\% 下, 检验 $H_0 : \sigma = 0.02 \longleftrightarrow H_1 : \sigma \neq 0.02$.
     \end{shaded}
     \end{bbox}
 
@@ -8536,6 +8860,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某车间生产铜丝, 生产一向比较稳定. 今从产品中随机抽取 10 根检查其折断力, 得数 (单位: N) 如下:
+$$288.8, \;\; 294.7, \;\; 300.2, \;\; 286.6, \;\; 290.3, \;\; 280.1, \;\; 296.4, \;\; 295.4, \;\; 290.2, \;\; 289.2.$$
+假设铜丝的折断力服从正态分布, 问是否可以相信该车间生产的铜丝的折断力的方差是 16 ($\alpha = 0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8550,6 +8877,13 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+随机从一批钉子中抽取 9 枚, 测得其长度(单位: cm)为
+$$2.15, \;\; 2.13, \;\; 2.10, \;\; 2.14, \;\; 2.15, \;\; 2.16, \;\; 2.12, \;\; 2.11, \;\; 2.13$$
+假设钉子长度服从正态分布, 分别在
+
+(1)$\mu=2.12$; \qquad (2)$\mu$未知
+
+两种情况下, 在显著性水平5\%下检验 $H_0 : \sigma\leq 0.01 \longleftrightarrow H_1 : \sigma>0.01$.
     \end{shaded}
     \end{bbox}
 
@@ -8564,6 +8898,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 0.644, 0.672, 0.070, 0.176, 0.314, 0.295, 0.331, 0.001, 0.490 为来自均匀分布 $U(0,\theta)$ 的简单随机样本. 在显著性水平 0.05 下检验 $H_0 : \theta=1 \longleftrightarrow H_1 : \theta<1$.
     \end{shaded}
     \end{bbox}
 
@@ -8578,6 +8913,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 0.455, 0.840, 0.653, 0.443, 0.026, 0.523, 0.284, 0.270, 0.720 为来自均匀分布 $U(0,\theta)$ 的简单随机样本. 在显著性水平 0.05 下检验 $H_0 : \theta=0 \longleftrightarrow H_1 : \theta<0$.
     \end{shaded}
     \end{bbox}
 
@@ -8592,6 +8928,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 0.213, 0.626, 1.091, 0.591, 1.083, 0.475, 0.315, 0.328, 4.151 为来自指数分布$Exp(\lambda)$的简单随机样本. 在显著性水平 0.05 下检验 $H_0 : \lambda=1 \longleftrightarrow H_1 : \lambda>1$.
     \end{shaded}
     \end{bbox}
 
@@ -8606,6 +8943,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 $(X_1, X_2, \ldots, X_n)$ 为来自正态总体 $N(\mu, 5^2)$ 的样本. 如果检验问题为 $H_0 : \mu = 3 \longleftrightarrow H_1 : \mu \neq 3$, 在显著性水平 0.05 下拒绝域为 $\left\{|\overline{X} - 3| > 2\right\}$, 问样本量 $n$ 至少应取多大?
     \end{shaded}
     \end{bbox}
 
@@ -8620,6 +8958,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+装配一个部件可以采用不同的方法, 现在关心的是哪一种方法的效率更高. 现在从两种不同的装配方法中各抽取 12 种产品, 记录各自的装配时间 (单位: min) 如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{11pt}
+\begin{tabular}{c|cccccccccccc}
+\hline
+甲方法/min & 30 & 34 & 34 & 35 & 34 & 28 & 34 & 26 & 31 & 31 & 38 & 26 \\
+\hline
+乙方法/min & 26 & 32 & 22 & 26 & 31 & 28 & 30 & 22 & 31 & 26 & 32 & 29 \\
+\hline
+\end{tabular}
+\end{center}
+假设两总体为正态总体, 且方差相等, 问这两种方法的装配时间有无显著不同 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8634,6 +8985,58 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为了了解烧伤患者在催眠下进行药物治疗是否比仅用药物治疗疗效更好, 韦克曼(Wakeman)和卡普兰(Kaplan)做了一个对照试验, 其中的一部分数据是把烧伤患者分成两组, 一组只用药物治疗, 另一组在催眠下进行药物治疗, 对每个患者记下允许的药物治疗的百分数. 假设有 4 人接受催眠下的药物治疗治疗, 5 人仅接受药物治疗, 数据如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{27pt}
+\begin{tabular}{c|ccccc}
+\hline
+仅药物治疗/\% & 85 & 92 & 76 & 81 & 66 \\
+\hline
+催眠下药物治疗/\% & 26 & 46 & 37 & 51 & \\
+\hline
+\end{tabular}
+\end{center}
+在正态假定下问两种治疗方案有无差异? ($\alpha = 0.05$)
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{3em}
+
+    \begin{center}
+以下习题, 如果没有给出数据分布, 那么都假定处理后的数据服从正态分布.
+    \end{center}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem
+为了了解冷藏牛排和新鲜牛排在烹饪后的口感哪个更受顾客欢迎, 一个 18 人的品尝专家小组对两种牛排进行了品尝, 给每人提供两种牛排 (品尝冷藏和新鲜牛排的先后次序是随机的), 然后按 5 分制打分, 记录如下:
+\begin{center}
+\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{16pt}
+\begin{tabular}{c|cc||c|cc}
+\hline
+专家编号 & 冷藏得分 & 新鲜得分 & 专家编号 & 冷藏得分 & 新鲜得分 \\
+\hline
+1 & 4 & 3 & 10 & 5 & 4 \\
+2 & 4 & 2 & 11 & 3 & 2 \\
+3 & 5 & 2 & 12 & 4 & 2 \\
+4 & 4 & 4 & 13 & 3 & 3 \\
+5 & 5 & 3 & 14 & 4 & 3 \\
+6 & 3 & 1 & 15 & 4 & 2 \\
+7 & 5 & 1 & 16 & 2 & 2 \\
+8 & 5 & 2 & 17 & 3 & 1 \\
+9 & 5 & 3 & 18 & 4 & 3 \\
+\hline
+\end{tabular}
+\end{center}
+问专家对冷藏牛排和新鲜牛排在烹饪后的口感是否有差异?($\alpha = 0.05$)
     \end{shaded}
     \end{bbox}
 
@@ -8648,6 +9051,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为比较 A, B 两种止痛药的效果, 用两种止痛药的平均止痛时间来衡量. 设有 10 个患者服用了止痛药 A, 另外 10 个患者服用了止痛药 B, 止痛时间 (单位: min)如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{15pt}
+\begin{tabular}{c|cccccccccc}
+\hline
+A/min & 25 & 16 & 20 & 30 & 46 & 22 & 83 & 26 & 34 & 26 \\
+\hline
+B/min & 32 & 44 & 46 & 28 & 36 & 48 & 53 & 76 & 58 & 42 \\
+\hline
+\end{tabular}
+\end{center}
+问 A 止痛药的效果是否优于 B 止痛药的效果? (设止痛时间服从正态分布, 两种药止痛时间的方差相同, $\alpha = 0.05$)
     \end{shaded}
     \end{bbox}
 
@@ -8662,6 +9078,20 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为了考察 A, B 两种制鞋材料的耐磨性, 用它们制作了 10 双鞋, 其中每双鞋的两只鞋分别用 A, B 两种材料制作 (左、右两只鞋随机地采用 A 或 B ). 10 个男孩试穿这 10 双鞋之后的磨损情况如下 (数字代表磨损程度):
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{13pt}
+\begin{tabular}{c|cccccccccc}
+\hline
+ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+\hline
+A & 13.2 & 8.2 & 10.9 & 14.3 & 10.7 & 6.6 & 9.5 & 10.8 & 8.8 & 13.3 \\
+B & 14.0 & 8.8 & 11.2 & 14.2 & 11.8 & 6.4 & 9.8 & 11.3 & 9.3 & 13.6 \\
+\hline
+\end{tabular}
+\end{center}
+问是否可以认为这两种材料的耐磨性无显著差异 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8676,6 +9106,26 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+用一种叫``混乱指标''的尺度去衡量工程师的英语文章的可理解性, 对混乱指标的打分越低表示可理解性越高. 分别随机选取 13 篇刊载在工程杂志上的论文, 以及 10 篇未出版的学术报告, 对它们的打分如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{21pt}
+\begin{tabular}{cccc|cccc}
+\hline
+\multicolumn{4}{c|}{工程杂志上的论文(数据 I)} & \multicolumn{4}{c}{未出版的学术报告(数据 \uppercase\expandafter{\romannumeral2})} \\
+\hline
+1.79 & 1.75 & 1.67 & 1.65 & 2.39 & 2.51 & 2.86 &  \\
+1.87 & 1.74 & 1.94 &  & 2.56 & 2.29 & 2.49\\
+1.62 & 2.06 & 1.33 &  & 2.36 & 2.58 &  &  \\
+1.96 & 1.69 & 1.70 &  & 2.62 & 2.41 &  &  \\
+\hline
+\end{tabular}
+\end{center}
+设数据 \uppercase\expandafter{\romannumeral1}, \uppercase\expandafter{\romannumeral2} 分别来自正态总体$N(\mu_1,\sigma_1^2)$, $N(\mu_2,\sigma_2^2)$, $\mu_1$, $\mu_2$, $\sigma_1^2$, $\sigma_2^2$均未知, 两样本独立.
+
+(1) 试检验假设 $H_0 : \sigma_1^2=\sigma_2^2$,\quad $H_1 : \sigma_1^2 \neq \sigma_2^2$ (取$\alpha=0.1$);
+
+(2) 若能接受$H_0$, 则接着检验假设 $H_0^{'} : \mu_1=\mu_2$,\quad $H_1^{'} : \mu_1 \neq \mu_2$ (取$\alpha=0.1$).
     \end{shaded}
     \end{bbox}
 
@@ -8690,6 +9140,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+一个以减肥为主要目的的健美俱乐部声称, 参加其训练班至少可以使肥胖者体重平均减少 8 kg 以上. 为检验该宣传是否可信, 调查人员随机调查了 9 名参加者, 得到他们训练前后的体重数据 (单位: kg)如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{11.5pt}
+\begin{tabular}{c|ccccccccc}
+\hline
+训练前/kg & 104.5 & 94.0 & 104.7 & 96.4 & 91.6 & 90.9 & 92.0 & 99.9 & 109.7\\
+\hline
+训练后/kg & 94.2 & 86.6 & 97.5 & 91.7 & 82.6 & 83.8 & 81.3 & 92.2 & 101.0\\
+\hline
+\end{tabular}
+\end{center}
+现假设训练前后人的体重服从正态分布. 问在显著性水平 0.05 下, 是否可以认为该俱乐部的宣传是可信的?
     \end{shaded}
     \end{bbox}
 
@@ -8704,6 +9167,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+在 28 题中, 如果训练前后的数据是对两组人测量的, 并假设训练前后人的体重服从方差相同的正态分布, 问在显著性水平 0.05 下, 是否可以认为该俱乐部的宣传是可信的?
     \end{shaded}
     \end{bbox}
 
@@ -8718,6 +9182,20 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+两种新的装配方法经过检验后装配时间的方差报告如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{60pt}
+\begin{tabular}{c|cc}
+\hline
+方法 & 样本容量 & 样本方差\\
+\hline
+A & $n_1=31$ & $s_1^2=25$\\
+B & $n_2=25$ & $s_2^2=12$\\
+\hline
+\end{tabular}
+\end{center}
+取$\alpha=0.10$, 检验 A 和 B 这两种装配方法的方差是否相等.
     \end{shaded}
     \end{bbox}
 
@@ -8732,6 +9210,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为了解甲、乙两企业职工工资水平, 分别从两企业各随机抽取若干名职工调查, 得数据 (单位: 元)如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{13.5pt}
+\begin{tabular}{c|cccccccc}
+\hline
+甲公司/元 & 3750 & 5300 & 3750 & 9100 & 5700 & 5250 & 5000 &  \\
+\hline
+乙公司/元 & 5000 & 9500 & 4500 & 9000 & 6000 & 8500 & 9750 & 6000 \\
+\hline
+\end{tabular}
+\end{center}
+设两企业职工工资分别服从正态分布, 总体独立且均值、方差均未知. 试根据以上数据判断: 两企业职工工资的方差是否相等? 甲企业职工平均工资是否低于乙企业职工平均工资 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8746,6 +9237,22 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某市场研究机构用 8 个人组成的样本来给某特定商品的潜在购买力打分. 样本中每个人都分别在看过该产品新的电视广告之前与之后打分. 潜在购买力的分值为 0$\sim$10 分, 分值越高表示潜在购买力越高. 原假设为看广告后平均得分小于或等于看广告前的平均得分, 拒绝该假设就表明广告有宣传效果, 提高了平均潜在购买力. 给定显著性水平$\alpha=0.05$, 用下列数据检验该假设, 并对广告给予评价.
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{28pt}
+\begin{tabular}{c|cc||c|cc}
+\hline
+\multirow{2}{*}{个人} & \multicolumn{2}{c||}{购买力得分} & \multirow{2}{*}{个人} & \multicolumn{2}{c}{购买力得分} \\ 
+\cline{2-3} \cline{5-6}
+ & \multicolumn{1}{c}{之后} & \multicolumn{1}{c||}{之前} & & \multicolumn{1}{c}{之后} & \multicolumn{1}{c}{之前} \\ \hline
+1 & 6 & 5 & 5 & 3 & 5 \\
+2 & 6 & 4 & 6 & 9 & 8 \\
+3 & 7 & 7 & 7 & 7 & 5 \\
+4 & 4 & 3 & 8 & 6 & 6 \\
+\hline
+\end{tabular}
+\end{center}
     \end{shaded}
     \end{bbox}
 
@@ -8760,6 +9267,20 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+现有两台天平, 为比较它们的精度, 将一物体分别在两台天平上各称量 9 次, 得数据(单位: g)如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{10pt}
+\begin{tabular}{c|ccccccccc}
+\hline
+甲天平/g & 19.96 & 19.97 & 20.06 & 19.96 & 20.06 & 20.01 & 20.01 & 19.98 & 19.98 \\
+\hline
+乙天平/g & 19.90 & 19.89 & 20.18 & 19.91 & 20.03 & 20.00 & 20.00 & 20.02 & 19.91 \\
+\hline
+\end{tabular}
+\end{center}
+设两台天平的称量结果分别服从$N(\mu_1,\sigma_1^2)$, $N(\mu_2,\sigma_2^2)$, 在显著性水平 0.05 下检验假设
+$$H_0 : \sigma_1^2 \geq \sigma_2^2 \longleftrightarrow H_1 : \sigma_1^2 < \sigma_2^2.$$
     \end{shaded}
     \end{bbox}
 
@@ -8774,6 +9295,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设有 A 种药随机地给 8 个患者服用, 经过一固定的时间后, 测量患者身体细胞内药的浓度, 得数据
+$$1.40, \;\; 1.42, \;\; 1.41, \;\; 1.62, \;\; 1.55, \;\; 1.81, \;\; 1.60, \;\; 1.52$$
+又有 B 种药给其他 6 个患者服用, 在同样固定时间后, 测量患者身体细胞内药的浓度, 得数据
+$$1.76, \;\; 1.41, \;\; 1.87, \;\; 1.49, \;\; 1.67, \;\; 1.81$$
+设两种药在患者身体细胞内的浓度都服从正态分布, 试问 A 种药在患者身体细胞内的浓度的方差是否小于 B 种药在患者身体细胞内的浓度的方差 ($\alpha=0.1$)?
     \end{shaded}
     \end{bbox}
 
@@ -8788,6 +9314,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+从甲、乙两处煤矿各随机抽取矿石 5 个和 4 个, 分析其含灰率 (单位: \%)得到数据如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{28pt}
+\begin{tabular}{c|ccccc}
+\hline
+甲矿/\% & 24.3 & 20.8 & 23.7 & 21.3 & 17.4\\
+\hline
+乙矿/\% & 18.2 & 16.9 & 20.2 & 16.7 &  \\
+\hline
+\end{tabular}
+\end{center}
+假设各煤矿含灰率都服从正态分布且方差相等, 问甲、乙两矿的含灰率有无显著差异 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8802,6 +9341,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体$X \sim N(\mu_1,0.04)$, $Y \sim N(\mu_2,0.09)$. 现从$X$中抽取的样本值为2.10, 2.35, 2.39, 2.41, 2.44, 2.56; 从$Y$中抽取的样本值为2.03, 2.28, 2.58, 2.71. 试验证$\mu_1$和$\mu_2$是否有显著差异 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8816,6 +9356,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+现有两批电子器件, 从中随机抽取若干进行检验, 测得样本的电阻 (单位: $\Omega$)如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{20pt}
+\begin{tabular}{c|cccccc}
+\hline
+A批/$\Omega$ & 0.140 & 0.138 & 0.143 & 0.142 & 0.144 & 0.137 \\
+\hline
+B批/$\Omega$ & 0.135 & 0.140 & 0.142 & 0.136 & 0.138 & 0.140 \\
+\hline
+\end{tabular}
+\end{center}
+假设这两批电子器件的电阻均服从正态分布, 试在显著性水平 0.05 下, 比较这两批电子器件的电阻有无差异.
     \end{shaded}
     \end{bbox}
 
@@ -8830,6 +9383,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+1861 年, 新奥尔良新月报刊登了 10 篇文章, 它们的签名是斯诺德格拉斯 (Quintus CurtiusSnodgrass), 有些人怀疑它们实际上是马克・吐温写的. 为了调查这一点, 我们考虑在马克・吐温的 8 篇小品文以及签名为斯诺德格拉斯的这 10 篇小品文中由 3 个字母组成的单字的比例:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{6.5pt}
+\begin{tabular}{c|cccccccccc}
+\hline
+马克・吐温 & 0.225 & 0.262 & 0.217 & 0.240 & 0.230 & 0.229 & 0.235 & 0.217 &  &  \\
+\hline
+斯诺德格拉斯 & 0.209 & 0.205 & 0.196 & 0.210 & 0.202 & 0.207 & 0.224 & 0.223 & 0.220 & 0.201 \\
+\hline
+\end{tabular}
+\end{center}
+设两组数据分别来自正态总体, 且两总体方差相等, 但参数均未知. 两样本相互独立. 问两位作家所写的小品文中包含由 3 个字母组成的单字的比例是否有显著的差异 (取$\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8844,6 +9410,28 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+2004 年, 有线电视和收音机超过广播电视、录像、音乐和报纸, 成为使用量最大的两个娱乐媒体. 研究者用 15 名志愿者组成一个样本, 搜集他们每周看有线电视的时间和听收音机的时间数据 (单位: h)如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{17pt}
+\begin{tabular}{ccc||ccc}
+\hline
+志愿者 & 有线电视/h & 收音机/h & 志愿者 & 有线电视/h & 收音机/h\\
+\hline
+1 & 22 & 25 & 9 & 21 & 21 \\
+2 & 8 & 10 & 10 & 23 & 23 \\
+3 & 25 & 29 & 11 & 14 & 15 \\
+4 & 22 & 19 & 12 & 14 & 18 \\
+5 & 12 & 13 & 13 & 14 & 17 \\
+6 & 26 & 28 & 14 & 16 & 15 \\
+7 & 22 & 23 & 15 & 24 & 23 \\
+8 & 19 & 21 &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+(1) 在显著性水平 0.05 下, 检验有线电视和收音机使用量的总体均值之间是否有差异?实际$p$值是多少?
+
+(2) 每周花在看有线电视上的时间样本均值是多少?每周花在听收音机上的时间的样本均值是多少?哪个媒体具有较大的使用量?
     \end{shaded}
     \end{bbox}
 
@@ -8858,6 +9446,32 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某报道提供了 2012 年几家著名公司的每股收益的数据. 在 2012 年之前, 财务分析家就预测了这些公司 2012 年的每股收益. 利用下面数据评论实际的和预测的每股收益的差异.
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{45pt}
+\begin{tabular}{ccc}
+\hline
+公司 & 实际每股收益/元 & 预计每股收益/元 \\
+\hline
+A & 1.29 & 0.38 \\
+B & 2.01 & 2.31 \\
+C & 2.59 & 3.43 \\
+D & 1.60 & 1.78 \\
+E & 1.84 & 2.18 \\
+F & 2.72 & 2.19 \\
+G & 1.51 & 1.71 \\
+H & 2.28 & 2.18 \\
+I & 0.77 & 1.55 \\
+J & 1.81 & 1.74 \\
+\hline
+\end{tabular}
+\end{center}
+(1) 若 $\alpha=0.05$, 检验实际的和预测的每股平均收益之间是否存在差异? $p$值是多少? 你的结论是什么?
+
+(2) 两均值之差的点估计值是多少? 分析家是低估了还是高估了每股的收益?
+
+(3) 对于95\%的置信系数, (2)中估计的边际误差是多少?
     \end{shaded}
     \end{bbox}
 
@@ -8872,6 +9486,25 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某厂家生产豪华型与普通型两种家用电器. 由零售点抽样得到的销售价格如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{21pt}
+\begin{tabular}{c|cc||c|cc}
+\hline
+\multirow{2}{*}{零售点} & \multicolumn{2}{c||}{价格/元} & \multirow{2}{*}{零售点} & \multicolumn{2}{c}{价格/元} \\ 
+\cline{2-3} \cline{5-6}
+ & \multicolumn{1}{c}{豪华型} & \multicolumn{1}{c||}{普通型} & & \multicolumn{1}{c}{豪华型} & \multicolumn{1}{c}{普通型} \\ \hline
+1 & 390 & 270 & 5 & 400 & 300 \\
+2 & 390 & 280 & 6 & 390 & 340 \\
+3 & 450 & 350 & 7 & 350 & 290 \\
+4 & 380 & 300 &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+(1) 厂家建议的两种型号的零售价有 100 元的差价. 在显著性水平$\alpha=0.05$下, 检验两种型号的平均差价是否为 100 元.
+
+(2) 两种型号平均差价的95\%置信区间是多少?
     \end{shaded}
     \end{bbox}
 
@@ -8886,6 +9519,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为比较新旧两种肥料对小麦产量的影响, 研究者选择了面积相等、土壤等条件相同的 12 块地, 分别在 6 块地上施用新旧两种肥料. 对于旧肥料, 得到的小麦产量是 17, 14, 18, 13, 19 和 15; 而新肥料下小麦产量是 16, 19, 20, 22, 18 和 19. 假设两种肥料下小麦产量分别服从正态分布, 且总体独立, 均值和方差均未知. 试根据以上数据判断:
+
+(1) 两种肥料下小麦产量的方差是否相等 ($\alpha=0.05$)?
+
+(2) 新肥料下小麦平均产量是否显著得高于旧肥料下小麦平均产量 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8900,6 +9538,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+2000 年的全国人口普查表明某城市的 65 岁以上老年人所占的比例为 13.55\%. 现在为了调查人口的变动情况, 随机抽取 400 名居民, 发现其中有 57 人年龄在 65 岁以上. 试问该市现在老年人所占的比例较 2000 年普查时是否有变化 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -8914,6 +9553,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设到一商场的顾客会以概率$p$购买商品, 商场随机抽取了 500 个顾客, 其中 15 个购买了商品. 在显著性水平 5\% 下检验 $H_0 : p=0.02 \longleftrightarrow H_1 : p \neq 0.02$.
     \end{shaded}
     \end{bbox}
 
@@ -8928,6 +9568,13 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某种产品以往的废品率为 6\%, 采用某种技术革新后, 随机抽取 200 个产品进行检查, 其中 8 个废品, 即样本废品率 4\%, 相比以往有所降低, 取显著性水平为$\alpha=0.05$.
+
+(1) 此问题的原假设和备择假设分别是什么?
+
+(2) 犯第一类错误的概率是多少?
+
+(3) 样本的结果是否能支持备择假设.
     \end{shaded}
     \end{bbox}
 
@@ -8942,6 +9589,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设某一生产线上商品的次品率为$p$, 现随机抽取了 1000 个商品, 其中 5 个次品. 次品率低于 0.52\% 即为合格, 在显著性水平 0.05 下判断这批产品是否合格.
     \end{shaded}
     \end{bbox}
 
@@ -8956,6 +9604,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+有些人相信, 化学家生女儿的机会比一般人大 (可能是由于化学家在实验室中暴露于某化学品之下影响了子女的性别). 美国华盛顿州卫生局在出生证明上列出了父母的职业. 1980—1990 年有 555 名新生婴儿的父亲是化学家, 而这些婴儿中有 273 名是女孩. 同时期华盛顿州出生的婴儿中有 48.8\% 的女孩. 有无证据显示, 化学家生女儿的比例要高于全州的比例? (穆尔, 2003)
     \end{shaded}
     \end{bbox}
 
@@ -8970,6 +9619,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+2015年末全国大陆总人口 137462 万人, 出生率 12.07\textperthousand; 辽宁省人口 4382 万人, 出生率 6.17\textperthousand; 吉林省人口 2753 万人, 出生率 5.87\textperthousand; 黑龙江人口 3812 万人, 出生率6.00\textperthousand. 东北三省人口出生率是否显著小于全国人口出生率? 给出$p$值.
     \end{shaded}
     \end{bbox}
 
@@ -8984,132 +9634,15 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
-    \end{shaded}
-    \end{bbox}
+某汽车协会的一项研究调查男性还是女性更有可能停车问路. 研究假设: 如果你和你的配偶正在行驶并且迷路, 你会停车问路吗? 由该协会的典型样本数据得到在 811 名女性中有 300 人说她们会停车问路, 同时在 750 名男性中有 255 人说他们会停车问路.
 
-\vspace{-5em}
+(1) 研究的假设是女性更有可能说她们会停车问路, 建立这个研究的原假设和备择假设.
 
-    \begin{bbox}
-解: 
-    \end{bbox}
+(2) 表示她们会停车问路的女性的百分数是多少？
 
-\vspace{-5em}
+(3) 表示他们会停车问路的男性的百分数是多少？
 
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
+(4) 在显著性水平$\alpha=0.05$下检验假设, $p$值是多少? 你期待从这个研究中得到什么结论?
     \end{shaded}
     \end{bbox}
 
@@ -9129,6 +9662,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem 
+为检验吸烟与患慢性气管炎有无关系, 随机调查了 339 人, 其中 205 名吸烟者中有 43 人患慢性气管炎, 在 134 名不吸烟者中有 13 人患慢性气管炎. 问在显著水平 0.05 下数据是否支持``吸烟者患慢性气管炎的比例较高''这个结论?
     \end{shaded}
     \end{bbox}
 
@@ -9143,6 +9677,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为确定某种肥料的效果, 取 1000 株植物做试验. 在没有施肥的 100 株植物中, 有 53 株长势良好; 在已施肥的 900 株中, 则有 783 株长势良好. 问施肥的效果是否显著 ($\alpha=0.01$)?
     \end{shaded}
     \end{bbox}
 
@@ -9157,6 +9692,21 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+一农场半年前在一鱼塘中按比例 20 : 15 : 40 : 25 投放了四种鱼: 鲑鱼、鲈鱼、竹夹鱼和鲇鱼的鱼苗, 现在在鱼塘里获得一个样本如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{34pt}
+\begin{tabular}{c|cccc}
+\hline
+序号 & 1 & 2 & 3 & 4 \\
+\hline
+种类 & 鲑鱼 & 鲈鱼 & 竹夹鱼 & 鲇鱼 \\
+\hline
+数量/条 & 132 & 100 & 200 & 168 \\
+\hline
+\end{tabular}
+\end{center}
+试取$\alpha=0.05$, 检验各类鱼数量的比例较半年前是否有显著的改变.
     \end{shaded}
     \end{bbox}
 
@@ -9171,6 +9721,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+对截至目前一共 44 位美国总统的星座进行分析, 发现天蝎座和水瓶座各有 5 人, 双子座和射手座各有 3 人, 处女座和白羊座各有 2 人, 而其余六个星座均有 4 人. 于是有人宣称有些星座擅长当美国总统, 而有些星座则不擅长. 结合你所学的知识, 说明该说法是否有统计学上的依据? (显著性水平取$\alpha=0.05$)
     \end{shaded}
     \end{bbox}
 
@@ -9185,6 +9736,26 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某媒体用抽样调查来确定人们如何利用他们的空闲时间. 男性和女性都选择看电视为最普遍的活动. 调查结果如下表所示:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{52pt}
+\begin{tabular}{c|c|c}
+\hline
+性别 & 样本容量 & 选择看电视的人数 \\
+\hline
+男性 & 800 & 248 \\
+女性 & 600 & 156 \\
+\hline
+\end{tabular}
+\end{center}
+(1) 陈述一个假设, 该假设可用于检验选择看电视作为最普遍活动男性比率和女性比率之间的差异.
+
+(2) 选择看电视作为最普遍活动的男性样本比率是多少? 相应的女性样本比率是多少?
+
+(3) 进行假设检验并计算$p$值. 在显著性水平$\alpha=0.05$下, 你的结论如何?
+
+(4) 总体比率之差的 95\% 置信区间估计是什么?
     \end{shaded}
     \end{bbox}
 
@@ -9199,6 +9770,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+袋中装有 8 个球, 其中红球数未知. 在其中任取 3 个, 记录红球的个数 X, 然后放回. 再任取 3 个, 记录红球的个数, 然后放回. 如此重复进行 112 次, 得到结果如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{40pt}
+\begin{tabular}{c|cccc}
+\hline
+$X$ & 0 & 1 & 2 & 3 \\
+\hline
+出现次数 & 1 & 31 & 55 & 25 \\
+\hline
+\end{tabular}
+\end{center}
+试在$\alpha=0.05$水平下检验假设 $H_0 : $ 红球的个数为5.
     \end{shaded}
     \end{bbox}
 
@@ -9213,6 +9797,22 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+摩尔根的果蝇实验用来检验孟德尔第二定律 (自由组合定律)是否成立. 在该定律成立的条件下, 果蝇眼睛的颜色(红-A, 紫-a)和翅膀的长度(长-B, 短-b)应该是独立遗传的, 即有 4 种组合 (AB, Ab, aB, ab)应该是等可能的 (概率各为 0.25). 摩尔根观察到的 4 种组合的计数分别为 1339, 151, 154, 1195 (总数$n=2839$). 试检验孟德尔第二定律是否成立.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem$^*$
+研究小牛在出生后 60 天内第一次患肺炎并恢复后再次患肺炎的概率是否和初发一样. 共检查了 156 头小牛, 有 30 头患肺炎了 2 次, 63 头只患肺炎一次, 63 头一次也没患肺炎. 试问小牛两次患病的概率是否一致?
     \end{shaded}
     \end{bbox}
 
@@ -9227,6 +9827,21 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为了研究蜗牛的种类是否与其生活的珊瑚礁种类有关, 选取了 3 种珊瑚礁作为检验样本, 记为 \uppercase\expandafter{\romannumeral1}, \uppercase\expandafter{\romannumeral2}, \uppercase\expandafter{\romannumeral3}, 记录下 A 和 B 两种蜗牛分别在 3 种珊瑚礁中生存的数目, 得到如下数据. 试问 A 和 B 两种蜗牛的分布是否在 3 种珊瑚礁中都是一样的 ($\alpha=0.05$)?
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{40pt}
+\begin{tabular}{c|ccc|c}
+\hline
+ & \uppercase\expandafter{\romannumeral1} & \uppercase\expandafter{\romannumeral2} & \uppercase\expandafter{\romannumeral3} & 合计 \\
+\hline
+A & 6 & 8 & 14 & 28 \\
+B & 7 & 21 & 5 & 33 \\
+\hline
+合计 & 13 & 29 & 19 & 61 \\
+\hline
+\end{tabular}
+\end{center}
     \end{shaded}
     \end{bbox}
 
@@ -9241,6 +9856,23 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+有甲、乙、丙三个工厂生产同一种产品. 产品分一, 二, 三三个等级 (分别代表高、中、低). 为考察各工厂产品质量是否一致, 从这三个工厂中分别随机抽出产品若干件, 每件鉴定其质量等级, 结果如下:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{53pt}
+\begin{tabular}{c|c|c|c}
+\hline
+\multirow{2}{*}{等级} & \multicolumn{3}{c}{工厂} \\ 
+\cline{2-4}
+ & \multicolumn{1}{c|}{甲} & \multicolumn{1}{c|}{乙} & \multicolumn{1}{c}{丙} \\
+\hline
+一 & 58 & 38 & 30 \\
+二 & 40 & 44 & 35 \\
+三 & 11 & 18 & 26 \\
+\hline
+\end{tabular}
+\end{center}
+试在显著性水平 0.05 下检验假设: 各工厂产品质量一致. 若不一致, 试问哪个厂产品质量较优? 哪个厂的产品质量较劣? 请说明理由.
     \end{shaded}
     \end{bbox}
 
@@ -9255,6 +9887,20 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+某工厂为了了解白班和夜班生产的产品合格率是否有差异, 进行调查得到如下数据:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{63pt}
+\begin{tabular}{c|c|c}
+\hline
+ & 合格 & 不合格 \\
+\hline
+白班 & 232 & 19 \\
+夜班 & 54 & 18 \\
+\hline
+\end{tabular}
+\end{center}
+试据此判断, 产品合格率是否与班次有关 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -9269,6 +9915,20 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+为了解男性和女性对三种类型的啤酒: 淡啤酒、普通啤酒和黑啤酒的偏好有没有差异, 分别调查了 180 位男性和 120 位女性的喜好, 得如下数据:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{43pt}
+\begin{tabular}{c|c|c|c}
+\hline
+ & 淡啤酒 & 普通啤酒 & 黑啤酒 \\
+\hline
+男性 & 49 & 31 & 100 \\
+女性 & 51 & 20 & 49 \\
+\hline
+\end{tabular}
+\end{center}
+请问男性和女性对这三种类型的啤酒的偏好有显著差异吗 ($\alpha=0.05$)?
     \end{shaded}
     \end{bbox}
 
@@ -9283,6 +9943,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+检查一本书的 150 页, 记录各页中印刷错误的个数, 其结果为
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{17pt}
+\begin{tabular}{c|cccccccc}
+\hline
+错误的个数$f_i$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & $\geq$ 7 \\
+\hline
+含$f_i$个错误的页数 & 86 & 40 & 19 & 2 & 0 & 2 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+试在显著性水平 0.05 下检验假设 $H_0 : $ 每页上的印刷错误个数服从泊松分布.
     \end{shaded}
     \end{bbox}
 
@@ -9297,20 +9970,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
+下表给出了从某大学一年级学生中随机抽取的 200 个学生的某次数学考试成绩:
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{9pt}
+\begin{tabular}{c|cccccccc}
+\hline
+分数 & [20,30] & (30,40] & (40,50] & (50,60] & (60,70] & (70,80] & (80,90] & (90,100] \\
+\hline
+学生数 & 5 & 15 & 30 & 51 & 60 & 23 & 10 & 6 \\
+\hline
+\end{tabular}
+\end{center}
+试在显著性水平 0.05 下检验成绩是否服从正态分布$N(60,15^2)$.
     \end{shaded}
     \end{bbox}
 
