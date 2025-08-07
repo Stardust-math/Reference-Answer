@@ -1258,6 +1258,8 @@ $$p=0.3+0.4\times0.6-0.3\times0.4\times0.6=0.468.$$
         \qitem
 双色球是目前彩票中最受欢迎的玩法之一. 投注区分为红色球号码区和蓝色球号码区, 红色球号码区由1到33共33个号码组成, 蓝色球号码区由1到16共16个号码组成.投注时, 选择6个不同的红色球号码和1个蓝色球号码组成一注进行单式投注, 每注金额人民币2元. 设开奖时, 由系统随机指定6个不同的红色球号码和1个蓝色球号码. 若某单位投注中分别有\( i (0 \le i \le 6) \)个红色球号码和\( j (j = 0, 1) \)个蓝色球号码与指定号码相同, 则称该投注的形式为``\( i+j \)''. 最后所有奖项规则如下:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{14pt}
 \begin{tabular}{c|c|c|c|c|c|c}
 \hline
 等级 & 一等奖 & 二等奖 & 三等奖 & 四等奖 & 五等奖 & 六等奖 \\
@@ -1283,6 +1285,8 @@ A = \{\text{中奖}\}, \quad B = \{\text{中一等奖或二等奖}\}
 
 记匹配$i$个红色球号码为事件$A_{i}$, 匹配蓝色球号码为事件$B$, 随机变量$X$为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{13pt}
 \begin{tabular}{c|c|c|c|c|c|c|c}
 \hline
 等级 & 未获奖 & 一等奖 & 二等奖 & 三等奖 & 四等奖 & 五等奖 & 六等奖 \\
@@ -1295,6 +1299,8 @@ $X$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
 
 (1) 显然各个不同的$A_{i}\cap B$(或$A_{i}\cap B^{c}$)交集为空且$A_{i}$, $B$(或$B^c$)相互独立, 故$P((A_{m}B_{1})\cup(A_{n}B_{2}))=P(A_{m}B_{1})+P(A_{n}B_{2})$, $B_{1},B_{2}=B\text{或}B^c$且$P(A_{i}B)=P(A_{i})P(B)$(或$P(A_{i}B^{c})=P(A_{i})P(B^{c})$). 计算可得$X$的分布律如下:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{13pt}
 \begin{tabular}{c|c|c|c|c|c|c|c}
 \hline
 $X$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
@@ -1347,6 +1353,8 @@ $$P(S_{n}=k)=\frac{k-1}{n-1}P(S_{n-1}=k-1)+\left(1-\frac{k}{n-1}\right)P(S_{n-1}
 
 显然, $X$的分布律为: 
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{38pt}
 \begin{tabular}{c|c|c|c|c}
 \hline
 $X$ & 100 & 80 & 50 & -60 \\
@@ -1373,6 +1381,8 @@ $P(X=x)$ & 0.6 & 0.2 & 0.1 & 0.1 \\
 
 记五个工作日内发生故障的次数为随机变量$X$, 则$X$服从参数为$n=5$, $p=0.2$的二项分布, 即$X\sim B(5,0.2)$, 则$P(X=k)=\binom{5}{k}\cdot(0.2)^k\cdot(0.8)^{5-k}$, $0 \leq k \leq 5$. 故毛利润的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{26pt}
 \begin{tabular}{c|c|c|c|c}
 \hline
 毛利润(万元) & 10 & 5 & 0 & -2 \\
@@ -1393,6 +1403,8 @@ $P$ & 0.32768 & 0.4096 & 0.2048 & 0.05792 \\
         \qitem
 设随机变量$X$的分布律如下: 
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{30pt}
 \begin{tabular}{c|ccc}
 $X$ & -1 & 1 & 2\\
 \hline
@@ -1445,6 +1457,8 @@ $P$ & 0.25 & 0.5 & 0.25\\
 
 显然$X$的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{30pt}
 \begin{tabular}{c|c|c|c}
     \hline
     $X$ & 1 & 2 & 3 \\
@@ -1564,6 +1578,8 @@ $$P(X=1|B)=\frac{P(B|X=1)P(X=1)}{P(B)}\approx0.4149.$$
 $$P(X=i)=\binom{i-1}{4-1}\cdot(0.4)^{4}\cdot(0.6)^{i-4},i=4,5,6,7$$
 \begin{center}
     $\Longrightarrow$
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{20pt}
 \begin{tabular}{c|c|c|c|c}
     \hline
     $i$ & 4 & 5 & 6 & 7 \\
@@ -1592,6 +1608,7 @@ $p_{\text{乙},4}=1-\sum\limits_{i=4}^{7}P(X=i)=0.289792 < p_{\text{乙},2}=0.35
 记$Y$为三个骰子中押的数字出现的次数, 则$Y\sim B(3,\displaystyle\frac{1}{6})$, 即$P(Y=k)=\binom{3}{k}\cdot(\displaystyle\frac{1}{6})^{k}\cdot(\frac{5}{6})^{3-k}$, $k=0,1,2,3$. 则: $P(x)=P(Y),X=1,2,3$; $P(X=-1)=P(Y=0)$ $\Longrightarrow$ $X$的分布律为:
 \begin{center}
 \renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{20pt}
 \begin{tabular}{c|c|c|c|c}
     \hline
     $X$ & -1 & 1 & 2 & 3 \\
@@ -2182,6 +2199,8 @@ $$P(X > t+x|X>t)=\frac{1-F(t+x)}{1-F(t)}=1-F(x)=P(X>x) \Longleftrightarrow 1-F(t
 
 易知$X$的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{12pt}
 \begin{tabular}{c|ccccccccccc}
     \hline
     $X$ & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
@@ -2208,6 +2227,8 @@ $$P(X > t+x|X>t)=\frac{1-F(t+x)}{1-F(t)}=1-F(x)=P(X>x) \Longleftrightarrow 1-F(t
 
 记三个骰子的点数分别为$X_1$, $X_2$, $X_3$, 则$P(X\leq k)=P(X_1\leq k,X_2\leq k,X_3\leq k)=P(X_1\leq k)P(X_2\leq k)P(X_3\leq k)=\left(\frac{k}{6}\right)^3$, $1\leq k\leq 6$ $\Longrightarrow$ $P(X=k)=P(X\leq k)-P(X\leq k-1)=\frac{k^3-(k-1)^3}{216}$. $X$的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{14pt}
 \begin{tabular}{c|cccccc}
     \hline
     $X$ & 1 & 2 & 3 & 4 & 5 & 6 \\
@@ -2227,6 +2248,8 @@ $$P(X > t+x|X>t)=\frac{1-F(t+x)}{1-F(t)}=1-F(x)=P(X>x) \Longleftrightarrow 1-F(t
         \qitem
 设随机变量$X$的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{20pt}
 \begin{tabular}{c|cccc}
 $X$ & -1 & 0 & 1 & 2\\
 \hline
@@ -2246,6 +2269,8 @@ $P$ & 0.2 & 0.3 & 0.1 & 0.4\\
 
 (1) $Y_1$的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{14pt}
 \begin{tabular}{c|cccc}
 $Y_1$ & -3 & -1 & 1 & 3\\
 \hline
@@ -2255,6 +2280,8 @@ $P$ & 0.4 & 0.1 & 0.3 & 0.2\\
 
 (2) $Y_2$的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{14pt}
 \begin{tabular}{c|ccc}
 $Y_2$ & 0 & 1 & 2\\
 \hline
@@ -2264,6 +2291,8 @@ $P$ & 0.3 & 0.3 & 0.4\\
 
 (3) $Y_3$的分布律为:
 \begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{14pt}
 \begin{tabular}{c|ccc}
 $Y_3$ & 0 & 1 & 4\\
 \hline
@@ -2351,7 +2380,7 @@ $V(E)=\pm\sqrt{\displaystyle\frac{2E}{M}}$ $\Longrightarrow$ $|V'(E)|=\displayst
 \begin{aligned}
     \nonumber
 f_{E}(e)&=\displaystyle\frac{1}{\sqrt{2eM}}\left[f_{V}\left(\sqrt{\frac{2e}{M}}\right)+f_{V}\left(-\sqrt{\frac{2e}{M}}\right)\right]\\
- &=\displaystyle\frac{1}{\sqrt{2\pi eM}\sigma}\left[e^{-\frac{(\frac{2e}{M}-\mu)^2}{2 \sigma^2}}+e^{-\frac{(-\frac{2e}{M}-\mu)^2}{2 \sigma^2}}\right]
+ &=\displaystyle\frac{1}{\sqrt{2\pi eM}\sigma}\left[e^{-\displaystyle\frac{(\frac{2e}{M}-\mu)^2}{2 \sigma^2}}+e^{-\displaystyle\frac{(-\frac{2e}{M}-\mu)^2}{2 \sigma^2}}\right]
 \end{aligned}
 \end{equation}
 \end{center}
@@ -2818,8 +2847,8 @@ $$p_{a}=\displaystyle\frac{\left(\frac{q}{p}\right)^{a}-\left(\frac{q}{p}\right)
 易得, $(X,Y)$的联合概率质量函数/联合分布律为:
 \begin{footnotesize}
 \begin{center}
-    \renewcommand{\arraystretch}{1.5}
-    \setlength{\tabcolsep}{20pt}
+    \renewcommand{\arraystretch}{1.7}
+    \setlength{\tabcolsep}{25pt}
     \begin{tabular}{c|c|c|c}
 	    \hline
 	    \diagbox{$X$}{$P(X,Y)$}{$Y$} & 0 & 1 & 2 \\
@@ -2874,7 +2903,7 @@ F_{X,Y}(x, y) =
 \begin{footnotesize}
 \begin{center}
     \renewcommand{\arraystretch}{1.5}
-    \setlength{\tabcolsep}{20pt}
+    \setlength{\tabcolsep}{25pt}
     \begin{tabular}{c|c|c|c}
 	    \hline
 	    \diagbox{$X$}{$P(X,Y)$}{$Y$} & 0 & 1 & 2 \\
@@ -2924,7 +2953,7 @@ F_{X,Y}(x, y) =
 \begin{footnotesize}
 \begin{center}
     \renewcommand{\arraystretch}{1.5}
-    \setlength{\tabcolsep}{20pt}
+    \setlength{\tabcolsep}{25pt}
     \begin{tabular}{c|c|c|c|c}
 	    \hline
 	    \diagbox{$Y$}{$P(X,Y)$}{$X$} & 0 & 1 & 2 & 3 \\
@@ -2978,8 +3007,8 @@ F_{X,Y}(x, y) =
 易得, $(X_1,X_2)$的联合分布律为:
 \begin{footnotesize}
 \begin{center}
-    \renewcommand{\arraystretch}{1}
-    \setlength{\tabcolsep}{6pt}
+    \renewcommand{\arraystretch}{1.2}
+    \setlength{\tabcolsep}{20pt}
     \begin{tabular}{c|c|c}
 	    \hline
 	    \diagbox{$X_2$}{$P(X,Y)$}{$X_1$} & 0 & 1 \\
@@ -3001,7 +3030,7 @@ F_{X,Y}(x, y) =
 设二维随机向量的联合分布律为
 \begin{center}
     \renewcommand{\arraystretch}{1}
-    \setlength{\tabcolsep}{5em}
+    \setlength{\tabcolsep}{6.2em}
     \begin{threeparttable}
     \begin{tabular}{c|cc}
         \hline
@@ -4018,7 +4047,7 @@ $$f_{X}(x)=\iint\limits_{y^2+z^2\leq 1-x^2}f_{X,Y,Z}(x,y,z)\mathrm{d}y\mathrm{d}
     \begin{bbox}
 \begin{center}
     \renewcommand{\arraystretch}{1.4}
-    \setlength{\tabcolsep}{12pt}
+    \setlength{\tabcolsep}{20pt}
     \begin{tabular}{c|c|c|c}
 	    \hline
 	    \diagbox{$X$}{$P(X,Y)$}{$Y$} & -1 & 0 & 1\\
@@ -5139,7 +5168,7 @@ $$\lim\limits_{n\to\infty}\displaystyle\frac{E(X^{n+1})}{E(X^{n})}=\max\limits_{
 解: 
 
 记$p_i=P(X=x_i)>0$, $x_j=\max\limits_{1\leq i\leq k}\{x_i\}$, 则:
-$$\lim\limits_{n\to\infty}\displaystyle\frac{E(X^{n+1})}{E(X^{n})}=\lim\limits_{n\to\infty}\frac{\sum\limits_{i=1}^{k}p_{i}x_{i}^{n+1}}{\sum\limits_{i=1}^{k}p_{i}x_{i}^{n}}=\lim\limits_{n\to\infty}\frac{p_{j} x_{j}^{n+1}\sum\limits_{i=1}^{k}\frac{p_i}{p_j}\left(\frac{x_i}{x_j}\right)^{n+1}}{p_{j} x_{j}^{n}\sum\limits_{i=1}^{k}\frac{p_i}{p_j}\left(\frac{x_i}{x_j}\right)^{n}}=x_j=\max\limits_{1\leq i\leq k}\{x_i\}$$
+$$\lim\limits_{n\to\infty}\displaystyle\frac{E(X^{n+1})}{E(X^{n})}=\lim\limits_{n\to\infty}\frac{\sum\limits_{i=1}^{k}p_{i}x_{i}^{n+1}}{\sum\limits_{i=1}^{k}p_{i}x_{i}^{n}}=\lim\limits_{n\to\infty}\frac{\displaystyle p_{j} x_{j}^{n+1}\sum\limits_{i=1}^{k}\frac{p_i}{p_j}\left(\frac{x_i}{x_j}\right)^{n+1}}{\displaystyle p_{j} x_{j}^{n}\sum\limits_{i=1}^{k}\frac{p_i}{p_j}\left(\frac{x_i}{x_j}\right)^{n}}=x_j=\max\limits_{1\leq i\leq k}\{x_i\}$$
     \end{bbox}
 
 \vspace{-5em}
@@ -6780,6 +6809,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem 
+如何理解``样本既可以视为是随机变量, 也可以是具体的数值''?
     \end{shaded}
     \end{bbox}
 
@@ -6794,6 +6824,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设某人进行射击练习, 他独立射击 5 次, 结果分别为 8,9,7,10 和 6 环, 则总体是什么? 样本是什么?
     \end{shaded}
     \end{bbox}
 
@@ -6808,6 +6839,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+从全班同学中随机选择 5 名同学, 则总体和样本分别指什么?
     \end{shaded}
     \end{bbox}
 
@@ -6822,6 +6854,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+调查 50 个人对某件事情是 (1) 否 (0) 支持, 假设每个人对该事情支持的可能性为 $p$, 各人之间相互独立, 则总体分布是什么? 若其中 10 个人的调查结果为$x_1$, $x_2$, $\cdots$, $x_{10}$ (其中$x_i$只取0或1), 则抽样分布是什么?
     \end{shaded}
     \end{bbox}
 
@@ -6836,6 +6869,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+测量一个物体的长度, 试写出总体及其分布, 并解释该总体的合理性.
     \end{shaded}
     \end{bbox}
 
@@ -6850,6 +6884,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+考虑某工厂生产的灯管寿命, 则总体又是什么? 解释你做法的合理性.
     \end{shaded}
     \end{bbox}
 
@@ -6864,6 +6899,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+一个总体有$N$个元素, 其指标分别为$a_1 > a_2 > \cdots > a_N$, 指定自然数$M < N$, $m < M$, $n < N$. 在($a_1$, $a_2$, $\cdots$, $a_M$)中不放回地随机抽出$m$个元素, 在($a_{M+1}$, $a_{M+2}$, $\cdots$, $a_{N}$)中不放回地随机抽出$n-m$个元素. 写出所得样本的分布.
     \end{shaded}
     \end{bbox}
 
@@ -6878,6 +6914,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设总体$X$服从0-1分布$B(1,p)$, 其中$p$为未知参数, $(X_1, X_2, \cdots, X_5)$为从此总体中抽取的简单样本.
+
+(1) 写出样本空间和抽样分布;
+
+(2) 指出$X_1+X_2$, $\min\limits_{1 \leq i \leq 5}X_i$, $X_5+2p$, $X_5-E(X_1)$, $\displaystyle\frac{(X_5-X_1)^2}{\text{Var}(X_1)}$哪些是统计量, 哪些不是. 为什么?
     \end{shaded}
     \end{bbox}
 
@@ -6892,6 +6933,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+随机地取 7 只活塞环, 测得它们的直径为 (单位: mm)
+$$74.001, \;\; 74.005, 74.003, \;\; 74.000, \;\; 73.908, \;\; 74.006, \;\; 74.002$$
+试求样本均值和样本标准差.
     \end{shaded}
     \end{bbox}
 
@@ -6906,6 +6950,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设样本量为 10 的一个样本值为
+$$0.4, \;\; 0.3, \;\; -0.3, \;\; -0.1, \;\; 1.7, \;\; 0.6, \;\; -0.1, \;\; 0.9, \;\; 2.6, \;\; 0.5$$
+试计算经验分布函数.
     \end{shaded}
     \end{bbox}
 
@@ -6920,6 +6967,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$(X_1, X_2, \cdots, X_n)$为来自总体$N(\mu,\sigma^2)$的简单随机样本, $S^2$为样本方差. 试证明
+
+(1) $\text{Var}(S^2) = 2\sigma^4 \big/ (n-1)$;
+
+(2) $E(S)=\displaystyle\frac{\sigma\sqrt{2}\Gamma(n/2)}{\sqrt{n-1}\Gamma\left[(n-1)/2\right]}$.
     \end{shaded}
     \end{bbox}
 
@@ -6934,6 +6986,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设随机变量$X\sim t_n$, 其中$n>1$, 求$Y=1/X^2$的分布.
     \end{shaded}
     \end{bbox}
 
@@ -6948,6 +7001,8 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$(X_1,X_2,\cdots,X_n)$为来自总体$N(0,1)$的简单随机样本, 证明
+$$\displaystyle\frac{(n-1)X_{1}^{2}}{\displaystyle\sum\limits_{i=2}^{n}X_{i}^{2}} \sim F_{1,n-1}.$$
     \end{shaded}
     \end{bbox}
 
@@ -6962,6 +7017,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设随机变量$X_1$, $X_2$相互独立同分布于标准正态分布, 求$Y = \displaystyle\frac{(X_1-X_2)^2}{(X_1+X_2)^2}$的分布.
     \end{shaded}
     \end{bbox}
 
@@ -6976,6 +7032,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$X_1$, $X_2$, $X_3$, $X_4$是来自正态总体$N(0,2^2)$的简单随机样本, 令$T=a(X_1-2X_2)^2+b(3X_3-4X_4)^2$. 试求$a$, $b$使统计量$T$服从$\chi^2$分布.
     \end{shaded}
     \end{bbox}
 
@@ -6990,6 +7047,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$X_1$, $X_2$, $\cdots$, $X_9$为独立同分布的正态随机变量, 记
+$$Y_1 = \displaystyle\frac{1}{6}(X_1+X_2+\cdots+X_6), \qquad Y_2 = \frac{1}{3}(X_7+X_8+X_9), \qquad S^2=\frac{1}{2}\sum\limits_{i=7}^{9}(X_i-Y_2)^2.$$
+试求$Z=\sqrt{2}(Y_1-Y_2) \big/ S$的分布.
     \end{shaded}
     \end{bbox}
 
@@ -7004,6 +7064,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设$X_1$, $X_2$, $\cdots$, $X_{15}$是独立同分布的随机变量, 服从正态分布$N(0,2^2)$. 试求
+$$Y = \displaystyle\frac{X_1^2+X_2^2+\cdots+X_{10}^2}{2\left(X_{11}^2+X_{12}^2+\cdots+X_{15}^2\right)}$$
+的分布.
     \end{shaded}
     \end{bbox}
 
@@ -7018,6 +7081,15 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \( X_1, X_2, \cdots, X_n \) 为从下列总体中抽取的简单样本:
+
+(1) 正态总体 \( N(\mu, \sigma^2) \);
+
+(2) 参数为 \(\lambda\) 的泊松总体;
+
+(3) 参数为 \(\lambda\) 的指数分布,
+
+试求样本均值 \(\overline{X}\) 的分布.
     \end{shaded}
     \end{bbox}
 
@@ -7032,6 +7104,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是从 \(0-1\) 分布 \(B(1, p)\) 中抽取的简单样本, \(0 < p < 1\), 记 \(\overline{X}\) 为样本均值, 求\(\displaystyle S_n^2 = \sum\limits_{i=1}^n (X_i - \overline{X})^2 \big/ n\)的期望.
     \end{shaded}
     \end{bbox}
 
@@ -7046,6 +7119,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \( (X_1, X_2, \cdots, X_n) \) 为来自正态总体 \( N(\mu, \sigma^2) \) 的一个简单随机样本, \( \overline{X} \) 和 \( S_n^2 \) 分别表示样本均值和样本方差, 又设 \( X_{n+1} \sim N(\mu, \sigma^2) \) 且与 \( X_1, X_2, \cdots, X_n \) 独立, 试求统计量\(\displaystyle \sqrt{\frac{n}{n+1}} (X_{n+1} - \overline{X}) \big/ S_n\)的分布.
     \end{shaded}
     \end{bbox}
 
@@ -7060,6 +7134,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \( (X_1, X_2, \cdots, X_m) \) 为来自正态总体 \( N(\mu_1, \sigma^2) \) 的一个简单随机样本, \( (Y_1, Y_2, \cdots, Y_n) \) 为来自正态总体 \( N(\mu_2, \sigma^2) \) 的一个简单随机样本, 且 \( (X_1, X_2, \cdots, X_m) \) 和 \( (Y_1, Y_2, \cdots, Y_n) \) 相互独立, \( \overline{X} \) 和 \( \overline{Y} \) 分别表示它们的样本均值, \( S_{1m}^2 \) 和 \( S_{2n}^2 \) 分别表示它们的样本方差, \( \alpha \) 和 \( \beta \) 是两个给定的实数, 试求
+\[T = \displaystyle\frac{\alpha (\overline{X} - \mu_1) + \beta (\overline{Y} - \mu_2)}{\sqrt{\displaystyle\frac{(m-1)S_{1m}^2 + (n-1)S_{2n}^2}{n+m-2} \left( \frac{\alpha^2}{m} + \frac{\beta^2}{n} \right)}}\]
+的分布.
     \end{shaded}
     \end{bbox}
 
@@ -7074,6 +7151,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \( X_{(1)}, X_{(2)}, \cdots, X_{(n)} \) 为从均匀分布 \( U(0, 1) \) 中抽取的次序统计量.
+
+(1) 样本量 \( n \) 为多大时, 才能使 \( P(X_{(n)} \geq 0.99) \geq 0.95 \)? 
+
+(2) 求极差 \( R_n = X_{(n)} - X_{(1)} \) 的期望.
     \end{shaded}
     \end{bbox}
 
@@ -7093,6 +7175,21 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem 
+设总体 \( X \) 的概率分布如下:
+
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{38pt}
+\begin{tabular}{c|cccc}
+\hline
+\( X \) & 0 & 1 & 2 & 3 \\
+\hline
+\( P \) & \(\theta^2\) & \(2\theta(1-\theta)\) & \(\theta^2\) & \(1-2\theta\) \\
+\hline
+\end{tabular}
+\end{center}
+
+其中 \( 0 < \theta < 1/2 \) 为未知参数. 现从此总体中抽出一样本量为 100 的简单随机样本, 其中 0 出现了 10 次, 1 出现了 53 次, 2 出现了 16 次, 3 出现了 21 次. 试求 \(\theta\) 的矩估计.
     \end{shaded}
     \end{bbox}
 
@@ -7107,6 +7204,21 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \( X \) 的概率分布如下:
+
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{50.5pt}
+\begin{tabular}{c|ccc}
+\hline
+\( X \) & 1 & 2 & 3 \\
+\hline
+\( P \) & \( p_1 \) & \( p_2 \) & \( 1-p_1-p_2 \) \\
+\hline
+\end{tabular}
+\end{center}
+
+其中 \( 0 < p_1, p_2 < 1 \) 为未知参数. 现从此总体中抽出一样本量为 \( n \) 的简单随机样本, 其中 1 出现了 \( n_1 \) 次, 2 出现了 \( n_2 \) 次, 3 出现了 \( n_3 \) 次. 试求 \( p \) 的矩估计.
     \end{shaded}
     \end{bbox}
 
@@ -7121,6 +7233,17 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是总体 \(X\) 的一个简单随机样本, 试求总体 \(X\) 在具有下列概率质量函数时参数 \(\theta\) 的矩估计:
+
+(1) \(p(x; \theta) = 1/\theta, \quad x = 0, 1, 2, \cdots, \theta - 1\), 其中 \(\theta\) (正整数) 是未知参数;
+
+(2) \(p(x; \theta) = \displaystyle\binom{m}{x} \theta^x (1 - \theta)^{m - x}, \quad x = 0, 1, \cdots, m\);
+
+(3) \(p(x; \theta) = (x - 1) \theta^2 (1 - \theta)^{x - 2}, \quad x = 2, 3, \cdots, 0 < \theta < 1\);
+
+(4) \(p(x; \theta) = -\theta^x / \left(x \ln (1 - \theta)\right), \quad x = 1, 2, \cdots, 0 < \theta < 1\);
+
+(5) \(p(x; \theta) = \theta^x e^{-\theta} / x!, \quad x = 0, 1, 2, \cdots\).
     \end{shaded}
     \end{bbox}
 
@@ -7135,6 +7258,43 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是总体 \(X\) 的一个简单随机样本, 试求总体 \(X\) 在具有下列概率密度函数时参数 \(\theta\) 的矩估计:
+
+(1) \(f(x; \theta) = 
+\begin{cases} 
+2(\theta - x)/\theta^2, & 0 < x < \theta, \\
+0, & \text{其他};
+\end{cases}\)
+
+(2) \(f(x; \theta) = 
+\begin{cases} 
+(\theta + 1)x^{\theta}, & 0 < x < 1, \theta > 0, \\
+0, & \text{其他};
+\end{cases}\)
+
+(3) \(f(x; \theta) = 
+\begin{cases} 
+\sqrt{\theta}x^{\sqrt{\theta}-1}, & 0 < x < 1, \theta > 0, \\
+0, & \text{其他};
+\end{cases}\)
+
+(4) \(f(x; \theta) = 
+\begin{cases} 
+\theta c^{\theta}/x^{(\theta+1)}, & x > c (c > 0 \text{已知}), \theta > 1, \\
+0, & \text{其他};
+\end{cases}\)
+
+(5) \(f(x; \theta) = 
+\begin{cases} 
+6x(\theta - x)/\theta^3, & 0 < x < \theta, \\
+0, & \text{其他};
+\end{cases}\)
+
+(6) \(f(x; \theta) = 
+\begin{cases} 
+\theta^2x^{-3}e^{-\theta/x}, & x > 0, \theta > 0, \\
+0, & \text{其他}.
+\end{cases}\)
     \end{shaded}
     \end{bbox}
 
@@ -7149,6 +7309,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+总体 \(X\) 的概率密度函数为
+
+\[f(x) = 
+\begin{cases} 
+\displaystyle\frac{4x^2}{\theta^3\sqrt{\pi}}e^{-x^2/\theta^2}, & x \geq 0, \\
+0, & \text{其他}.
+\end{cases}\]
+
+设 \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(X\) 的简单随机样本.
+
+(1) 求 \(\theta\) 的矩估计量 \(\hat{\theta}\);
+
+(2) 求 \(\hat{\theta}\) 的方差.
     \end{shaded}
     \end{bbox}
 
@@ -7163,6 +7336,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \(Y = e^X\), 其中 \(X \sim N(\mu, \sigma^2)\), 求 \(E(Y)\) 和 \(\text{Var}(Y)\) 的矩估计.
     \end{shaded}
     \end{bbox}
 
@@ -7177,6 +7351,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自正态总体 \(N(0, \sigma^2)\) 的样本, 求 \(\sigma\) 的矩估计:
+
+(1) 利用 \( E(|X_1|) = \displaystyle\sqrt{\frac{2}{\pi}} \sigma \); \qquad (2) 利用 \(\sigma = \sqrt{\text{Var}(X_1)}\).
     \end{shaded}
     \end{bbox}
 
@@ -7191,6 +7368,18 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+总体 \( X \) 的概率密度函数为
+\[f(x) =
+\begin{cases} 
+\displaystyle\frac{1}{2\theta}, & 0 < x < \theta, \\
+\displaystyle\frac{1}{2(1-\theta)}, & \theta \leq x < 1, \\
+0, & \text{其他}.
+\end{cases}\]
+\( (X_1, X_2, \cdots, X_n) \) 是来自总体 \( X \) 的简单随机样本, \( \overline{X} \) 为样本平均值.
+
+(1) 求 \( \theta \) 的矩估计量 \( \hat{\theta} \);
+
+(2) 判断 \( 4\overline{X}^2 \) 是否为 \( \theta^2 \) 的无偏估计量, 并说明理由.
     \end{shaded}
     \end{bbox}
 
@@ -7205,6 +7394,10 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+假设如第 2 题, 并假定 \( p_2 = 2p_1 = 2p \). 记 \( p \) 的矩估计为 \( \hat{p} \), 现定义
+\[\hat{p}_1 = \frac{n_1}{n}, \quad \hat{p}_2 = \frac{n_2}{2n}, \quad \hat{p}_3 = \frac{1}{3} \left( 1 - \frac{n_3}{n} \right).\]
+
+试验证它们的无偏性并确定何者的方差最小.
     \end{shaded}
     \end{bbox}
 
@@ -7219,6 +7412,21 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \( X \) 的概率分布为
+
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{51pt}
+\begin{tabular}{c|ccc}
+\hline
+\( X \) & 1 & 2 & 3 \\
+\hline
+\( P \) & \( 1 - \theta \) & \( \theta - \theta^2 \) & \( \theta^2 \) \\
+\hline
+\end{tabular}
+\end{center}
+
+其中 \( \theta \in (0, 1) \) 未知, 以 \( N_i \) 表示来自总体 \( X \) 的简单随机样本(样本量为 \( n \))中等于 \( i \) 的个数(\( i = 1, 2, 3 \)), 试求常数 \( a_1, a_2, a_3 \), 使得 \( T = \displaystyle\sum\limits_{i=1}^{3} a_i N_i \) 为 \( \theta \) 的无偏估计量, 并求 \( T \) 的方差.
     \end{shaded}
     \end{bbox}
 
@@ -7233,6 +7441,16 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(X\) 的样本, 总体 \(X\) 的概率密度函数为  
+\[f(x; \theta) = 
+\begin{cases} 
+1, & \theta - 1/2 \leq x \leq \theta + 1/2, \\ 
+0, & \text{其他}, 
+\end{cases}
+\qquad
+- \infty < \theta < \infty.\]
+
+试问样本均值 \(\overline{X}\) 及 \(\max\limits_{1 \leq i \leq n} X_i\) 是否都是 \(\theta\) 的无偏估计? 若不是则将其修正为无偏估计. 问修正后的无偏估计何者更有效?
     \end{shaded}
     \end{bbox}
 
@@ -7247,6 +7465,59 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \(X_1, X_2, X_3\) 是来自均匀分布总体 \(U(0, \theta)\) 的样本, \(\theta > 0\) 为参数. 试证 \(\displaystyle\frac{4}{3} \max\limits_{1 \leq i \leq 3} X_i\) 及 \(4 \min\limits_{1 \leq i \leq 3} X_i\) 都是 \(\theta\) 的无偏估计量. 哪个更有效?
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem$^*$
+设 \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(U(0, \theta)\) 的一个样本. 证明:
+
+(1) \(\hat{\theta}_1 = \max\{X_1, X_2, \cdots, X_n\} + \min\{X_1, X_2, \cdots, X_n\}\) 是 \(\theta\) 的一个无偏估计;
+
+(2) 对适当选取的常数 \(C_n\), \(\hat{\theta}_2 = C_n \min\{X_1, X_2, \cdots, X_n\}\) 是 \(\theta\) 的一个无偏估计;
+
+(3) 计算 \(\hat{\theta}_2\) 的方差, 并与 \(\hat{\theta}_3 = \overline{X}\), \(\hat{\theta}_4 = \displaystyle\frac{n+1}{n} \max\{X_1, X_2, \cdots, X_n\}\) 的方差作比较.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem$^*$
+设 \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(N(\mu, \sigma^2)\) 的样本, 已知 \(\hat{\theta}_1 = \displaystyle\frac{1}{n-1} \sum\limits_{i=1}^n (X_i - \overline{X})^2\) 为 \(\sigma^2\) 的无偏估计. 证明 \(\hat{\theta}_2 = \displaystyle\frac{n-1}{n+1} \hat{\theta}_1\) 虽然不是 \(\sigma^2\) 的无偏估计, 但是 \(\hat{\theta}_2\) 的均方误差较小, 即 \(E(\hat{\theta}_2 - \sigma^2)^2 < E(\hat{\theta}_1 - \sigma^2)^2\). 这说明无偏估计不一定是最好的选择.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem$^*$
+设 \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(F(x; \theta)\) 的样本, 估计量 \(T(X_1, X_2, \cdots, X_n)\) 是参数函数 \(q(\theta)\) 的无偏估计. 假设 \(T \sim N(q(\theta), \sigma_T^2)\), 证明:
+\[E\left(\left|T(X_1, X_2, \cdots, X_n) - q(\theta)\right|\right) = \sqrt{\frac{2}{\pi}} \sigma_T\]
     \end{shaded}
     \end{bbox}
 
@@ -7261,6 +7532,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设从均值为 \(\mu\), 方差为 \(\sigma^2\) 的总体中, 分别抽取样本量为 \(n_1, n_2, n_3\) 的三组独立简单随机样本. \(\overline{X_1}, \overline{X_2}\) 和 \(\overline{X_3}\) 分别是三组样本的均值.
+
+(1) 证明: 对任意的常数 \(a, b, c\) 满足 \(a + b + c = 1\), 则 \(a\overline{X_1} + b\overline{X_2} + c\overline{X_3}\) 是 \(\mu\) 的无偏估计;
+
+(2) 求 \(a, b, c\) 使得 \(\text{Var}(a\overline{X_1} + b\overline{X_2} + c\overline{X_3})\) 达到最小.
     \end{shaded}
     \end{bbox}
 
@@ -7275,6 +7551,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \(X_1, X_2, \cdots, X_n\) 为抽自均匀分布 \(U(0, \theta)\) 的样本.
+
+(1) 选取适当的参数\(a_n, b_n, c_n\), 使得\(\hat{\theta}_1 = a_n \overline{X}\), \(\hat{\theta}_2 = b_n \min\{X_1, X_2, \cdots, X_n\}\)和\(\hat{\theta}_3 = c_n \max\{X_1, X_2, \cdots, X_n\}\) 都是 \(\theta\) 的无偏估计;
+
+(2) 比较 \(\hat{\theta}_i (i = 1, 2, 3)\) 哪个更有效.
     \end{shaded}
     \end{bbox}
 
@@ -7289,6 +7570,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+指数分布总体 \(X \sim Exp(\theta^{-1}), (X_1, X_2, \cdots, X_n)\) 为简单随机样本.
+
+(1) 选取适当的常数 \(a_n, b_n\), 使得 \(\hat{\theta}_1 = a_n \overline{X}\) 和 \(\hat{\theta}_2 = b_n \min\{X_1, X_2, \cdots, X_n\}\) 都是 \(\theta\) 的无偏估计;
+
+(2) 比较 \(\hat{\theta}_i (i = 1, 2)\) 哪个更有效.
     \end{shaded}
     \end{bbox}
 
@@ -7303,6 +7589,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设从均值为 \(\mu\), 方差为 \(\sigma^2\) 的总体中分别抽取容量为 \(n_1\), \(n_2\) 的两个独立样本, \(\overline{X}_1\)、\(\overline{X}_2\) 分别是两样本的均值. 试证明对于任意常数 \(a\), \(Y = a\overline{X}_1 + (1 - a)\overline{X}_2\) 是 \(\mu\) 的无偏估计, 并确定常数 \(a\) 使 \(Y\) 的方差达到最小.
     \end{shaded}
     \end{bbox}
 
@@ -7317,6 +7604,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设有 \(k\) 台仪器, 第 \(i\) 台仪器测量的标准差为 \(\sigma_i\), \(i = 1, 2, \cdots, k\). 用这些仪器独立地对某一物理量 \(\theta\) 各测一次, 分别得到 \(X_1, X_2, \cdots, X_k\). 设仪器都没有系统误差, 即 \(E(X_i) = \theta\), \(i = 1, 2, \cdots, k\). 问 \(a_1, a_2, \cdots, a_k\) 应取何值才能使 \(\hat{\theta} = \displaystyle\sum\limits_{i=1}^k a_i X_i\) 估计 \(\theta\) 时, \(\hat{\theta}\) 是无偏的, 并且 \(\text{Var}(\hat{\theta})\) 最小?
     \end{shaded}
     \end{bbox}
 
@@ -7331,6 +7619,17 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \( X \) 的概率密度函数为
+\[f(x;\theta) = 
+\begin{cases} 
+3x^2/\theta^3, & 0 < x < \theta, \\
+0, & \text{其他},
+\end{cases}\]
+其中 \(\theta \in (0,\infty)\) 为未知参数, \(X_1, X_2, X_3\) 为总体 \(X\) 的简单随机抽样, 令 \(T = \max\{X_1, X_2, X_3\}\).
+
+(1) 求 \(T\) 的概率密度函数;
+
+(2) 确定 \(a\), 使得 \(aT\) 为 \(\theta\) 的无偏估计.
     \end{shaded}
     \end{bbox}
 
@@ -7345,6 +7644,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(X\) 的一个简单随机样本, \(E(X) = \mu, \text{Var}(X) = \sigma^2\).
+
+(1) 确定常数 \(c\), 使得\(c \displaystyle\sum\limits_{i=1}^{n-1} (X_{i+1} - X_i)^2\) 为 \(\sigma^2\)的无偏估计;
+
+(2) 记 \(\overline{X}, S^2\) 分别是样本均值和样本方差, 确定常数 \(c\), 使得 \(\overline{X}^2 - cS^2\) 是 \(\mu^2\) 的无偏估计.
     \end{shaded}
     \end{bbox}
 
@@ -7359,6 +7663,16 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为来自总体 \(X\) 的简单随机样本, 总体 \(X\) 的概率密度函数为
+\[f(x;\theta) = 
+\begin{cases} 
+e^{-(x-\theta)}, & x \geq \theta, \\
+0, & x < \theta.
+\end{cases}\]
+
+(1) 选取适当的参数 \(a_n, b_n\), 使得 \(\hat{\theta}_1 = \overline{X} + a_n\) 和 \(\hat{\theta}_2 = \min\{X_1, X_2, \cdots, X_n\} + b_n\) 都是 \(\theta\) 的无偏估计;
+
+(2) 比较 \(\hat{\theta}_i(i=1,2)\) 哪个更有效.
     \end{shaded}
     \end{bbox}
 
@@ -7373,6 +7687,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+试求第 1 题参数的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7387,6 +7702,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+试求第 3 题各情形下参数的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7401,6 +7717,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+试求第 4 题各情形下参数的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7415,6 +7732,24 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+
+(1) 设 \( (X_1, X_2, \cdots, X_n) \) 是来自总体 \( X \) 的一个样本, 且 \( X \) 服从参数为 \( \lambda \) 的泊松分布. 求 \( P(X = 0) \) 的最大似然估计;
+
+(2) 数据
+
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{26pt}
+\begin{tabular}{c|ccccccc}
+\hline  
+\( r \) & 0 & 1 & 2 & 3 & 4 & 5 & \(\geq\) 6 \\
+\hline
+\( s \) & 44 & 42 & 21 & 9 & 4 & 2 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+统计了某铁路局 122 个扳道员五年内由于操作失误引起的严重事故情况, 其中 \( r \) 表示一扳道员五年内引起严重事故的次数, \( s \) 表示扳道员人数. 假设扳道员由于操作失误在五年内所引起的严重事故的次数服从泊松分布. 求一扳道员在五年内未引起严重事故的概率 \( p \) 的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7429,6 +7764,21 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设电话总机在某一段时间内接到呼叫的次数服从泊松分布. 观察1 min内接到的呼叫次数, 设共观察了40次, 得如下数据:
+
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{21pt}
+\begin{tabular}{c|ccccccc}
+\hline
+接到的呼叫次数 & 0 & 1 & 2 & 3 & 4 & 5 & \(\geq\)6 \\
+\hline
+观察到的次数 & 5 & 10 & 12 & 8 & 3 & 2 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+
+试求泊松分布参数 \(\lambda\) 的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7443,6 +7793,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \(X \sim U(\theta, \theta + |\theta|), \theta \in \Theta\), \((X_1, X_2, \cdots, X_n)\) 是从总体中抽取的一个简单随机样本,
+
+(1) 设 \(\Theta = (-\infty, 0)\), 求 \(\theta\) 的矩估计和最大似然估计;
+
+(2) 设 \(\Theta = (0, \infty)\), 求 \(\theta\) 的矩估计和最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7457,6 +7812,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(X\) 的一个简单样本, 总体 \(X\) 的概率密度函数为
+\[f(x; a, b) = c \; \exp\{-(a + bx)^2\}, \quad b > 0, a \in \mathbb{R}\]
+其中 \(c\) 为规范化常数, 求 \(c\) 的值并求参数 \(a, b\) 的 MLE.
     \end{shaded}
     \end{bbox}
 
@@ -7471,6 +7829,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \(X\) 的概率密度函数为
+\[f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi}\sigma}(x - \mu)^2 \exp\left\{-\frac{1}{2\sigma^2}(x - \mu)^2\right\},\]
+求参数 \(\mu, \sigma^2\) 的矩估计, 写出求 MLE 的方程.
     \end{shaded}
     \end{bbox}
 
@@ -7485,6 +7846,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \(X \sim Exp(-\lambda x), \lambda > 0\), 求 \(P(\lambda < X \leq 2\lambda)\) 的矩估计和最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7499,6 +7861,32 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \(X \sim B(1, p)\), 求 \(p(1 - p)^2\) 的矩估计和 MLE.
+    \end{shaded}
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+解: 
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
+    \begin{shaded}
+        \qitem$^*$
+某电子元件寿命服从指数分布, 其概率密度函数为
+\[f(x) = 
+\begin{cases} 
+\lambda^{-1} e^{-x/\lambda}, & 0 < x < \infty, \\
+0, & x \leq 0.
+\end{cases}\]
+从这批产品中抽取 \( n \) 个作寿命试验, 规定到第 \( r \) 个 (\( 0 < r \leq n \)) 电子元件失效时就停止试验. 这样获得前 \( r \) 个次序统计量 \( X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(r)} \) 和 \( n \) 个电子元件总试验时间\(T = \displaystyle\sum\limits_{i=1}^{r} X_{(i)} + (n-r)X_{(r)}\).
+
+(1) 证明: \( 2T/\lambda \) 服从自由度为 \( 2r \) 的 \( \chi^2 \) 分布, 即 \( 2T/\lambda \sim \chi_{2r}^2 \).  
+
+(2) 求 \( \lambda \) 的矩估计.
     \end{shaded}
     \end{bbox}
 
@@ -7513,6 +7901,21 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+人体中某个基因的形态有三种, 分别是 AA、Aa、aa, 每个人的基因型只可能为这三种形态之一. 设总体中该基因的基因型分布律如下:
+
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{45pt}
+\begin{tabular}{c|ccc}
+\hline
+基因型 & AA & Aa & aa \\
+\hline
+概率 & \(\theta^2\) & \(2\theta(1-\theta)\) & \((1-\theta)^2\) \\
+\hline
+\end{tabular}
+\end{center}
+
+其中 \(\theta > 0\) 为未知参数. 现从总体中随机抽取 \(n\) 个人, 其中 \(n_1\) 个人具有基因型 AA, \(n_2\) 个人具有基因型 Aa, \(n_3\) 个人具有基因型 aa. 试求 \(\theta\) 的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7527,6 +7930,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设从均匀分布总体 \(U(\theta_1, \theta_2)\) 中抽取一组简单样本 \((X_1, X_2, \cdots, X_n)\), 试求未知参数 \(\theta_1, \theta_2\) 的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7541,6 +7945,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自正态总体 \(N(\mu, \sigma^2)\) 的简单随机样本, 其中 \(-\infty < \mu < \infty\), \(\sigma^2 > 0\) 为未知参数. 求 \(\theta = P(X \geq 2)\) 的 MLE.
     \end{shaded}
     \end{bbox}
 
@@ -7555,6 +7960,14 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \(X\) 的概率密度函数为
+\[f(x; \theta) =
+\begin{cases} 
+\theta, & 0 < x < 1, \\
+1 - \theta, & 1 \leq x < 2, \\
+0, & \text{其他}.
+\end{cases}\]
+其中 \(0 < \theta < 1\) 为未知参数. 现从该总体中抽取一组简单随机样本 \((X_1, X_2, \cdots, X_n)\), 求 \(\theta\) 的 MLE.
     \end{shaded}
     \end{bbox}
 
@@ -7569,6 +7982,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \(X\) 的分布函数为
+\[F(x; \theta) =
+\begin{cases} 
+1 - e^{-x^2/\theta}, & x \geq 0, \\
+0, & \text{其他},
+\end{cases}\]
+其中 \(\theta\) 为未知参数且大于零, \((X_1, X_2, \cdots, X_n)\) 为来自总体 \(X\) 的简单随机样本.
+
+(1) 求 \(E(X), E(X^2)\);
+
+(2) 求 \(\theta\) 的最大似然估计量 \(\hat{\theta}\);
+
+(3) 是否存在实数 \(a\), 使得 \(\hat{\theta} \overset{P}{\longrightarrow} a\).
     \end{shaded}
     \end{bbox}
 
@@ -7583,6 +8009,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体的数学期望为 \(\mu\), \((X_1, X_2, \cdots, X_n)\) 是来自总体 \(X\) 的样本. 假设 \(a_1, a_2, \cdots, a_n\) 是任意常数, 且\(\displaystyle\sum\limits_{i=1}^n a_i \neq 0\). 验证\(\displaystyle\sum\limits_{i=1}^n a_i X_i \Big/ \displaystyle\sum\limits_{i=1}^n a_i\)是\(\mu\)的无偏估计量.
     \end{shaded}
     \end{bbox}
 
@@ -7597,6 +8024,11 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自均匀分布总体 \(U(\theta, c\theta)\) 的简单随机样本, 其中 \(c > 1\) 为常数, \(\theta > 0\) 为未知参数.
+
+(1) 试求 \(\theta\) 的最大似然估计;
+
+(2) 试求 \(\theta\) 的矩估计, 并验证其是否具有无偏性.
     \end{shaded}
     \end{bbox}
 
@@ -7611,6 +8043,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为从几何分布  
+\[P(X = k) = p(1 - p)^{k-1}, \quad k = 0, 1, 2, \cdots, \quad 0 < p < 1\]
+中抽取的简单随机样本, 分别求出 \( p^{-1} \) 和 \( p^{-2} \) 的无偏估计.
     \end{shaded}
     \end{bbox}
 
@@ -7625,6 +8060,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+一袋中有 \( N \) 个均匀硬币, 其中 \( \theta \) 个是普通的硬币, 其余 \( N - \theta \) 个两面都是正面. 现从袋中随机摸出一个把它连掷两次, 记下结果, 但是不看它属于哪种硬币, 又把它放回袋中, 如此重复 \( n \) 次. 如果掷出 0, 1, 2 次正面的次数分别是 \( n_0, n_1, n_2 \) 次 (\( n_0 + n_1 + n_2 = n \)), 试分别用矩估计法和最大似然法这两种方法估计袋中普通硬币数 \( \theta \).
     \end{shaded}
     \end{bbox}
 
@@ -7639,6 +8075,19 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \( (X_1, X_2, \cdots, X_n) \) 是从总体 \( X \) 中抽取的简单随机样本, 已知 \( X \) 的概率密度函数为
+\[f(x) =
+\begin{cases}
+\sigma^{-1} e^{-(x-\theta)/\sigma}, & x > \theta, \\
+0, & \text{其他},
+\end{cases}\]
+其中 \( \sigma > 0 \) 为一已知常数, 而 \( \theta \) 是未知参数
+
+(1) 试求 \( \theta \) 的矩估计 \( \hat{\theta}_1 \) 和最大似然估计 \( \hat{\theta}_2 \);
+
+(2) 验证 \( \hat{\theta}_1, \hat{\theta}_2 \) 的无偏性. 如果不是无偏的话, 你是否可以将其修正得到 \( \theta \) 的无偏估计 \( \tilde{\theta}_1, \tilde{\theta}_2 \)? 
+
+(3) 比较 \( \tilde{\theta}_1 \) 与 \( \tilde{\theta}_2 \) 何者为优(即方差较小).
     \end{shaded}
     \end{bbox}
 
@@ -7653,6 +8102,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+若 \( Y = e^X \), 而 \( X \sim N(\mu, \sigma^2) \), 则随机变量 \( Y \) 的分布称为对数正态分布. 设 \( (Y_1, Y_2, \cdots, Y_n) \) 是从总体 \( Y \) 中抽取的简单随机样本, 求 \( \mu \) 和 \( \sigma^2 \) 的矩估计和最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7667,6 +8117,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \( X \) 的概率密度函数为 \( (2\sigma)^{-1} \exp\left\{ -|x-a| \big/ \sigma \right\} \), 其中 \( \sigma > 0 \) 和 \( a \) 为未知参数. 设 \( (X_1, X_2, \cdots, X_n) \) 为来自此总体的简单随机样本, 求 \( a \) 和 \( \sigma \) 的矩估计和最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7681,6 +8132,14 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设总体 \( X \) 服从韦布尔分布, 概率密度函数为
+\[f(x, \lambda) =
+\begin{cases}
+\lambda \alpha x^{\alpha-1} e^{-\lambda x^\alpha}, & x > 0, \\
+0, & \text{其他},
+\end{cases}
+\quad \lambda > 0, \quad \alpha > 0.\]
+设 \( (X_1, X_2, \cdots, X_n) \) 为从此总体中抽取的简单样本. 若 \( \alpha \) 已知, 求 \( \lambda \) 的矩估计和最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7695,6 +8154,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为从总体 \(X\) 中抽取的随机样本, \(X\) 服从均匀分布 \(U(\theta - 1/2, \theta + 1/2)\), 求 \(\theta\) 的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7709,6 +8169,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自均匀分布 \(U(\theta, 2\theta)\) 的简单随机样本, 其中 \(0 < \theta < \infty\), 求 \(\theta\) 的最大似然估计, 它是 \(\theta\) 的无偏估计吗? 如果不是, 试对它略作修正得到 \(\theta\) 的一个无偏估计.
     \end{shaded}
     \end{bbox}
 
@@ -7723,6 +8184,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_m)\) 和 \((Y_1, Y_2, \cdots, Y_n)\) 是分别来自总体 \(N(\mu_1, \sigma^2)\) 和 \(N(\mu_2, \sigma^2)\) 的两组独立样本, 求 \(\mu_1, \mu_2\) 和 \(\sigma^2\) 的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7737,6 +8199,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_m)\) 和 \((Y_1, Y_2, \cdots, Y_n)\) 是分别来自总体 \(N(\mu, \sigma^2)\) 和 \(N(\mu, 2\sigma^2)\) 的两组独立样本, 求 \(\mu\) 和 \(\sigma^2\) 的最大似然估计.
     \end{shaded}
     \end{bbox}
 
@@ -7751,6 +8214,15 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为来自指数分布总体  
+\[ f(x, \theta) = e^{-(x - \mu)}, \quad x \geq \mu, -\infty < \mu < \infty \]  
+的简单样本.  
+
+(1) 试求 \(\mu\) 的最大似然估计 \(\hat{\mu}^*\), \(\hat{\mu}^*\) 是 \(\mu\) 的无偏估计吗? 如果不是, 试对它作修正得到 \(\mu\) 的无偏估计 \(\hat{\mu}^{**}\);
+
+(2) 试求 \(\mu\) 的矩估计 \(\hat{\mu}\), 并证明它是 \(\mu\) 的无偏估计;
+
+(3) 试问 \(\hat{\mu}^{**}\) 和 \(\hat{\mu}\) 哪一个有效?
     \end{shaded}
     \end{bbox}
 
@@ -7765,6 +8237,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为来自均匀分布总体 \(U(0, \theta)\) 的一个简单随机样本, 求 \(\theta\) 的最大似然估计 \(\hat{\theta}_n\), 证明 \(\hat{\theta}_n\) 是 \(\theta\) 的相合估计.
     \end{shaded}
     \end{bbox}
 
@@ -7779,6 +8252,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为来自指数分布总体 \(Exp(\lambda)\) 的一个简单随机样本, 已知 \(\overline{X}\) 为 \(1 \big/ \lambda\) 的无偏估计. 问 \(1 \big/ \overline{X}\) 是否为 \(\lambda\) 的无偏估计?
     \end{shaded}
     \end{bbox}
 
@@ -7793,6 +8267,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 是来自均匀分布总体 \(U(\theta_1, \theta_2)\) 的简单随机样本. 试求 \(\theta_1\) 和 \(\theta_2\) 的最大似然估计 \(\hat{\theta}_1\) 和 \(\hat{\theta}_2\).
     \end{shaded}
     \end{bbox}
 
@@ -7807,6 +8282,27 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设从总体  
+
+\begin{center}
+%\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{40pt}
+\begin{tabular}{c|cccc}
+\hline
+\(X\) & 0 & 1 & 2 & 3 \\
+\hline
+\(P\) & \(\theta/2\) & \(\theta\) & \(3\theta/2\) & \(1-3\theta\) \\
+\hline
+\end{tabular}
+\end{center}
+
+中抽取的一个简单样本 \(X_1, X_2, \cdots, X_{10}\) 的观测值为 \((0, 3, 1, 1, 0, 2, 0, 0, 3, 0)\),
+
+(1) 求 \(\theta\) 的矩估计量 \(\hat{\theta}_M\) 和最大似然估计量 \(\hat{\theta}_L\), 并求出估计值;  
+
+(2) 上述估计量是否为无偏的? 若不是, 请作修正;  
+
+(3) 比较修正后的两个估计量, 指出哪个更有效.
     \end{shaded}
     \end{bbox}
 
@@ -7821,6 +8317,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为来自均匀分布总体 \(U(0, \theta)\) 的简单随机样本. 证明下述断言: \(\hat{\theta} = \max\{X_1, X_2, \cdots, X_n\}\) 为 \(\theta\) 的相合估计但不是无偏估计.
     \end{shaded}
     \end{bbox}
 
@@ -7835,6 +8332,7 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \(\hat{\theta}_n\) 是参数 \(\theta\) 的无偏估计, 其中 \(n\) 为样本量. 方差 \(\text{Var}(\hat{\theta}_n) > 0\) 且 \(\lim\limits_{n \to \infty} \text{Var}(\hat{\theta}_n) = 0\). 证明: \(\hat{\theta}^2_n\) 是 \(\theta^2\) 的相合估计但不是无偏估计.
     \end{shaded}
     \end{bbox}
 
@@ -7849,6 +8347,9 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
     \begin{bbox}
     \begin{shaded}
         \qitem
+设 \((X_1, X_2, \cdots, X_n)\) 为来自均匀分布总体 \(U(\theta - 1, \theta + 1)\) 的简单随机样本. \(\theta\) 的矩估计为 \(\hat{\theta} = \overline{X}\). 证明: 当 \(n \to \infty\) 时, \(\sqrt{3n}(\hat{\theta} - \theta) \overset{\mathcal{L}}{\longrightarrow} N(0, 1)\).
+
+上式说明在一定条件下两者是等价的. 但是理论证明, 平均绝对误差估计比均方误差估计更稳健 (robustness), 即当实际模型与理论模型有点偏差或样本变化时, 由平均绝对误差模型得到的参数估计值不会变动很大.
     \end{shaded}
     \end{bbox}
 
@@ -7862,7 +8363,8 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
 
     \begin{bbox}
     \begin{shaded}
-        \qitem
+        \qitem$^*$
+设总体服从指数分布 \(Exp(\lambda)\), 问 \(\lambda\) 的无偏估计是否为 MVUE?
     \end{shaded}
     \end{bbox}
 
@@ -7876,63 +8378,8 @@ $$\displaystyle u \leq P(U_n\leq u)=P(10^n U_n\leq 10^n u)=P(10^n U_n\leq \lfloo
 
     \begin{bbox}
     \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
-    \end{shaded}
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-解: 
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
-    \begin{shaded}
-        \qitem
+        \qitem$^*$
+设某个传染病患者的密接者有 200 人, 密接者被感染的概率为 3\%, 如果每个密接者都做核酸检测, 需要做 200 次. 为了减少核酸检测的次数, 可以采用混检的方法, 即把若干人的被检样本混在一起做核酸检测. 先设把 200 人分为 20 组, 每组 10 人. 问平均而言, 最多需要做多少次核酸检测才能检测出全部感染者? 方差为多少? 如果 5 人一组, 分为 20 组, 平均要做多少次检测? 你认为几人一组进行混检才能使检测次数最少? 试推广到一般情况.
     \end{shaded}
     \end{bbox}
 
@@ -9994,9 +10441,9 @@ B & 7 & 21 & 5 & 33 \\
 \end{qitems}
 
 
+\section*{致谢}
 
-
-
+在此感谢``韦亦舟PB23020493''对题目的检查校对, \underline{\hbox to 40mm{}}对答案的补充修改, 以及``洪子墨PB23061164''与``蓝昱韬PB23010339''对版面格式等提的感受和建议.
 
 
 \end{document}
