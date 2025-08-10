@@ -579,7 +579,7 @@ $$\sum\limits_{n=1}^{\infty}\mu(A_{n}) < \infty \Longrightarrow \mu(\varlimsup\l
     \begin{bbox}
 解: 
 
-记$A$: 骰子点数为4或6, $B$: 骰子点数为2或4, $C$: 骰子点数为1, 2或4. 则有: $P(A)=\frac{1}{3}$, $P(B)=\frac{1}{2}$, $P(C)=\frac{1}{2}$, $P(A|B)=\frac{1}{2}$, $P(B|C)=\frac{2}{3}$, $P(A|C)=\frac{1}{3}$, 满足$P(A|B)>P(A)$, $P(B|C)>P(B)$但$P(A|C)=P(A)$.
+记$A$: 骰子点数为4或6, $B$: 骰子点数为2或4, $C$: 骰子点数为1, 2或4. 则有: $P(A)=\frac{1}{3}$, $P(B)=\frac{1}{3}$, $P(C)=\frac{1}{2}$, $P(A|B)=\frac{1}{2}$, $P(B|C)=\frac{2}{3}$, $P(A|C)=\frac{1}{3}$, 满足$P(A|B)>P(A)$, $P(B|C)>P(B)$但$P(A|C)=P(A)$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 本质是条件概率不存在传递性.}
     \end{bbox}
@@ -1119,7 +1119,7 @@ $$p=0.3+0.4\times0.6-0.3\times0.4\times0.6=0.468.$$
     \begin{bbox}
     \begin{shaded}
         \qitem
-双色球是目前彩票中最受欢迎的玩法之一. 投注区分为红色球号码区和蓝色球号码区, 红色球号码区由1到33共33个号码组成, 蓝色球号码区由1到16共16个号码组成.投注时, 选择6个不同的红色球号码和1个蓝色球号码组成一注进行单式投注, 每注金额人民币2元. 设开奖时, 由系统随机指定6个不同的红色球号码和1个蓝色球号码. 若某单位投注中分别有\( i (0 \le i \le 6) \)个红色球号码和\( j (j = 0, 1) \)个蓝色球号码与指定号码相同, 则称该投注的形式为``\( i+j \)''. 最后所有奖项规则如下:
+双色球是目前彩票中最受欢迎的玩法之一. 投注区分为红色球号码区和蓝色球号码区, 红色球号码区由1到33共33个号码组成, 蓝色球号码区由1到16共16个号码组成.投注时, 选择6个不同的红色球号码和1个蓝色球号码组成一注进行单式投注, 每注金额人民币2元. 设开奖时, 由系统随机指定6个不同的红色球号码和1个蓝色球号码. 若某单式投注中分别有\( i (0 \le i \le 6) \)个红色球号码和\( j (j = 0, 1) \)个蓝色球号码与指定号码相同, 则称该投注的形式为``\( i+j \)''. 最后所有奖项规则如下:
 \begin{center}
 %\renewcommand{\arraystretch}{1}
 \setlength{\tabcolsep}{14pt}
@@ -1575,7 +1575,7 @@ $\Longrightarrow$ $Y$, $Z$相互独立.
     \begin{bbox}
     \begin{shaded}
         \qitem
-某种数码传输系统每秒传送$5.12\times10^5$个字符(0或1), 由于会受到干扰, 传送中会出现误码, 即将0(或1)传送为1(或0). 若误码率为$10^{-7}$, 求在10S内至少出现一个误码的概率. 在100s内呢? 结果精确到小数点后三位.
+某种数码传输系统每秒传送$5.12\times10^5$个字符(0或1), 由于会受到干扰, 传送中会出现误码, 即将0(或1)传送为1(或0). 若误码率为$10^{-7}$, 求在10 s内至少出现一个误码的概率. 在100s内呢? 结果精确到小数点后三位.
     \end{shaded}
     \end{bbox}
 
@@ -1796,7 +1796,7 @@ $S_{\text{总}}=\displaystyle\int_{0}^{2}2x-x^2\mathrm{d}x=\frac{4}{3}$; $F(x)=\
     \begin{array}{cl}
         \nonumber
         0,\ &x < 1,\\
-        ax\ln x+bx+1,\ &1 \leq x < e,\\
+        ax^2\ln x+bx^2+1,\ &1 \leq x < e,\\
         1,\ &x \geq e,
     \end{array}
     \right.
@@ -1813,7 +1813,7 @@ $S_{\text{总}}=\displaystyle\int_{0}^{2}2x-x^2\mathrm{d}x=\frac{4}{3}$; $F(x)=\
 
 (1) $X$是连续型随机变量 $\Longrightarrow$ $F(x)$连续 $\Longrightarrow$ $F(1)=b+1=0$, $F(e)=(a+b)e+1=1$ $\Longrightarrow$ $a=1$, $b=-1$.
 
-(2) $f(x)=F'(x)=\ln x,1 \leq x < e$.
+(2) $f(x)=F'(x)=2x\ln x-x$, $1 \leq x < e$.
     \end{bbox}
 
 \vspace{-5em}
@@ -1904,7 +1904,9 @@ $$|f(x)-xf(1)|=|f(x-r)+rf(1)-xf(1)|=|f(x-r)+(r-x)f(1)|\leq \frac{4M+c|f(1)|}{n}.
     \begin{shaded}
         \qitem
 假定一机器的检修时间服从参数为$\lambda=1$的指数分布(单位: h). 试求: 
+
 (1) 检修时间会超过2 h的概率;
+
 (2) 若已经检修了2 h, 总检修时间会超过4 h的概率.
     \end{shaded}
     \end{bbox}
@@ -1945,7 +1947,7 @@ $X\sim Exp(\lambda=\frac{1}{5})$ $\Longrightarrow$ $f(t)=\lambda e^{-\lambda t}=
     \begin{bbox}
     \begin{shaded}
         \qitem
-(1) 设$X$为正值连续型随机变量, 试证明它服从指数分布的充要条件是对任意的常数力$t,x > 0$, 均有:
+(1) 设$X$为正值连续型随机变量, 试证明它服从指数分布的充要条件是对任意的常数$t,x > 0$, 均有:
 $$P(X \leq t+x|X>t)=P(X \leq x);$$
 (2) 设$X$为取值为正整数的离散型随机变量, 试证明它服从几何分布的充要条件是对任意的正整数$m$, $n$, 均有:
 $$P(X \leq m+n|X>n)=P(X \leq m).$$
@@ -1961,11 +1963,6 @@ $$P(X \leq m+n|X>n)=P(X \leq m).$$
 $$\text{证}\quad P(X \leq t+x|X>t)=P(X \leq x) \Longleftrightarrow \text{证}\quad P(X > t+x|X>t)=P(X > x)$$
 必要性显然, 充分性:
 $$P(X > t+x|X>t)=\frac{1-F(t+x)}{1-F(t)}=1-F(x)=P(X>x) \Longleftrightarrow 1-F(t+x)=[1-F(t)][1-F(x)]$$
-    \end{bbox}
-
-\vspace{-5em}
-
-    \begin{bbox}
 记$G(x)=1-F(x)$, 则$G(x+y)=G(x)G(y),\forall x,y>0$满足柯西乘法方程 (或$\Longrightarrow$ $\ln G(x+y)=\ln G(x)+\ln G(y)$满足柯西加法方程). 又由$G(0)=1-F(0)>1-F(1)=G(1)$, 从而$\exists\lambda>0$, s.t.$G(x)=e^{-\lambda x}$, 即$F(x)=1-e^{-\lambda x}$ $\Longrightarrow$ $X\sim Exp(\lambda)$.
 
 (2) 必要性显然, 充分性见课本P54.
@@ -2248,7 +2245,11 @@ f_{E}(e)&=\displaystyle\frac{1}{\sqrt{2eM}}\left[f_{V}\left(\sqrt{\frac{2e}{M}}\
 \end{equation}
 \end{center}
 关于具体的分布类型, 当$\mu\neq0$时, $E$服从缩放的非中心卡方分布; 当$\mu=0$时, $E$服从缩放的卡方分布/伽马分布, 即$E\sim\frac{1}{2}M \sigma^2 \chi^{2}(1)$ / $E\sim Ga(\alpha=\frac{1}{2},\beta=\frac{1}{\frac{1}{2}m \sigma^2})$.
+    \end{bbox}
 
+\vspace{-5em}
+
+    \begin{bbox}
 \textcolor{themeColor}{\selectfont \ding{226} 推广的密度函数变换公式, 见课本P74的注.}
 
 \textcolor{themeColor}{\selectfont \ding{226} 卡方分布; 伽马分布, 见课本P193. 因为我感觉书上并不是很全, 所以这里简单补充一下相关的知识:\\
@@ -2316,7 +2317,11 @@ $Y_1$, $Y_2$, $Y_3$均关于$X$单调, 由密度函数变换公式:
 (1) $$X=\ln Y_1\in(0,1) \Longrightarrow f_{Y_1}(y)=f_{X}(\ln y)\cdot|(\ln y)'|=\displaystyle\frac{1}{y},\ y\in(1,e).$$
 
 (2) $$X=Y_{2}^{-1}\in(0,1) \Longrightarrow f_{Y_2}(y)=f_{X}(1/y)\cdot|(1/y)'|=\displaystyle\frac{1}{y^2},\ y\in(1,\infty).$$
+    \end{bbox}
 
+\vspace{-5em}
+
+    \begin{bbox}
 (3) $$X=e^{-\lambda Y_3}\in(0,1) \Longrightarrow f_{Y_3}(y)=f_{X}(e^{-\lambda y})|(e^{-\lambda y})'|=\lambda e^{-\lambda y},\ y\in(0,\infty).$$
 
 \textcolor{themeColor}{\selectfont \ding{226} 密度函数变换公式, 见课本P73.}
@@ -2350,7 +2355,7 @@ $$X=\pm\arccos Y_2\text{分段单调}, \in(-\displaystyle\frac{\pi}{2},\displays
     \begin{bbox}
     \begin{shaded}
         \qitem
-设随机变量$X$的分布函数$F(x)$为严格单调连续函数, 证明: 随机变量$Y=F(x)$服从区间$(0,1)$上的均匀分布.
+设随机变量$X$的分布函数$F(x)$为严格单调连续函数, 证明: 随机变量$Y=F(X)$服从区间$(0,1)$上的均匀分布.
     \end{shaded}
     \end{bbox}
 
@@ -2380,7 +2385,11 @@ $$X\sim Exp(1) \Longrightarrow X>0 \Longrightarrow Y_{1}=X^2,\ Y_{2}=1-e^{-X}\te
 由密度函数变换公式:
 
 (1) $$X=\sqrt{Y_1} \Longrightarrow f_{Y_1}(y)=f_{X}(\sqrt{y})|(\sqrt{y})'|=\displaystyle\frac{e^{-\sqrt{y}}}{2\sqrt{y}},\ y\in(0,\infty).$$
+    \end{bbox}
 
+\vspace{-5em}
+
+    \begin{bbox}
 (2) $$X=-\ln(1-Y_2) \Longrightarrow f_{Y_2}(y)=f_{X}(-\ln(1-y))|(-\ln(1-y))'|=e^{\ln(1-y)}\frac{1}{1-y}=1,\ y\in(0,1).$$
 
 \textcolor{themeColor}{\selectfont \ding{226} 密度函数变换公式, 见课本P73.}
@@ -2437,6 +2446,11 @@ $\Longrightarrow$ $f_{Z}(z)=F_{Z}'(z)=\displaystyle\frac{\lambda e^{-\lambda z}}
 
 考虑$Y$, $Z$的联合分布:
 $$f_{Y,Z}(k,z)=f_{X}(k+z)=\lambda e^{-\lambda(k+z)}=P(Y=k)f_{Z}(z) \Longrightarrow Y, Z\text{独立}.$$
+    \end{bbox}
+
+\vspace{-5em}
+
+    \begin{bbox}
 \textcolor{themeColor}{\selectfont \ding{226} 截断指数分布(Truncated Exponential Distribution), 若我们希望变量只在区间$[a,b]$上有分布, 而原始指数分布是$Exp(\lambda)$, 故而为保持概率空间的规范性, 其截断版本的密度函数为:
 $$f_{X|a\leq X\leq b}(X)=\displaystyle\frac{\lambda e^{-\lambda x}}{e^{-\lambda a}-e^{\lambda b}},$$
 记为$X\sim Exp(\lambda)|a\leq X\leq b$或$X\sim TruncExp(\lambda;a,b)$.}
@@ -2509,7 +2523,11 @@ $$f_{Y_1}(y)=f_{X}(\ln y)|(\ln y)'|=\displaystyle\frac{e^{-(\ln y)^2/2}}{\sqrt{2
 
 (2) $Y_2(X)$在$(-\infty,0)$与$(0,\infty)$上分段单调 $\Longrightarrow$ 由推广的密度变换公式:
 $$f_{Y_2}(y)=f_{X}(y)+f_{X}(-y)=2f_{X}(y)=\displaystyle\frac{2}{\sqrt{\pi}}e^{-y^2/2},\ y \geq 0.$$
+    \end{bbox}
 
+\vspace{-5em}
+
+    \begin{bbox}
 (3) $Y_3(X)$在$(-\infty,0)$与$(0,\infty)$上分段单调 $\Longrightarrow$ 由推广的密度变换公式:
 $$f_{Y_3}(y)=\sum f_{X}(\sqrt{\pm\displaystyle\frac{y-1}{2}})\left|\pm\sqrt{\displaystyle\frac{y-1}{2}}'\right|=\displaystyle\frac{e^{-(y-1)/4}}{2\sqrt{\pi(y-1)}},\ y > 1.$$
 \textcolor{themeColor}{\selectfont \ding{226} 密度函数变换公式, 见课本P73; 推广的密度函数变换公式, 见课本P74的注.}
@@ -3955,7 +3973,7 @@ $$P(X=x)=\left(\frac{1}{3}\right)^{x-1}\cdot\frac{2}{3},\qquad P(Y=y)=\frac{1}{4
     \begin{shaded}
         \qitem
 令$X$和$Y$为独立的离散型随机变量, 且在$\{0,1,\cdots,K-1\}$上均匀分布, 考虑
-$$Z_n=X+nY\ (\text{mod}\ K),$$
+$$Z_n \equiv X+nY\ (\text{mod}\ K),$$
 研究$Z_n$的独立性和两两独立性.
     \end{shaded}
     \end{bbox}
@@ -4289,7 +4307,7 @@ $$P(X+Y\leq1)=\int_{0}^{1}\int_{0}^{\min\{x,1-x\}}3x\mathrm{d}y\mathrm{d}x=\int_
     \left\{
     \begin{array}{cl}
         \nonumber
-        \displaystyle\frac{|1-(x+1)e^{-x}|y}{1+y}, & x>0, y>0,\\
+        \displaystyle\frac{\left[1-(x+1)e^{-x}\right]y}{1+y}, & x>0, y>0,\\
         0, & \text{其他}.
     \end{array}
     \right.
@@ -4308,7 +4326,7 @@ $$P(X+Y\leq1)=\int_{0}^{1}\int_{0}^{\min\{x,1-x\}}3x\mathrm{d}y\mathrm{d}x=\int_
     \begin{bbox}
 解: 
 
-(1) 易知$|1-(x+1)e^{-x}|=1-(x+1)e^{-x}$, 故:
+(1)
 $$F_{X}(x)=\lim\limits_{y\to\infty}F(x,y)=1-(x+1)e^{-x},\ x>0\qquad F_{Y}(y)=\lim\limits_{X\to\infty}=\frac{y}{1+y},\ y>0.$$
 
 (2)
@@ -4777,15 +4795,15 @@ $$E(X)=0.5 E(X_{1})+0.5 E(X_{2})=0.5\times0+0.5\times4=2$$
         \qitem
 设$X$为一个连续型随机变量, 试对下列各种情形, 分别求$E ( X ) $和$\mathrm{Var}(X)$.
 
-(1) 若$X$的条件密度函数为
+(1) 若$X$的密度函数为
 $$f(x)=\displaystyle\frac{x}{\sigma^2}\exp\left\{-\frac{x^2}{2\sigma^2}\right\},\quad x>0,$$
 其中$\sigma>0$为常数, 则称$X$服从瑞利(Rayleigh)分布;
 
-(2) 若$X$的条件密度函数为
+(2) 若$X$的密度函数为
 $$f(x)=\displaystyle\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1},\quad 0<x<1,$$
 其中$\alpha,\beta>0$为常数, $\Gamma(x)$为$\Gamma$函数, 则称$X$服从$\beta$分布.
 
-(3) 若$X$的条件密度函数为
+(3) 若$X$的密度函数为
 $$f(x)=\displaystyle\frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}\exp \left\{-\left(\frac{x}{\lambda}\right)^{k}\right\},\quad x>0,$$
 其中$k, \lambda>0$为常数, 则称$X$服从韦布尔分布.
     \end{shaded}
@@ -6604,7 +6622,7 @@ $$\displaystyle \Longrightarrow \mathrm{Cov}(X_i,X_j)=E(X_i,X_j)-E(X_i)E(X_j)=0 
     \begin{bbox}
     \begin{shaded}
         \qitem$^{*}$
-设$f(x)$, $g(x)$是$[0,1]$上的非负连续函数, 且存在常数$c$, 使得$f(x)\leq c g(x)$. 用大数定理证明下式成立:
+设$f(x)$, $g(x)$是$[0,1]$上的非负连续函数, 且存在常数$c$, 使得$f(x)\leq c g(x)$. 用大数定律证明下式成立:
 $$\lim\limits_{n\to\infty}\displaystyle\int_{0}^{1}\int_{0}^{1}\cdots\int_{0}^{1}\frac{f(x_1)f(x_2)\cdots f(x_n)}{g(x_1)g(x_2)\cdots g(x_n)}\mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_n=\frac{\int_{0}^{1}f(x)\mathrm{d}x}{\int_{0}^{1}g(x)\mathrm{d}x}.$$
 提示：设$X_1$, $X_2$, $\cdots$, $X_n$为独立同分布的随机变量, 其公共分布为$U(0,1)$, 记被积函数为$h(x_1,x_2,\cdots,x_n)$, 则上述重积分为$E[h(X_1,X_2,\cdots,X_n)]$, 因为被积函数非负且有上界, 所以求极限与求期望可交换次序.
     \end{shaded}
@@ -9223,7 +9241,7 @@ $$2.15, \;\; 2.13, \;\; 2.10, \;\; 2.14, \;\; 2.15, \;\; 2.16, \;\; 2.12, \;\; 2
     \begin{bbox}
     \begin{shaded}
         \qitem
-设 0.455, 0.840, 0.653, 0.443, 0.026, 0.523, 0.284, 0.270, 0.720 为来自均匀分布 $U(0,\theta)$ 的简单随机样本. 在显著性水平 0.05 下检验 $H_0 : \theta=0 \longleftrightarrow H_1 : \theta<0$.
+设 0.455, 0.840, 0.653, 0.443, 0.026, 0.523, 0.284, 0.270, 0.720 为来自均匀分布 $U(\theta,1)$ 的简单随机样本. 在显著性水平 0.05 下检验 $H_0 : \theta=0 \longleftrightarrow H_1 : \theta > 0$.
     \end{shaded}
     \end{bbox}
 
@@ -9320,7 +9338,7 @@ $$2.15, \;\; 2.13, \;\; 2.10, \;\; 2.14, \;\; 2.15, \;\; 2.16, \;\; 2.12, \;\; 2
 \vspace{3em}
 
     \begin{center}
-以下习题, 如果没有给出数据分布, 那么都假定处理后的数据服从正态分布.
+\textbf{以下习题, 如果没有给出数据分布, 那么都假定处理后的数据服从正态分布.}
     \end{center}
 
     \begin{bbox}
@@ -10306,7 +10324,7 @@ B & 7 & 21 & 5 & 33 \\
 
 \section*{致谢}
 
-在此感谢``韦亦舟PB23020493''对题目的检查校对, \underline{\hbox to 40mm{}}对答案的补充修改, 以及``洪子墨PB23061164''与``蓝昱韬PB23010339''对版面格式等提的感受和建议.
+在此感谢``唐洋阳PB23010365''对题干的检查校对, \underline{\hbox to 40mm{}}对答案的补充修改, 以及``洪子墨PB23061164''与``蓝昱韬PB23010339''对版面格式等提的感受和建议.
 
 
 \end{document}
