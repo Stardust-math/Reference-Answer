@@ -248,10 +248,10 @@
 \newcommand\motto[1]{\def\ExBook@value@motto{\kaishu “#1”}}
 \newcommand\Creator[1]{\def\ExBook@value@Creator{\textbf{#1}}}
 \newcommand\UpdateTime[1]{\def\ExBook@value@UpdateTime{\textbf{最后更新时间：#1}}}
-\newcommand\Lhead[1]{\def\ExBook@value@Lhead{\textbf{#1}}}
-\newcommand\Chead[1]{\def\ExBook@value@Chead{\textbf{#1}}}
-\newcommand\Rhead[1]{\def\ExBook@value@Rhead{\textbf{#1}}}
-\newcommand\LheadC[1]{\def\ExBook@value@LheadC{\textbf{#1}}}
+\newcommand\Lhead[1]{\def\ExBook@value@Lhead{#1}}
+\newcommand\Chead[1]{\def\ExBook@value@Chead{#1}}
+\newcommand\Rhead[1]{\def\ExBook@value@Rhead{#1}}
+\newcommand\LheadC[1]{\def\ExBook@value@LheadC{#1}}
 \newcommand\TextWater[1]{\def\ExBook@value@TextWater{\textcolor{black!38}{\selectfont #1}}}
 \newcommand{\textwater}{\def\ExBook@value@TextWater}
 \newcommand\WaterImg[1]{\def\ExBook@value@waterImg{#1}}
@@ -383,15 +383,15 @@
     \fancyhf{}
 
     % 设置页眉内容
-    \fancyhead[L]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Lhead}}}
-    \fancyhead[C]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Chead}} }
-    \fancyhead[R]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Rhead}} }
+    \fancyhead[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Lhead}}
+    \fancyhead[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Chead}}
+    \fancyhead[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Rhead}}
 
     % 设置页码位置
-    \fancyfoot[C]{\color{themeColor} 第 \thepage 页  / 共 \pageref{LastPage} 页}
+    \fancyfoot[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont 第 \thepage 页  / 共 \pageref{LastPage} 页}}
     \if@showmark
-        \fancyfoot[L]{\color{themeColor}\kaishu  \truncate{7cm}{\leftmark}}
-        \fancyfoot[R]{\color{themeColor}\kaishu  \truncate{7cm}{\rightmark}}
+        \fancyfoot[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\leftmark}}}
+        \fancyfoot[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\rightmark}}}
         \if@notocnum
             \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
             \renewcommand{\subsectionmark}[1]{\markright{#1}{}}
@@ -423,9 +423,9 @@
  %                         **   A4标准版   **
  %                         *****************
     \if@printmode
-    \geometry{a4paper, twoside, left=18mm, right=18mm, top=25mm, bottom=25mm, headsep=5mm, bindingoffset = 1cm}
+    \geometry{a4paper, twoside, left=18mm, right=18mm, top=25mm, bottom=25mm, headheight=15pt, headsep=5mm, bindingoffset = 1cm}
     \else
-        \geometry{a4paper, left=18mm, right=18mm, top=25mm, bottom=25mm, headsep=5mm}   
+        \geometry{a4paper, left=18mm, right=18mm, top=25mm, bottom=25mm, headheight=15pt, headsep=5mm}  
     \fi
 
     % 自定义封面样式
@@ -464,16 +464,16 @@
     \fancyhf{}
 
     % 设置页眉内容
-    \fancyhead[L]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Lhead}}}
-    \fancyhead[C]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Chead}} }
-    \fancyhead[R]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Rhead}} }
+    \fancyhead[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Lhead}}
+    \fancyhead[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Chead}}
+    \fancyhead[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Rhead}}
 
     % 设置页码位置
-    \fancyfoot[C]{\color{themeColor}第 \thepage 页  / 共 \pageref{LastPage} 页 }
+    \fancyfoot[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont 第 \thepage 页  / 共 \pageref{LastPage} 页}}
     
     \if@showmark
-        \fancyfoot[L]{\color{themeColor}\kaishu  \truncate{7cm}{\leftmark}}
-        \fancyfoot[R]{\color{themeColor}\kaishu  \truncate{7cm}{\rightmark}}
+        \fancyfoot[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\leftmark}}}
+        \fancyfoot[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\rightmark}}}
         \if@notocnum
             \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
             \renewcommand{\subsectionmark}[1]{\markright{#1}{}}
@@ -493,7 +493,6 @@
     }
     {
 
-    \vspace*{2.5cm}
     \end{minipage}
 
     \if@water
@@ -706,15 +705,15 @@
     \fancyhf{}
 
     % 设置页眉内容
-    \fancyhead[L]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Lhead}}}
-    \fancyhead[C]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Chead}} }
-    \fancyhead[R]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Rhead}} }
+    \fancyhead[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Lhead}}
+    \fancyhead[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Chead}}
+    \fancyhead[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Rhead}}
 
     % 设置页码位置
-    \fancyfoot[C]{\color{themeColor}第 \thepage 页  / 共 \pageref{LastPage} 页 }
+    \fancyfoot[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont 第 \thepage 页  / 共 \pageref{LastPage} 页}}
     \if@showmark
-        \fancyfoot[L]{\color{themeColor}\kaishu  \truncate{7cm}{\leftmark}}
-        \fancyfoot[R]{\color{themeColor}\kaishu  \truncate{7cm}{\rightmark}}
+        \fancyfoot[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\leftmark}}}
+        \fancyfoot[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\rightmark}}}
         \if@notocnum
             \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
             \renewcommand{\subsectionmark}[1]{\markright{#1}{}}
@@ -790,16 +789,16 @@
     \fancyhf{}
 
     % 设置页眉内容
-    \fancyhead[L]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Lhead}}}
-    \fancyhead[C]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Chead}} }
-    \fancyhead[R]{\color{themeColor} \fontsize{10pt}{0}{\textbf{\ExBook@value@Rhead}} }
+    \fancyhead[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Lhead}}
+    \fancyhead[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Chead}}
+    \fancyhead[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\bfseries\ExBook@value@Rhead}}
 
     % 设置页码位置
-    \fancyfoot[C]{\color{themeColor}第 \thepage 页  / 共 \pageref{LastPage} 页 }
+    \fancyfoot[C]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont 第 \thepage 页  / 共 \pageref{LastPage} 页}}
 
     \if@showmark
-        \fancyfoot[L]{\color{themeColor}\kaishu  \truncate{7cm}{\leftmark}}
-        \fancyfoot[R]{\color{themeColor}\kaishu  \truncate{7cm}{\rightmark}}
+        \fancyfoot[L]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\leftmark}}}
+        \fancyfoot[R]{{\XeTeXinterchartokenstate=1\kaishu\color{themeColor}\fontsize{10pt}{12pt}\selectfont\truncate{7cm}{\rightmark}}}
         \if@notocnum
             \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
             \renewcommand{\subsectionmark}[1]{\markright{#1}{}}
