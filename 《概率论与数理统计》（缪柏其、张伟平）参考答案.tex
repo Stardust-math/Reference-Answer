@@ -173,8 +173,8 @@
 记$A$, $B$, $C$分别为喜欢巧克力糖, 夹心糖, 奶糖, 则$|\Omega|=1000$, $|A|=811$, $|B|=752$, $|C|=418$.
 
 由容斥原理: 
-$$|A\cup B\cup C|=|A|+|B|+|C|-|A\cup B|-|A\cup C|-|B\cup C|+|A\cap B\cap C|$$
-$\Longrightarrow$$|A\cup B\cup C|=1004 > 1000=|\Omega|=|A|+|B|+|C|$矛盾.
+$$|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|$$
+$\Longrightarrow$$|A\cup B\cup C|=1004 > 1000=|\Omega|$矛盾.
 
 \textcolor{themeColor}{\selectfont \ding{226} 集合势的容斥原理: $|\bigcup\limits_{i=1}^{n}A_{i}|=\sum\limits_{k=1}^{n}(-1)^{k-1}\sum\limits_{1\leq i_{1}<\cdots<i_{k}\leq n}|A_{i_{1}}\cap A_{i_{2}}\cdots\cap A_{i_{k}}|$.}
 
@@ -193,7 +193,7 @@ $\Longrightarrow$$|A\cup B\cup C|=1004 > 1000=|\Omega|=|A|+|B|+|C|$矛盾.
 
 解: 
 
-记$A$, $B$分别为订甲种报纸, 订乙种报纸, 则$\frac{|A|}{|\Omega|}=0.4$, $\frac{|B|}{|\Omega|}=0.25$, $\frac{|AB|}{|\omega|}=0.15$.
+记$A$, $B$分别为订甲种报纸, 订乙种报纸, 则$\frac{|A|}{|\Omega|}=0.4$, $\frac{|B|}{|\Omega|}=0.25$, $\frac{|AB|}{|\Omega|}=0.15$.
 
 (1) $p_{1}=\frac{|A\backslash B|}{|\Omega|}=\frac{|A|-|AB|}{|\Omega|}=0.25$;
 
@@ -288,7 +288,7 @@ $P=\displaystyle{\frac{\binom{12}{6}\cdot\frac{30!}{(2!)^6 (3!)^6}}{12^{30}}}\ap
 
 解:
 
-$P=\displaystyle{\frac{12-4+1}{A_{12}^{4}}}\approx1.82\%\in(0.01,0.05]$$\Longrightarrow$从宽标准看, 该现象是小概率事件; 从严标准看, 该现象是随机的.
+$P=\displaystyle{\frac{12-4+1}{C_{12}^{4}}}\approx1.82\%\in(0.01,0.05]$$\Longrightarrow$从宽标准看, 该现象是小概率事件; 从严标准看, 该现象是随机的.
 
 \textcolor{themeColor}{\selectfont \ding{226} 有关小概率事件及宽、严标准, 见课本P14.}
 
@@ -305,7 +305,7 @@ $P=\displaystyle{\frac{12-4+1}{A_{12}^{4}}}\approx1.82\%\in(0.01,0.05]$$\Longrig
 
 解: 
 
-记$A_{i},1\leq i\leq4$分别为缺少梅花、方块、红心、黑桃的牌, 则由容斥原理: $P=1-\frac{\bigcup\limits_{i=1}^{4}A_{i}}{\binom{52}{10}}=1-\frac{4\binom{39}{10}-6\binom{26}{10}+4\binom{13}{10}}{\binom{52}{10}}\approx0.9988$.
+记$A_{i},1\leq i\leq4$分别为缺少梅花、方块、红心、黑桃的牌, 则由容斥原理: $P=1-\frac{\left|\bigcup\limits_{i=1}^{4}A_{i}\right|}{\binom{52}{10}}=1-\frac{4\binom{39}{10}-6\binom{26}{10}+4\binom{13}{10}}{\binom{52}{10}}\approx0.8413$.
 
 \vspace{2.5cm-5em}
 
@@ -351,7 +351,7 @@ $P(A|N=n)=\frac{1}{n+1} \leq \frac{1}{2}$且当$n \geq 2$时, 不等号严格成
 
 \ding{173} 直接计算:
 
-由泰勒展开式: $\sum\limits_{k=1}^{\infty}\frac{x^k}{k}=-\ln(1-x),\ |x|<1$, 令$x=\frac{1}{2}$, 即得$P(A)=2\sum\limits_{m=2}^{\infty}\frac{(\frac{1}{2})^m}{m}=2\ln2-1\approx0.3862<0.5$. 因此, 该规则对甲不公平.
+由泰勒展开式: $\sum\limits_{k=1}^{\infty}\frac{x^k}{k}=-\ln(1-x),\ |x|<1$, 令$x=\frac{1}{2}$, 即得$P(A)=2\sum\limits_{m=2}^{\infty}\frac{(\frac{1}{2})^m}{m}=2\ln2-1\approx0.3863<0.5$. 因此, 该规则对甲不公平.
 
 \textcolor{themeColor}{\selectfont \ding{226} 全概率公式; 概率估计/泰勒展开.}
 
@@ -380,9 +380,9 @@ $P(A|N=n)=\frac{1}{n+1} \leq \frac{1}{2}$且当$n \geq 2$时, 不等号严格成
 
 (2)每个人恰有一个邻座$\Longleftrightarrow$所有人成对相邻, 且每一对都没有邻座.
 
-故若$2 \nmid n$, 则$p_{2}=0$; 若$2 \mid n$且$N\geq \frac{3}{2}n-1$, 则由(1)及每对内部的排列得, 坐法数为: $A_{N-n+1}^{\frac{n}{2}}\cdot 2^{\frac{n}{2}}$ $\Longrightarrow$ $p_{2}=2^{\frac{n}{2}}\frac{(N-n+1)!(N-n)!}{(N-\frac{3}{2}n+1)!N!}$, 否则$p_{2}=0$.
+故若$2 \nmid n$, 则$p_{2}=0$; 若$2 \mid n$且$N\geq \frac{3}{2}n-1$, 则先选择$\frac{n}{2}$对相邻的座位和间隔的k-1个空座, 再用隔板法对剩余空位进行分配, 最后对n个人进行排列, 得到坐法数为: $C_{N-n+1}^{\frac{n}{2}}\cdot n!$ $\Longrightarrow$ $p_{2}=\frac{C_{N-n+1}^{\frac{n}{2}}\cdot n!}{A_{N}^{n}}=\frac{n!(N-n+1)!(N-n)!}{(\frac{n}{2})!(N-\frac{3}{2}n+1)!N!}$, 否则$p_{2}=0$.
 
-(3) 若$n>\lceil\frac{N}{2}\rceil$, 则$p_{3}=0$; 若$n \leq \lceil\frac{N}{2}\rceil$, 则从$\lceil\frac{N}{2}\rceil$对中选$n$对排列, 再内部排列得, 坐法数为: $A_{\lfloor\frac{N}{2}\rfloor}^{n}\cdot(2!)^{n}+(\lceil\frac{N}{2}\rceil-\lfloor\frac{N}{2}\rfloor)\cdot A_{\lfloor\frac{N}{2}\rfloor}^{n-1}\cdot(2!)^{n-1}$ $\Longrightarrow$ $p_{3}=\frac{A_{\lfloor\frac{N}{2}\rfloor}^{n}\cdot(2!)^{n}+(\lceil\frac{N}{2}\rceil-\lfloor\frac{N}{2}\rfloor)\cdot A_{\lfloor\frac{N}{2}\rfloor}^{n-1}\cdot(2!)^{n-1}}{A_{N}^{n}}$.
+(3) 若$n>\lceil\frac{N}{2}\rceil$, 则$p_{3}=0$; 若$n \leq \lceil\frac{N}{2}\rceil$, 则从$\lceil\frac{N}{2}\rceil$对中选$n$对排列, 再内部排列得, 坐法数为: $A_{\lfloor\frac{N}{2}\rfloor}^{n}\cdot(2!)^{n}+(\lceil\frac{N}{2}\rceil-\lfloor\frac{N}{2}\rfloor)\cdot n\cdot A_{\lfloor\frac{N}{2}\rfloor}^{n-1}\cdot(2!)^{n-1}$ $\Longrightarrow$ $p_{3}=\frac{A_{\lfloor\frac{N}{2}\rfloor}^{n}\cdot(2!)^{n}+(\lceil\frac{N}{2}\rceil-\lfloor\frac{N}{2}\rfloor)\cdot n\cdot A_{\lfloor\frac{N}{2}\rfloor}^{n-1}\cdot(2!)^{n-1}}{A_{N}^{n}}$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 第三题为了叙述与答案的简洁采用了上下取整, 不习惯的同学可以根据奇偶分类讨论.}
 
@@ -407,7 +407,7 @@ $P(A|N=n)=\frac{1}{n+1} \leq \frac{1}{2}$且当$n \geq 2$时, 不等号严格成
 
 解:
 
-(1) 对该圆上的任意一点$A$, 另一端点$B$在圆上均匀分布, 则弦$AB$对应的圆心角$\theta$满足在$[0,\pi]$上均匀分布, 则$|AB| > \sqrt{3}$ $\Longleftrightarrow$ $\theta \in [\frac{2}{3}\pi,\pi]$ $\Longrightarrow$ $p_{1}=\frac{1}{3}$.
+(1) 对该圆上的任意一点$A$, 另一端点$B$在圆上均匀分布, 则弦$AB$对应的圆心角$\theta$满足在$[0,\pi]$上均匀分布, 则$|AB| > \sqrt{3}$ $\Longleftrightarrow$ $\theta \in (\frac{2}{3}\pi,\pi]$ $\Longrightarrow$ $p_{1}=\frac{1}{3}$.
 
 (2) 记弦的中点到圆心的距离为$d$, 则弦长$L=2\sqrt{1-d^2}$, 故$L > \sqrt{3}$ $\Longleftrightarrow$ $d < \frac{1}{2}$ $\Longrightarrow$ $p_{2}=\frac{(\frac{1}{2})^2\pi}{1^2\pi}=\frac{1}{4}$.
 
@@ -432,11 +432,11 @@ $P(A|N=n)=\frac{1}{n+1} \leq \frac{1}{2}$且当$n \geq 2$时, 不等号严格成
 
 这里采取补集法, 先计算所有满足$x+y+z=2n+1$的$(x,y,z)$数量: (相当于将$2n+1$分配到三个正整数中, 可以采用隔板法, 在$2n$个缝隙中选2个隔板), 则有$\binom{2n}{2}$种分配方法.
 
-记$A$, $B$, $C$分别为使得$x \geq n+1$, $y \geq n+1$, $z \geq n+1$的事件, 计算$|A\cup B\cup C|$. 先计算单个事件的势: $x+y+z=2n+1$且$x \geq n+1$ $\Longrightarrow$ 令$x'=x-n$, 则$x'+y+z=n+1$且$x' \geq 1$, 同理由隔板法可得: $|A|=\binom{n}{2}$. 由对称性, $|A|=|B|=|C|=\binom{n}{2}$. 显然$A\cap B,A\cap C,B\cap C,A\cap B\cap C=\emptyset$. 故由容斥原理: $|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|=3\binom{n}{3}$
+记$A$, $B$, $C$分别为使得$x \geq n+1$, $y \geq n+1$, $z \geq n+1$的事件, 计算$|A\cup B\cup C|$. 先计算单个事件的势: $x+y+z=2n+1$且$x \geq n+1$ $\Longrightarrow$ 令$x'=x-n$, 则$x'+y+z=n+1$且$x' \geq 1$, 同理由隔板法可得: $|A|=\binom{n}{2}$. 由对称性, $|A|=|B|=|C|=\binom{n}{2}$. 显然$A\cap B,A\cap C,B\cap C,A\cap B\cap C=\emptyset$. 故由容斥原理: $|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|=3\binom{n}{2}$.
 
 取补集即得满足条件的样本点数为: $\binom{2n}{2}-\binom{n}{3}=\frac{n(n+1)}{2}$. 由于先前我们的起点是固定的, 故总的样本点数为: $(2n+1)\frac{n(n+1)}{2}$. 由对称性, 每个顶点作为起点的概率相同, 即每个三角形会被取到三次, 故最终的样本点数为: $\frac{n(n+1)(2n+1)}{6}$ $\Longrightarrow$ $p=\frac{\frac{n(n+1)(2n+1)}{6}}{\binom{2n+1}{3}}=\frac{n+1}{2(2n-1)}$.
 
-\textcolor{themeColor}{\selectfont \ding{226} 容斥原理; 隔板法(这里采取的隔板法中每个元素都为正整数, 即将$n$个元素分给$k$个元素, 样本点数为: $\binom{n-1}{k}$; 若元素可以为0, 则样本点数为: $\binom{n+k-1}{k-1}$.两者本质是一样的, 将每个元素减一即可, 这道题也可以先将每条边标准化为可取到0的非负整数, 再进行计算, 本质不变).}
+\textcolor{themeColor}{\selectfont \ding{226} 容斥原理; 隔板法(这里采取的隔板法中每个元素都为正整数, 即将$n$个元素分给$k$个元素, 样本点数为: $\binom{n-1}{k-1}$; 若元素可以为0, 则样本点数为: $\binom{n+k-1}{k-1}$.两者本质是一样的, 将每个元素减一即可, 这道题也可以先将每条边标准化为可取到0的非负整数, 再进行计算, 本质不变).}
 
 \textcolor{themeColor}{\selectfont \ding{226} 若边为偶数同样可以以这种方式计算, 规定好"中心落在三角形的边上"是否算作"在内部"即可, 这里就不进行拓展了.}
 
@@ -496,7 +496,7 @@ $P(A|N=n)=\frac{1}{n+1} \leq \frac{1}{2}$且当$n \geq 2$时, 不等号严格成
 $$P(A_{n},\ \text{i.o.})=\lim\limits_{n \to \infty}P(B_{n}),$$
 再用不等式
 $$P(\bigcup\limits_{k=n}^{\infty}A_{k}) \leq \sum\limits_{k=n}^{\infty}P(A_{k});$$
-(2) 对$0 < x < 1$, 利用不等式$\ln(1-x) > -x$.
+(2) 对$0 < x < 1$, 利用不等式$\ln(1-x) < -x$.
     \end{shaded}
     \end{bbox}
 
@@ -518,7 +518,7 @@ $$\liminf\limits_{n\to\infty}A_{n}=\bigcup\limits_{n=1}^{\infty}\bigcap\limits_{
 
 设$A = \bigcap\limits_{n=1}^{\infty}\bigcup\limits_{m=n}^{\infty} A_m$. 对第一部分(1)
 \[
-\mathbb{P}(A) \leq \mathbb{P}\left( \bigcup_{m=n}^{\infty} A_m \right) \leq \sum_{m=-n}^{\infty} \mathbb{P}(A_m) \to 0.
+\mathbb{P}(A) \leq \mathbb{P}\left( \bigcup_{m=n}^{\infty} A_m \right) \leq \sum_{m=n}^{\infty} \mathbb{P}(A_m) \to 0.
 \]
 对第二部分(2), 由(1)知$\Leftarrow$. 另一方面, 只需 $\mathbb{P}(A^c) = 0$. 而
 \[
@@ -534,7 +534,7 @@ A^c = \bigcup_{n=1}^{\infty} \bigcap_{m=n}^{\infty} A_m^c,
 
 \textcolor{themeColor}{\selectfont \ding{226} (1)的本质是实分析中的Borel-Cantelli引理:\\
 设$(X,\Gamma,\mu)$是测度空间, $A_{n}\in\Gamma(\forall n)$. 则
-$$\sum\limits_{n=1}^{\infty}\mu(A_{n}) < \infty \Longrightarrow \mu(\varlimsup\limits_{n\to\infty})=0.$$}
+$$\sum\limits_{n=1}^{\infty}\mu(A_{n}) < \infty \Longrightarrow \mu(\varlimsup\limits_{n\to\infty} A_n)=0.$$}
 
 \vspace{2.5cm-7em}
 
@@ -620,7 +620,7 @@ $$\sum\limits_{n=1}^{\infty}\mu(A_{n}) < \infty \Longrightarrow \mu(\varlimsup\l
 
 (3.1) $p_{1}'=(\frac{\binom{n-1}{m}}{\binom{n}{m}})^{r-1}=(\frac{n-m}{n})^{r-1}$.
 
-(3.2) 先在$n$个群中选取$rm$个不同的群, 有$\binom{n}{rm}$种选择, 再将这些群分配到$r$步, 分配方式有$\frac{(rm)!}{(m!)^{r}}$种. 故$p_{2}'=\displaystyle\frac{\binom{n}{rm}\frac{(rm)!}{(m!)^{r}}}{[\binom{n}{m}]^{r}}=\frac{[(n-m)!]^{r}}{(n!)^r(n-rm)!}$.
+(3.2) 先在$n$个群中选取$rm$个不同的群, 有$\binom{n}{rm}$种选择, 再将这些群分配到$r$步, 分配方式有$\frac{(rm)!}{(m!)^{r}}$种. 故$p_{2}'=\displaystyle\frac{\binom{n}{rm}\frac{(rm)!}{(m!)^{r}}}{[\binom{n}{m}]^{r}}=\frac{[(n-m)!]^{r}}{(n!)^{r-1}(n-rm)!}$.
 
 \vspace{2.5cm-5em}
 
@@ -667,7 +667,7 @@ $$P(A|B_{1})=\frac{P(B_{1}|A)P(A)}{P(B_{1})}=\frac{1}{4}\qquad P(\overline{A}|B_
 解: 
 
 记第$i$次$(i \geq 1)$取到红色铅笔为事件$A_{i}$, 则:
-$$P(A_{1}A_{2}\mathop{\overline{A_{3}}}\mathop{\overline{A_{4}}})=P(A_{1})P(A_{2}|A_{1})P(\overline{A_{3}}|A_{1}A_{2})P(\overline{A_{4}}|A_{1}A_{2}A_{3})=\frac{b(a+b)r(r+a)}{(r+b)(r+a+b)(r+2a+b)(r+3a+b)}.$$
+$$P(A_{1}A_{2}\mathop{\overline{A_{3}}}\mathop{\overline{A_{4}}})=P(A_{1})P(A_{2}|A_{1})P(\overline{A_{3}}|A_{1}A_{2})P(\overline{A_{4}}|A_{1}A_{2}\overline{A_{3}})=\frac{b(a+b)r(r+a)}{(r+b)(r+a+b)(r+2a+b)(r+3a+b)}.$$
 
 \vspace{2.5cm-5em}
 
@@ -728,7 +728,7 @@ $$P(A|B)=\frac{P(B|A)P(A)}{P(B|A)P(A)+P(B|\overline{A})P(\overline{A})}=\frac{20
 
 解: 
 
-设选择第$i$个地区为事件$A_{i},1 \leq i \leq 3$, 第$j$次抽到女生为事件$B_{j},1 \leq i \leq 2$.
+设选择第$i$个地区为事件$A_{i},1 \leq i \leq 3$, 第$j$次抽到女生为事件$B_{j},1 \leq j \leq 2$.
 
 (1) 由全概率公式:
 $$P(B_{1})=P(B_{1}|A_{1})P(A_{1})+P(B_{1}|A_{2})P(A_{2})+P(B_{1}|A_{3})P(A_{3})=\frac{29}{90}\approx0.322.$$
@@ -753,7 +753,7 @@ $$P(B_{1}|\overline{B_{2}})=\frac{P(B_{1}\overline{B_{2}})}{P(\overline{B_{2}})}
 
 设扔掉的球中红球的数量为随机变量$X$, 记从剩下的20个球中摸到红球为事件$A$. 则由贝叶斯公式:
 $$P(X\geq2|A)=\frac{\sum\limits_{i=2}^{5}P(A|X=i)P(X=i)}{\sum\limits_{i=0}^{5}P(A|X=i)P(X=i)},$$
-其中$P(X=i)=\displaystyle\frac{\binom{20}{i}\binom{5}{5-k}}{\binom{25}{5}}$ $\Rightarrow$ $P(X\geq2|A)=\frac{1767}{1771}\approx0.9977.$
+其中$P(X=i)=\displaystyle\frac{\binom{20}{i}\binom{5}{5-i}}{\binom{25}{5}}$ $\Rightarrow$ $P(X\geq2|A)=\frac{1767}{1771}\approx0.9977.$
 
 \textcolor{themeColor}{\selectfont \ding{226} 贝叶斯公式; 这里的$X$服从的是参数为(N=25, M=20, n=5)的超几何分布(Hypergeometric Distribution), 即$X\sim H(25,20,5)$.}
 
@@ -1094,7 +1094,7 @@ $P(X=x)$ & $\frac{16532100}{17721088}$ & $\frac{1}{17721088}$ & $\frac{15}{17721
 \hline
 \end{tabular}
 \end{center}
-(2) $A=\{X \neq 0\}$, $B=\{X=1\text{或}2\}$ $\Longrightarrow$ $P(A)=1-P(X=0)=\frac{1189988}{17721088}\approx0.0671$, $P(B)=P(X=1)+P(X=2)=\frac{16}{17721088}\approx9.03\times10^{-7}$.
+(2) $A=\{X \neq 0\}$, $B=\{X=1\text{或}2\}$ $\Longrightarrow$ $P(A)=1-P(X=0)=\frac{1188988}{17721088}\approx0.0671$, $P(B)=P(X=1)+P(X=2)=\frac{16}{17721088}\approx9.03\times10^{-7}$.
 
 \vspace{2.5cm-5em}
 
@@ -1327,7 +1327,7 @@ $$P(X=1|B)=\frac{P(B|X=1)P(X=1)}{P(B)}\approx0.4149.$$
 解: 
 
 记甲队胜四场比赛所需的场次为随机变量$X$, 则$X$服从参数为$r=4$, $p=0.6$的负二项分布(帕斯卡分布), 即$X\sim NB(4,0.6)$, 则:
-$$P(X=i)=\binom{i-1}{4-1}\cdot(0.4)^{4}\cdot(0.6)^{i-4},i=4,5,6,7$$
+$$P(X=i)=\binom{i-1}{4-1}\cdot(0.6)^{4}\cdot(0.4)^{i-4},i=4,5,6,7$$
 \begin{center}
     $\Longrightarrow$
 %\renewcommand{\arraystretch}{1}
@@ -1355,7 +1355,7 @@ $p_{\text{乙},4}=1-\sum\limits_{i=4}^{7}P(X=i)=0.289792 < p_{\text{乙},2}=0.35
 
 解: 
 
-记$Y$为三个骰子中押的数字出现的次数, 则$Y\sim B(3,\displaystyle\frac{1}{6})$, 即$P(Y=k)=\binom{3}{k}\cdot(\displaystyle\frac{1}{6})^{k}\cdot(\frac{5}{6})^{3-k}$, $k=0,1,2,3$. 则: $P(x)=P(Y),X=1,2,3$; $P(X=-1)=P(Y=0)$ $\Longrightarrow$ $X$的分布律为:
+记$Y$为三个骰子中押的数字出现的次数, 则$Y\sim B(3,\displaystyle\frac{1}{6})$, 即$P(Y=k)=\binom{3}{k}\cdot(\displaystyle\frac{1}{6})^{k}\cdot(\frac{5}{6})^{3-k}$, $k=0,1,2,3$. 则: $P(X=k)=P(Y=k),X=1,2,3$; $P(X=-1)=P(Y=0)$ $\Longrightarrow$ $X$的分布律为:
 \begin{center}
 \renewcommand{\arraystretch}{1.5}
 \setlength{\tabcolsep}{20pt}
@@ -1434,7 +1434,7 @@ $\Longrightarrow$ $Y$, $Z$相互独立.
 
 解: 
 
-记$n$为保单数, $p$为保险期内死亡概率, $X$为需要赔付的保单数, 则$X\sim B(n=400,p=0.02)$. 由于$n=400\geq100$且$np=8 \leq 10$, 故可以使用``泊松逼近定理''进行估算: 令$\lambda=np=10$, 则$P(X \geq 2)=1-P(X=0)-P(X=1)\approx1-9e^{-8}\approx0.997$.
+记$n$为保单数, $p$为保险期内死亡概率, $X$为需要赔付的保单数, 则$X\sim B(n=400,p=0.02)$. 由于$n=400\geq100$且$np=8 \leq 10$, 故可以使用``泊松逼近定理''进行估算: 令$\lambda=np=8$, 则$P(X \geq 2)=1-P(X=0)-P(X=1)\approx1-9e^{-8}\approx0.997$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 泊松逼近定理及其判断(使用)条件, 见课本P57 定理2.2及下方的正文.}
 
@@ -1451,7 +1451,7 @@ $\Longrightarrow$ $Y$, $Z$相互独立.
 
 解: 
 
-记$n_{i},i=1,2$为指定秒内出现的字符数, $p$为出现误码的概率, $X_{i},i=1,2$为指定秒内出现的误码数, 则$X_{1}\sim B(n_{1}=5.12\times10^{6},p=10^{-7})$. 由于$n_{1}=5.12\times10^{6}\geq30$(或$n_{1}\geq100$)且$n_{1}p=0.512 \leq 5$(或$n_{1}p \leq 10$), 故可以使用``泊松逼近定理''进行估算: 令$\lambda_{1}=n_{1}p=1$, 则$P(X_{1} \geq 1)=1-P(X_{2}=0)\approx1-e^{-\lambda_{1}}\approx0.401$. 同理可得: $P(X_{2})\approx0.994$.
+记$n_{i},i=1,2$为指定秒内出现的字符数, $p$为出现误码的概率, $X_{i},i=1,2$为指定秒内出现的误码数, 则$X_{1}\sim B(n_{1}=5.12\times10^{6},p=10^{-7})$. 由于$n_{1}=5.12\times10^{6}\geq30$(或$n_{1}\geq100$)且$n_{1}p=0.512 \leq 5$(或$n_{1}p \leq 10$), 故可以使用``泊松逼近定理''进行估算: 令$\lambda_{1}=n_{1}p=0.512$, 则$P(X_{1} \geq 1)=1-P(X_{1}=0)\approx1-e^{-\lambda_{1}}\approx0.401$. 同理可得: $P(X_{2})\approx0.994$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 泊松逼近定理及其判断(使用)条件, 见课本P57 定理2.2及下方的正文.}
 
@@ -1490,7 +1490,7 @@ $\Longrightarrow$ $Y$, $Z$相互独立.
 解: 
 
 (1) 记总彩票数为$N$, 有奖彩票数为$M$, 购买的彩票数为$n$, 中奖次数为$X$, 则实际上$X$服从超几何分布, 即$X\sim H(N,M,n)$. 但因为$1\times10^{6}\gg100$, 所以每次买完一张彩票后, 下一张彩票中奖的概率$p$几乎不变, 即可以将该问题近似为二项分布: 令$p=\frac{M}{N}=0.0001$ $\Longrightarrow$ $X\sim B(n=100,p=0.0001)$. 又因为$n=100\geq 30$且$np=0.01\ll5$, 由泊松逼近定理, $P(X \geq 1)=1-P(X=0)\approx1-e^{-0.01}=0.00995$.
-(2) 要使$1-e^{-n'p}\geq0.95$ $\Longleftrightarrow$ $n'\geq29957$. 经检验, 此时$\frac{n'}{N}=0.29957$仍处于较小水平且$n'p=2.9957 \leq 5$, 仍满足二项分布近似与泊松逼近的条件.
+(2) 要使$1-e^{-n'p}\geq0.95$ $\Longleftrightarrow$ $n'\geq29958$. 经检验, 此时$\frac{n'}{N}=0.029958$仍处于较小水平且$n'p=2.9958 \leq 5$, 仍满足二项分布近似与泊松逼近的条件.
 
 \textcolor{themeColor}{\selectfont \ding{226} 泊松逼近定理及其判断(使用)条件, 见课本P57 定理2.2及下方的正文.}
 
@@ -1615,7 +1615,7 @@ $$f(x)=\frac{a}{1+x^2},\qquad -\infty < x < \infty.$$
 
 解: 
 
-$S_{\text{总}}=\displaystyle\int_{0}^{2}2x-x^2\mathrm{d}x=\frac{4}{3}$; $F(x)=\displaystyle\frac{1}{S_{\text{总}}}P(X\leq x)=\frac{3}{4}\int_{0}^{x}2t-t^2\mathrm{d}t=\frac{-x^3+3x^2}{4},0\leq x\leq 2$ $\Longrightarrow$ $f(x)=F'(x)=\displaystyle\frac{-3x^2+6x}{4},0\leq x\leq 2$.
+$S_{\text{总}}=\displaystyle\int_{0}^{2}2x-x^2\mathrm{d}x=\frac{4}{3}$; $F(x)=\displaystyle\frac{S_{X\leq x}}{S_{\text{总}}}=\frac{3}{4}\int_{0}^{x}2t-t^2\mathrm{d}t=\frac{-x^3+3x^2}{4},0\leq x\leq 2$ $\Longrightarrow$ $f(x)=F'(x)=\displaystyle\frac{-3x^2+6x}{4},0\leq x\leq 2$.
 
 \vspace{2.5cm-5em}
 
@@ -1628,7 +1628,7 @@ $$
     \left\{
     \begin{array}{ll}
         0,\ &x < 1,\\
-        ax^2\ln x+bx^2+1,\ &1 \leq x < e,\\
+        ax\ln x+bx+1,\ &1 \leq x < e,\\
         1,\ &x \geq e,
     \end{array}
     \right.
@@ -1641,9 +1641,9 @@ $$
 
 解: 
 
-(1) $X$是连续型随机变量 $\Longrightarrow$ $F(x)$连续 $\Longrightarrow$ $F(1)=b+1=0$, $F(e)=(a+b)e^2+1=1$ $\Longrightarrow$ $a=1$, $b=-1$.
+(1) $X$是连续型随机变量 $\Longrightarrow$ $F(x)$连续 $\Longrightarrow$ $F(1)=b+1=0$, $F(e)=(a+b)e+1=1$ $\Longrightarrow$ $a=1$, $b=-1$.
 
-(2) $f(x)=F'(x)=2x\ln x-x$, $1 \leq x < e$.
+(2) $f(x)=F'(x)=\ln x$, $1 \leq x < e$.
 
 \vspace{2.5cm-5em}
 
@@ -1701,7 +1701,7 @@ $$p=\displaystyle3\times\left(\frac{4-2}{4-1}\right)^{2}\times\left(\frac{2-1}{4
 
 解: 
 
-设$F(x)-F(y)=G(x-y)$, 则对$\forall x\in(0,1)$, 有$G(x)=F(x)-F(0)$, 从而$G(x)-G(y)=F(x)-F(y)=G(x-y),\forall x,y\in(0,1)$. 即$G$满足柯西函数方程. 由于对$\forall x\in(0,1)$, $\exists a,b\in(0,1)$, s.t.$x=a-b$ $\Longrightarrow$ $|G(x)|=|F(a)-F(b)| \leq 2$, 即$G$在正测集$(0,1)$上有界, 从而(证明见注释)$G(x)=G(1)x$ $\Longrightarrow$ $F(x)=G(x)+G(0)$关于$x$是线性的 $\Longrightarrow$ $f(x)\equiv c\in(0,1)$, 即$X$服从$(0,1)$上的均匀分布.
+设$F(x)-F(y)=G(x-y)$, 则对$\forall x\in(0,1)$, 有$G(x)=F(x)-F(0)$, 从而$G(x)-G(y)=F(x)-F(y)=G(x-y),\forall x,y\in(0,1)$. 不妨将G按已有性质延拓到$\mathbb{R}$上, 即$G$满足柯西函数方程. 由于对$\forall x\in(0,1)$, $\exists a,b\in(0,1)$, s.t.$x=a-b$ $\Longrightarrow$ $|G(x)|=|F(a)-F(b)| \leq 2$, 即$G$在正测集$(0,1)$上有界, 从而(证明见注释)$G(x)=G(1)x$ $\Longrightarrow$ $F(x)=G(x)+G(0)$关于$x$是线性的 $\Longrightarrow$ $f(x)\equiv c\in(0,1)$, 即$X$服从$(0,1)$上的均匀分布.
 
 \textcolor{themeColor}{\selectfont \ding{226} 柯西方程及其解的描述与证明如下(基本照搬周民强《实变函数论(第三版)》P86例2):\\
 设有定义在$\mathbb{R}$上的函数$f(x)$, 满足
@@ -1718,6 +1718,15 @@ $$|f(x)|\leq 4M,x\in[0,c].$$
 已知对任意的$x\in\mathbb{R}$以及自然数$n$, 均存在有理数$r$, 使得$|x-r|<c/n$, 因此我们得到
 $$|f(x)-xf(1)|=|f(x-r)+rf(1)-xf(1)|=|f(x-r)+(r-x)f(1)|\leq \frac{4M+c|f(1)|}{n}.$$
 根据$n$的任意性($r$的任意性), 即得$f(x)=xf(1)$.\qquad(其实(\romannumeral2)也能由Steinhaus定理直接得到)} 
+
+\textcolor{themeColor}{\selectfont \ding{226} 
+当然事实上, 无需求助于一般的柯西方程和实分析知识. 由 $F(b)-F(a)$ 只依赖于 $b-a$, 并结合 $F(0)=0$, 可得$F(s+t)=F(s)+F(t)$, $s,t\geq0$, $s+t\leq1$. 再由$F(1)=1$, 先得 $F(m/n)=m/n$ 对所有 $[0,1]$ 内的有理数成立. 对任意 $x\in[0,1]$, 利用
+$$
+\frac{\lfloor nx\rfloor}{n}\leq x\leq\frac{\lfloor nx\rfloor+1}{n}
+$$
+及 \(F\) 的单调性进行夹逼, 即得 \(F(x)=x\), 故 \(X\sim U(0,1)\).
+这其实正是数学分析中的稠密性定理: 利用有理数的稠密性延拓/推广到实数的思路 (不知道大家数分B1有没有讲过这部分内容, 可以稍作了解).
+}
 
 \vspace{2.5cm-5em}
 
@@ -1779,7 +1788,7 @@ $$P(X \leq m+n|X>n)=P(X \leq m).$$
 $$\text{证}\quad P(X \leq t+x|X>t)=P(X \leq x) \Longleftrightarrow \text{证}\quad P(X > t+x|X>t)=P(X > x)$$
 必要性显然, 充分性:
 $$P(X > t+x|X>t)=\frac{1-F(t+x)}{1-F(t)}=1-F(x)=P(X>x) \Longleftrightarrow 1-F(t+x)=[1-F(t)][1-F(x)]$$
-记$G(x)=1-F(x)$, 则$G(x+y)=G(x)G(y),\forall x,y>0$满足柯西乘法方程 (或$\Longrightarrow$ $\ln G(x+y)=\ln G(x)+\ln G(y)$满足柯西加法方程). 又由$G(0)=1-F(0)>1-F(1)=G(1)$, 从而$\exists\lambda>0$, s.t.$G(x)=e^{-\lambda x}$, 即$F(x)=1-e^{-\lambda x}$ $\Longrightarrow$ $X\sim Exp(\lambda)$.
+记$G(x)=1-F(x)$, 则$G(x+y)=G(x)G(y),\forall x,y>0$满足柯西乘法方程 (或$\Longrightarrow$ $\ln G(x+y)=\ln G(x)+\ln G(y)$满足柯西加法方程). 又由$G(1)=1 \Longleftrightarrow G(n)=G(1)^n=1$与$G(n) = P(X>n)\to 0$矛盾, 从而$G(0)=1-F(0)>1-F(1)=G(1)$ $\Longrightarrow$ $\exists\lambda>0$, s.t.$G(x)=e^{-\lambda x}$, 即$F(x)=1-e^{-\lambda x}$ $\Longrightarrow$ $X\sim Exp(\lambda)$.
 
 (2) 必要性显然, 充分性见课本P54.
 
@@ -1804,9 +1813,9 @@ $$P(X > t+x|X>t)=\frac{1-F(t+x)}{1-F(t)}=1-F(x)=P(X>x) \Longleftrightarrow 1-F(t
 
 将$X$标准化变换为$\displaystyle\frac{X-\mu}{\sigma}$, 则
 
-(1) 查表(课本附表1)得: $P(0\leq X\leq 4)=\Phi(1.5)-\Phi(-0.5)=\approx0.6247$; $P(X>2.4)=1-\Phi(0.7)\approx0.2420$; $P(|X|>2)=\Phi(0.5)+\Phi(-1.5)=0.3753$.
+(1) 查表(课本附表1)得: $P(0\leq X\leq 4)=\Phi(1.5)-\Phi(-0.5)=\approx0.6247$; $P(X>2.4)=1-\Phi(0.7)\approx0.2420$; $P(|X|>2)=1-\Phi(0.5)+\Phi(-1.5)=0.3753$.
 
-(2) $P(X>c)=2P(X \leq c)$ $\Longrightarrow$ $\Phi(\frac{c-1}{2})=\frac{1}{3}$ $\overset{\text{查表}}{\Longrightarrow}$ $\frac{c-1}{2}\approx0.43$ $\Longrightarrow$ $c\approx0.14$.
+(2) $P(X>c)=2P(X \leq c)$ $\Longrightarrow$ $\Phi(\frac{c-1}{2})=\frac{1}{3}$ $\overset{\text{查表}}{\Longrightarrow}$ $\frac{c-1}{2}\approx-0.43$ $\Longrightarrow$ $c\approx0.14$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 正态函数标准化, 正态函数的对称性, 见课本P70-71.}
 
@@ -2021,16 +2030,21 @@ $$f_{\frac{1}{X}}(x)=f_{X}(\frac{1}{x})\bigg|\left(\frac{1}{x}\right)'\bigg|=\fr
 
 解:
 
-记速度为随机变量$V$, 动能为随机变量$E$, 质量为常数$M$, 则$E=\frac{1}{2}M V^2$, 其中$V\sim N(\mu,\sigma)$.
+记速度为随机变量$V$, 动能为随机变量$E$, 质量为常数$M$, 则$E=\frac{1}{2}M V^2$, 其中$V\sim N(\mu,\sigma^2)$.
 
 $V(E)=\pm\sqrt{\displaystyle\frac{2E}{M}}$ $\Longrightarrow$ $|V'(E)|=\displaystyle\frac{1}{\sqrt{2EM}}$. 由推广的密度变换公式:
 $$
 \begin{aligned}
 f_{E}(e)&=\displaystyle\frac{1}{\sqrt{2eM}}\left[f_{V}\left(\sqrt{\frac{2e}{M}}\right)+f_{V}\left(-\sqrt{\frac{2e}{M}}\right)\right]\\
- &=\displaystyle\frac{1}{\sqrt{2\pi eM}\sigma}\left[e^{-\displaystyle\frac{(\frac{2e}{M}-\mu)^2}{2 \sigma^2}}+e^{-\displaystyle\frac{(-\frac{2e}{M}-\mu)^2}{2 \sigma^2}}\right]
+&=\frac{1}{2\sigma\sqrt{\pi eM}}
+\left[
+e^{-\frac{\left(\sqrt{\frac{2e}{M}}-\mu\right)^2}{2\sigma^2}}
++
+e^{-\frac{\left(\sqrt{\frac{2e}{M}}+\mu\right)^2}{2\sigma^2}}
+\right].
 \end{aligned}
 $$
-关于具体的分布类型, 当$\mu\neq0$时, $E$服从缩放的非中心卡方分布; 当$\mu=0$时, $E$服从缩放的卡方分布/伽马分布, 即$E\sim\frac{1}{2}M \sigma^2 \chi^{2}(1)$ / $E\sim Ga(\alpha=\frac{1}{2},\beta=\frac{1}{\frac{1}{2}m \sigma^2})$.
+关于具体的分布类型, 当$\mu\neq0$时, $E$服从缩放的非中心卡方分布; 当$\mu=0$时, $E$服从缩放的卡方分布/伽马分布, 即$E\sim\frac{1}{2}M \sigma^2 \chi^{2}(1)$ / $E\sim Ga(\alpha=\frac{1}{2}, \beta=\frac{1}{M\sigma^2})$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 推广的密度函数变换公式, 见课本P74的注.}
 
@@ -2124,7 +2138,7 @@ X=\pm\arccos Y_2\text{分段单调},\\
 x\in\left(-\displaystyle\frac{\pi}{2},\displaystyle\frac{\pi}{2}\right) 
 \end{array}
 \right\}
-\Longrightarrow f_{Y_2}(y)=\sum f_{X}(\pm\arctan y)|(\pm\arctan y)'|=\frac{2}{\pi\sqrt{1-y^2}},\ y\in(0,1).$$
+\Longrightarrow f_{Y_2}(y)=\sum f_{X}(\pm\arccos y)|(\pm\arccos y)'|=\frac{2}{\pi\sqrt{1-y^2}},\ y\in(0,1).$$
 \textcolor{themeColor}{\selectfont \ding{226} 密度函数变换公式, 见课本P73; 推广的密度函数变换公式, 见课本P74的注.}
 
 \vspace{2.5cm-5em}
@@ -2192,7 +2206,7 @@ $$f_{g}(x)=f_{X}\left(g^{-1}(y)\right)\left| \left(g^{-1}\right)'(y) \right|=2\l
 
 解: 
 $$P(Y=k)=P(k\leq x< k+1)=\displaystyle\int_{k}^{k+1}\lambda e^{-\lambda x}\mathrm{d}x=e^{-\lambda k}-e^{-\lambda (k+1)}=(1-e^{-\lambda})e^{-\lambda k}.$$
-故$Y$服从参数为$p=1-e^{-\lambda}$的几何分布, 即$Y\sim Ge(p=1-e^{-\lambda})$.
+故$Y$服从从0开始计数的、参数为$p=1-e^{-\lambda}$的几何分布, 即$Y\sim Ge(p=1-e^{-\lambda})$.
 $$
 \begin{aligned}
 P(k\leq X<k+z)
@@ -2211,7 +2225,7 @@ $\Longrightarrow$ $f_{Z}(z)=F_{Z}'(z)=\displaystyle\frac{\lambda e^{-\lambda z}}
 考虑$Y$, $Z$的联合分布:
 $$f_{Y,Z}(k,z)=f_{X}(k+z)=\lambda e^{-\lambda(k+z)}=P(Y=k)f_{Z}(z) \Longrightarrow Y, Z\text{独立}.$$
 \textcolor{themeColor}{\selectfont \ding{226} 截断指数分布(Truncated Exponential Distribution), 若我们希望变量只在区间$[a,b]$上有分布, 而原始指数分布是$Exp(\lambda)$, 故而为保持概率空间的规范性, 其截断版本的密度函数为:
-$$f_{X|a\leq X\leq b}(X)=\displaystyle\frac{\lambda e^{-\lambda x}}{e^{-\lambda a}-e^{\lambda b}},$$
+$$f_{X|a\leq X\leq b}(X)=\displaystyle\frac{\lambda e^{-\lambda x}}{e^{-\lambda a}-e^{-\lambda b}},$$
 记为$X\sim Exp(\lambda)|a\leq X\leq b$或$X\sim TruncExp(\lambda;a,b)$.}
 
 \vspace{2.5cm-5em}
@@ -2270,7 +2284,7 @@ $$f_{Y_1}(y)=f_{X}(\ln y)|(\ln y)'|=\displaystyle\frac{e^{-(\ln y)^2/2}}{\sqrt{2
 (2) $Y_2(X)$在$(-\infty,0)$与$(0,\infty)$上分段单调 $\Longrightarrow$ 由推广的密度变换公式:
 $$f_{Y_2}(y)=f_{X}(y)+f_{X}(-y)=2f_{X}(y)=\displaystyle\sqrt{\frac{2}{\pi}}e^{-y^2/2},\ y \geq 0.$$
 (3) $Y_3(X)$在$(-\infty,0)$与$(0,\infty)$上分段单调 $\Longrightarrow$ 由推广的密度变换公式:
-$$f_{Y_3}(y)=\sum f_{X}(\sqrt{\pm\displaystyle\frac{y-1}{2}})\left|\pm\sqrt{\displaystyle\frac{y-1}{2}}'\right|=\displaystyle\frac{e^{-(y-1)/4}}{2\sqrt{\pi(y-1)}},\ y > 1.$$
+$$f_{Y_3}(y)=\sum f_{X}(\pm\sqrt{\displaystyle\frac{y-1}{2}})\left|\pm\sqrt{\displaystyle\frac{y-1}{2}}'\right|=\displaystyle\frac{e^{-(y-1)/4}}{2\sqrt{\pi(y-1)}},\ y > 1.$$
 \textcolor{themeColor}{\selectfont \ding{226} 密度函数变换公式, 见课本P73; 推广的密度函数变换公式, 见课本P74的注.}
 
 \vspace{2.5cm-5em}
@@ -2301,7 +2315,7 @@ $$
 
 (1) 先确定$a$的值:
 $$\displaystyle\int_{0}^{3}f(x)\mathrm{d}x=\frac{9}{a}=1 \Longrightarrow a=9.$$
-$P(Y\leq y<1)=0$, $P(Y=1)=\displaystyle\int_{2}^{3}f(x)\mathrm{d}x=\frac{19}{27}$, $P(Y=2)=\displaystyle\int_{0}^{1}f(x)\mathrm{d}x=\frac{1}{27}$, $F_{Y}(y)=P(X=1)+\displaystyle\int_{1}^{y}f(x)\mathrm{d}x=\frac{y^3}{27}+\frac{2}{3},\ 1<y<2$ $\Longrightarrow$
+$P(Y\leq y<1)=0$, $P(Y=1)=\displaystyle\int_{2}^{3}f(x)\mathrm{d}x=\frac{19}{27}$, $P(Y=2)=\displaystyle\int_{0}^{1}f(x)\mathrm{d}x=\frac{1}{27}$, $F_{Y}(y)=P(Y=1)+\displaystyle\int_{1}^{y}f(x)\mathrm{d}x=\frac{y^3}{27}+\frac{2}{3},\ 1<y<2$ $\Longrightarrow$
 $$
     F_{Y}(y)=
     \left\{
@@ -2330,14 +2344,14 @@ $$
 解: 
 
 (1) $Y(X)$在$(0,1)$上严格单调递增 $\Longrightarrow$ 由密度函数变换公式:
-$$f_{Y}(y)=f_{X}(\displaystyle\frac{y}{1+y})\left|\left(\displaystyle\frac{y}{1+y}\right)'\right|=\displaystyle\frac{1}{(1+y)^2}.$$
+$$f_{Y}(y)=f_{X}(\displaystyle\frac{y}{1+y})\left|\left(\displaystyle\frac{y}{1+y}\right)'\right|=\displaystyle\frac{1}{(1+y)^2}, y>0.$$
 (2) 显然有:
 $$
     F_{Z}(z)=
     \left\{
     \begin{array}{ll}
         0, &z<0\\
-        a, &0\leq y\leq a\\
+        a, &0\leq z\leq a\\
         z, &a<z\leq 1\\
         1, &z>1
     \end{array}
@@ -2404,7 +2418,7 @@ $$p_{a}=\displaystyle\frac{\left(\frac{q}{p}\right)^{a}-\left(\frac{q}{p}\right)
 
 按照提示所说计算即可, 或者直接求出递推式$p(p_{n+1}-p_{n})=q(p_{n}-p_{n-1})$, 最后得到$p_{a}=\displaystyle\frac{\left(\frac{q}{p}\right)^{a}-\left(\frac{q}{p}\right)^{a+b}}{1-\left(\frac{q}{p}\right)^{a+b}}$. 
 
-令$\frac{q}{p}\to1$, 求$p_a$的极限, 或直接从头计算, 得到$p_a=\frac{b}{a+b}$. 显然, 若$a=o(b)$, 即$\lim\limits_{b\to\infty}\frac{a}{b}=0$, 则$\lim\limits_{b\to\infty}p_{a}=0$, 即甲几乎必定输光.
+令$\frac{q}{p}\to1$, 求$p_a$的极限, 或直接从头计算, 得到$p_a=\frac{b}{a+b}$. 显然, 若$a=o(b)$, 即$\lim\limits_{b\to\infty}\frac{a}{b}=0$, 则$\lim\limits_{b\to\infty}p_{a}=1$, 即甲几乎必定输光.
 
 看法: 单局游戏公平不代表全局游戏公平, 当对手资本远大于自身资本时, 资本小的一方几乎必然破产. 根本原因在于随机游走的波动性: 虽然期望的收益为0, 但方差的存在导致资本较少的一方更易触及吸收壁. (提示: 珍爱生命, 远离赌博.)\texttt{(。í \_ ì。)}
 
@@ -2579,7 +2593,7 @@ $$
     \setlength{\tabcolsep}{20pt}
     \begin{tabular}{c|c|c}
 	    \hline
-	    \diagbox{$X_2$}{$P(X,Y)$}{$X_1$} & 0 & 1 \\
+	    \diagbox{$X_2$}{$P(X_1,X_2)$}{$X_1$} & 0 & 1 \\
 	    \hline
 	    0 & 0.1 & 0.8 \\
 	    \hline
@@ -2685,7 +2699,7 @@ $$P(Y=2)=\sum\limits_{x=1}^{4}P(Y=2|X=x)\cdot P(X=x)=\frac{13}{48}.$$
 
 $(X,Y)\sim N(\mu_{X}=1,\mu_{Y}=0,\sigma_{X}^{2}=1,\sigma_{Y}^{2}=1,\rho=0)$ $\Longrightarrow$ $X\sim N(1,1)$, $Y\sim N(0,1)$, 且$\mathrm{Cov}(X,Y)=\rho\sigma_{X}\sigma_{Y}=0$ $\Longrightarrow$ $X$, $Y$相互独立 $\Longrightarrow$
 $$P(XY-Y<0)=P((X-1)Y<0)=P(X<1,Y>0)+P(X>1,Y<0)=0.5.$$
-\textcolor{themeColor}{\selectfont \ding{226} 二元正态分布的定义, 见课本P93. 课本上关于二元和多元正态分布的解释比较少, 我会在习题课及讲义里进行详细的补充和推导, 不然这部分内容不好理解. 其中$\rho$代表$X$与$Y$的相关系数, 定义见课本P146; $\mathrm{Cov}$代表协方差, 定义见课本P144. 两者的关系是$Cox(X,Y)=\rho_{X,Y}\sigma_{X}\sigma_{Y}$. 而独立可以推出协方差等于0, 但反之未必成立. 这里协方差等于0能推出独立是由正态分布的定义决定的(\textcolor{red}{当然这道题不需要知道这些结论, 直接从二元正态分布的定义出发令$\rho=0$即可}).}
+\textcolor{themeColor}{\selectfont \ding{226} 二元正态分布的定义, 见课本P93. 课本上关于二元和多元正态分布的解释比较少, 我会在习题课及讲义里进行详细的补充和推导, 不然这部分内容不好理解. 其中$\rho$代表$X$与$Y$的相关系数, 定义见课本P146; $\mathrm{Cov}$代表协方差, 定义见课本P144. 两者的关系是$Cov(X,Y)=\rho_{X,Y}\sigma_{X}\sigma_{Y}$. 而独立可以推出协方差等于0, 但反之未必成立. 这里协方差等于0能推出独立是由正态分布的定义决定的(\textcolor{red}{当然这道题不需要知道这些结论, 直接从二元正态分布的定义出发令$\rho=0$即可}).}
 
 \vspace{2.5cm-5em}
 
@@ -2711,8 +2725,8 @@ $$
     \left\{
     \begin{array}{l}
         \lim\limits_{x\to\infty,y\to\infty}F(x,y)=a(b+\frac{\pi}{2})(c+\frac{\pi}{2})=1\\
-        \lim\limits_{x\to\infty}F(x,y)=a(b-\frac{\pi}{2})(c+\arctan y)=0\\
-        \lim\limits_{y\to\infty}F(x,y)a(b+\arctan x)(c-\frac{\pi}{2})=0
+        \lim\limits_{x\to-\infty}F(x,y)=a(b-\frac{\pi}{2})(c+\arctan y)=0\\
+        \lim\limits_{y\to-\infty}F(x,y)a(b+\arctan x)(c-\frac{\pi}{2})=0
     \end{array}
     \right.
     \Longrightarrow
@@ -2879,7 +2893,7 @@ $$
 
 解: 
 $$\displaystyle\iint\limits_{0 < |x| < y < 1}A x^2\mathrm{d}x\mathrm{d}y=2\int_{0}^{1}\int_{0}^{y}A x^2\mathrm{d}x\mathrm{d}y=\frac{A}{6}=1 \Longrightarrow A=6.$$
-$$f_{Y}(y)=\displaystyle\int_{-\infty}^{+\infty}6x^2\mathrm{d}x=2\int_{0}^{y}6x^2\mathrm{d}x=4y^3 \Longrightarrow f_{X|Y}(x|y)=\frac{f(x,y)}{f_{Y}(y)}=\frac{3x^2}{2y^3}$$
+$$f_{Y}(y)=\displaystyle\int_{-y}^{+y}6x^2\mathrm{d}x=2\int_{0}^{y}6x^2\mathrm{d}x=4y^3 \Longrightarrow f_{X|Y}(x|y)=\frac{f(x,y)}{f_{Y}(y)}=\frac{3x^2}{2y^3}$$
 $$ \Longrightarrow P(X\leq0.25|Y=0.5)=\displaystyle\int_{-0.5}^{0.25}f_{X|Y}(x|0.5)\mathrm{d}x=\frac{9}{16}.$$
 
 \vspace{2.5cm-5em}
@@ -2931,7 +2945,16 @@ $$
 \vspace{\dimexpr2.5cm-5em\relax}
 
 解: 
-$$X\sim N(0,\sigma_{1}^{2}), Y\sim N(0,\sigma_{2}^{2}) \Longrightarrow X-Y\sim N(0,\sigma_{1}^{2}+\sigma_{2}^{2}) \Longrightarrow P(Z=1)=P(X\leq Y)=P(X-Y\leq 0)=\frac{1}{2}.$$
+$$
+X\sim N(0,\sigma_{1}^{2}), Y\sim N(0,\sigma_{2}^{2}) \Longrightarrow X-Y\sim N(0,\sigma_{1}^{2}+\sigma_{2}^{2})
+\Longrightarrow
+\left\{
+\begin{array}{l}
+P(Z=1)=P(X\leq Y)=P(X-Y\leq 0)=\frac{1}{2}\\
+P(Z=0)=1-P(Z=1)=\frac{1}{2}.
+\end{array}
+\right.
+$$
 \textcolor{themeColor}{\selectfont \ding{226} 服从正态分布的随机变量的线性组合: 若$X$, $Y$相互独立, $X\sim N(\mu_{X},\sigma_{X}^{2})$, $Y\sim N(\mu_{Y},\sigma_{Y}^{2})$, 则$aX+bY\sim N(a\mu_{X}+b\mu_{Y}, a^2 \sigma_{X}^{2}+b^2 \sigma_{Y}^{2})$, 证明与课本P109例3.22同理.}
 
 \vspace{2.5cm-5em}
@@ -2960,7 +2983,7 @@ $$
 解: 
 
 (1)
-$$\displaystyle\iint\limits_{\mathbb{R}^2}f(x,y)\mathrm{d}x\mathrm{d}y=\iint\limits_{x^2+y^2<R^2}c(R-\sqrt{x^2+y^2})\mathrm{d}x\mathrm{d}y=\int_{0}^{2\pi}\int_{0}^{R}c(R-r)r\mathrm{d}r\mathrm{d}\theta=\frac{\pi R^3}{3}=1 \Longrightarrow c=\frac{3}{\pi R^3}.$$
+$$\displaystyle\iint\limits_{\mathbb{R}^2}f(x,y)\mathrm{d}x\mathrm{d}y=\iint\limits_{x^2+y^2<R^2}c(R-\sqrt{x^2+y^2})\mathrm{d}x\mathrm{d}y=\int_{0}^{2\pi}\int_{0}^{R}c(R-r)r\mathrm{d}r\mathrm{d}\theta=\frac{c\pi R^3}{3}=1 \Longrightarrow c=\frac{3}{\pi R^3}.$$
 (2)
 $$p=\displaystyle\iint\limits_{x^2+y^2\leq r^2}f(x,y)\mathrm{d}x\mathrm{d}y=\int_{0}^{2\pi}\int_{0}^{r}c(R-\rho)\rho\mathrm{d}\rho\mathrm{d}\theta=\frac{r^2(3R-2r)}{R^3}.$$
 
@@ -3034,7 +3057,7 @@ $$
     \end{array}
     \right.
 $$
-(3)
+(2)
 
 \ding{172} 通过边缘密度函数积分:
 $$f_{Y}(y)=\int_{-\infty}^{+\infty}f_{X,Y}(x,y)\mathrm{d}x=\int_{y}^{+\infty}e^{-x}\mathrm{d}x=e^{-y},\ y>0 \Longrightarrow F_{Y}(y)=\int_{-\infty}^{y}f_{Y}(v)\mathrm{d}v=(1-e^{-y})I_{(0,\infty)}(y).$$
@@ -3072,7 +3095,7 @@ $$P(Y=k)=\int_{0}^{+\infty}\frac{x^{k}}{k!}e^{-2x}\mathrm{d}x=\frac{1}{k!}\int_{
 解: 
 
 $0\leq x\leq 2, 0\leq y\leq 2$ $\Longrightarrow$ $z=|x-y|\in[0,2]$. $f_{X,Y}(x,y)=\frac{1}{4}I_{[0,2]}(x)I_{[0,2]}(y)$.
-$$F_{Z}(z)=P(|X-Y|\leq z)=P(X-z\leq Y\leq X+z)=\frac{4-(2-z)^2}{4},\ z\in[0.2] \Longrightarrow f_{Z}(z)=F'(z)=1-\frac{z}{2},\ z\in[0,2]$$
+$$F_{Z}(z)=P(|X-Y|\leq z)=P(X-z\leq Y\leq X+z)=\frac{4-(2-z)^2}{4},\ z\in[0,2] \Longrightarrow f_{Z}(z)=F'(z)=1-\frac{z}{2},\ z\in[0,2]$$
 
 \vspace{2.5cm-5em}
 
@@ -3175,6 +3198,16 @@ $$
         P(U=1,V=1)=P(X>2Y)=\int_{0}^{1}\int_{2Y}^{2}\frac{1}{2}\mathrm{d}x\mathrm{d}y=\displaystyle\frac{1}{2}
     \end{array}
     \right.
+\Longrightarrow
+F_{U,V}(u,v)=
+\left\{
+\begin{array}{ll}
+0, & u<0 \text{ 或 } v<0,\\
+\dfrac{1}{4}, & 0\leq u<1,\ v\geq 0,\\
+\dfrac{1}{2}, & u\geq 1,\ 0\leq v<1,\\
+1, & u\geq 1,\ v\geq 1.
+\end{array}
+\right.
 $$
 
 \vspace{2.5cm-5em}
@@ -3358,25 +3391,31 @@ $$
 $$
 $$
     \Longrightarrow
-    Z\sim (1-p)\delta+p\cdot N(\mu,\sigma^2)
+    Z\sim (1-p)\delta_0+p\cdot N(\mu,\sigma^2)
 $$
 $XY$服从如上的混合分布.
 
-\textcolor{themeColor}{\selectfont \ding{226} $\delta$: 狄拉克函数, 满足\[
-\delta(x) =
-\begin{cases}
-\infty & \text{当 } x = 0 \\
-0 & \text{当 } x \neq 0
-\end{cases}
-\quad \text{且} \quad \int_{-\infty}^{\infty} \delta(x) \, dx = 1
-\]
-直观理解为一个无限高、无限窄但面积为1的尖峰, 所有的质量都集中在0点上.\\
-它在积分中的一个性质:
+\textcolor{themeColor}{\selectfont \ding{226}
+$\delta_0$: 集中在$0$点的狄拉克分布. 若将其形式地写成广义密度$\delta(x)$,
+则可以直观地理解为
 \[
-\int_{-\infty}^{\infty} \delta(x - a) f(x) \, dx = f(a)
+\delta(x)=
+\begin{cases}
+\infty, & \text{当 }x=0,\\
+0, & \text{当 }x\neq0,
+\end{cases}
+\qquad
+\int_{-\infty}^{+\infty}\delta(x)\,\mathrm{d}x=1.
 \]
-这道题之所以要使用狄拉克函数, 本质在于``离散型随机变量''对应的``概率''与``连续型随机变量''对应的``概率密度''的差异: 连续型随机变量在任意一点的概率都是0, 因为随机变量的概率是依托于样本集的测度比的, 离散型随机变量的点概率可能大于0是因为虽然样本点在整个实数集中的测度是0, 但样本空间的总测度也是0, 且样本点与样本空间的测度比是非负的, 此时可以简单理解为每个样本点所占的权重相同且非负; 但连续型随机变量的样本点测度为0而样本空间的总测度非0, 故而每一点的概率均为0, 而非概率密度. 只有对概率密度通过积分的方式求一个正测集上的概率才可能得到正值. 相反的, 要将离散型随机变量的概率转换成概率密度, 则需要借助狄拉克函数: 
-$$f_{X}(x)=P(X=a)\delta(x-a)$$}
+需要注意的是, 上式只是帮助理解的直观表示, 并不是普通函数意义下的逐点定义. 可以将其想象成一个无限高、无限窄但面积为$1$的尖峰, 所有的概率质量都集中在$0$点上. 它在积分中的一个性质为
+\[
+\int_{-\infty}^{+\infty}\delta(x-a)f(x)\,\mathrm{d}x=f(a).
+\]
+这道题之所以要使用狄拉克分布, 本质在于``离散型随机变量''对应的``概率质量''与``连续型随机变量''对应的``概率密度''之间的差异: 连续型随机变量在任意一点的概率都是$0$, 这是因为它的概率分布关于Lebesgue测度绝对连续, 而单点集的Lebesgue测度为$0$; 离散型随机变量的概率分布则可以直接在某些点上赋予正的概率质量. 因此, 连续型随机变量需要通过对概率密度积分来求相应集合上的概率. 相反, 若要把离散型随机变量的概率写成类似密度的形式, 则可以借助狄拉克函数. 若离散型随机变量$X$以概率$p_i$取值$a_i$, 则其广义密度可以形式地写为
+\[
+f_X(x)=\sum_i p_i\delta(x-a_i).
+\]
+}
 
 \textcolor{themeColor}{\selectfont \ding{226} 混合分布: 给定一组分布\( f_1(x), f_2(x), \dots, f_k(x) \), 和相应的权重(或混合概率)\( \pi_1, \pi_2, \dots, \pi_k \), 其中:
 \( \pi_i \geq 0 \), 
@@ -3417,7 +3456,7 @@ $$
 $$X,Y\text{相互独立} \Longrightarrow f_{X,Y}(x,y)=f_{X}(x)f_{Y}(y)=\displaystyle\frac{1}{2}e^{-y/2}I_{(0,1)}(x)I_{(0,+\infty)}(y).$$
 (2)
 $$\Delta=4(X^2-Y)\geq 0 \Longrightarrow p=P(Y\leq X^2)=\displaystyle\iint\limits_{Y\leq X^2}f_{X,Y}(x,y)\mathrm{d}x\mathrm{d}y=\int_{0}^{1}\int_{0}^{x^2}\frac{1}{2}e^{-y/2}\mathrm{d}y\mathrm{d}x=\int_{0}^{1}(1-e^{-x^2/2})\mathrm{d}x$$
-$$=1-\sqrt{2\pi}\int_{0}^{1}\phi(x)\mathrm{d}x=1-\sqrt{2\pi}(\Phi(1)-\Phi(0))\approx0.1446\text{(查表(课本附表1))}.$$
+$$=1-\sqrt{2\pi}\int_{0}^{1}\phi(x)\mathrm{d}x=1-\sqrt{2\pi}(\Phi(1)-\Phi(0))\approx0.1444\text{(查表(课本附表1))}.$$
 
 \vspace{2.5cm-5em}
 
@@ -3552,7 +3591,7 @@ $$
 $$
 $(m-n)^{-1}$唯一, 要求$(m-n,K)=1$, 从而此时$Y$唯一$\Longrightarrow$$X$也唯一.
 
-综上所述, $Z_n$具有两两独立性 $\Longleftrightarrow$ $(m-n,K)=1$.
+综上所述, 设$T$为随机变量族$\{Z_n\}$的完整指标集,$\{Z_n:n\in T\}$ 具有两两独立性 $\Longleftrightarrow$ $(m-n,K)=1$, $\forall$ $m,n\in T$, $m\neq n$.
 
 一般独立性: 对$\forall k\geq2$, $\forall 1\leq n_1\leq n_2\cdots\leq n_k$, 有$Z_{n_1}$, $Z_{n_2}$, $\cdots$, $Z_{n_k}$相互独立, 显然整个序列/方程组的自由度为2, 即不妨选取$Z_{n_1}$, $Z_{n_2}$, 则对$\forall 1\leq i\leq k$, $Z_{n_i}$均可被$Z_{n_1}$, $Z_{n_2}$线性表示. 故易知$k\geq3$时, $\{Z_{n}\}$不具有相互独立性.
 
@@ -3594,7 +3633,7 @@ $$f_{X}(x)=\int_{0}^{+\infty}f(x,y)\mathrm{d}y=3e^{-3x}\qquad f_{Y}(y)=\int_{0}^
 (3) 由(2)知$X$, $Y$独立, 故由卷积公式:
 $$f_{Z}(z)=\int_{0}^{z}f_{X}(x)f_{Y}(z-x)\mathrm{d}x=12e^{-4z}(e^{z}-1),\ z\geq0.$$
 (4) 先求条件密度函数, 再积分:
-$$f_{X|Z}(x|z)=\frac{f_{X,Y}(x,z-x)}{f_{Z}(z)}=\frac{e^{x}}{e-1},\ 0<x<1 \Longrightarrow P(X>0.5|X+Y=1)=\int_{0.5}^{1}f_{X|Z}(x|1)\mathrm{d}x=\frac{\sqrt{e}}{\sqrt{e}+1}.$$
+$$f_{X|Z}(x|z)=\frac{f_{X,Y}(x,z-x)}{f_{Z}(z)}=\frac{e^{x}}{e^{z}-1},\ 0<x<z \Longrightarrow P(X>0.5|X+Y=1)=\int_{0.5}^{1}f_{X|Z}(x|1)\mathrm{d}x=\frac{\sqrt{e}}{\sqrt{e}+1}.$$
 \textcolor{themeColor}{\selectfont \ding{226} 卷积, 见课本P106例3.19.}
 
 \vspace{2.5cm-5em}
@@ -3826,7 +3865,7 @@ $$
 解: 
 
 (1)
-$$F_{X}(x)=\lim\limits_{y\to\infty}F(x,y)=1-(x+1)e^{-x},\ x>0\qquad F_{Y}(y)=\lim\limits_{X\to\infty}=\frac{y}{1+y},\ y>0.$$
+$$F_{X}(x)=\lim\limits_{y\to\infty}F(x,y)=1-(x+1)e^{-x},\ x>0\qquad F_{Y}(y)=\lim\limits_{x\to\infty}F(x,y)=\frac{y}{1+y},\ y>0.$$
 (2)
 $$f(x,y)=\frac{\partial^2 F(x,y)}{\partial x\partial y}=\frac{x e^{-x}}{(1+y)^2},\ x>0,y>0$$
 $$f_{X}(x)=F_{X}^{'}(x)=x e^{-x},\ x>0\qquad f_{Y}(y)=F_{Y}^{'}(y)=\frac{1}{(1+y)^2},\ y>0.$$
@@ -3854,9 +3893,9 @@ $$
 \vspace{\dimexpr2.5cm-5em\relax}
 
 解: 
-$$f_{X}(x)=\int_{0}^{2\pi}\int_{0}^{2\pi}f(x,y,z)\mathrm{d}y\mathrm{d}z=\frac{1}{2\pi},\ 0\leq x\leq 2\pi \overset{\text{对称性}}{\Longrightarrow} f_{Y}(y)=\frac{1}{2\pi},\ 0\leq y\leq 2\pi;\ f_{Z}(z)=\frac{1}{2},\ 0\leq z\leq 2\pi.$$
+$$f_{X}(x)=\int_{0}^{2\pi}\int_{0}^{2\pi}f(x,y,z)\mathrm{d}y\mathrm{d}z=\frac{1}{2\pi},\ 0\leq x\leq 2\pi \overset{\text{对称性}}{\Longrightarrow} f_{Y}(y)=\frac{1}{2\pi},\ 0\leq y\leq 2\pi;\ f_{Z}(z)=\frac{1}{2\pi},\ 0\leq z\leq 2\pi.$$
 $$f_{X,Y}(x,y)=\int_{0}^{2\pi}f(x,y,z)\mathrm{d}z=\frac{1}{4\pi^2}=f_{X}(x)f_{Y}(y) \Longrightarrow X,Y\text{相互独立} \overset{\text{对称性}}{\Longrightarrow} X,Y,Z\text{两两独立}.$$
-$f(x,y,x)\neq f_{X}(x)f_{Y}(y)f_{Z}(z)$ $\Longrightarrow$ $X$, $Y$, $Z$不相互独立.
+$f_{X,Y,Z}(x,y,z) - f_{X}(x)f_{Y}(y)f_{Z}(z) = -\frac{\sin x \sin y\sin z}{8\pi^3} \neq 0$ $\Longrightarrow$ $X$, $Y$, $Z$不相互独立.
 
 \vspace{2.5cm-5em}
 
@@ -3947,6 +3986,18 @@ F_{W}(w)\in \text{AC}(\mathbb{R})
 
 若$P(Y=0)\neq0$, 则$w=0$处有一个正的点概率, 从而$F_{w}(w)$无法表示为一般lebesgue意义下的积分 $\Longrightarrow$ $W$不是连续型随机变量.
 
+特别地, 当$X\sim N(\mu,\sigma^2)$, $Y\sim B(1,p)$时,
+$P(Y=0)=1-p$, $P(Y=1)=p$, 故
+\[
+F_W(w)
+=p\Phi\left(\frac{w-\mu}{\sigma}\right)
++(1-p)I_{[0,+\infty)}(w).
+\]
+即$W$以概率$1-p$取值$0$, 以概率$p$服从正态分布
+$N(\mu,\sigma^2)$. 因此, 当$0\leq p<1$时, $W$在$0$点有
+正的点概率, 不是连续型随机变量; 当$p=1$时,
+$W\sim N(\mu,\sigma^2)$, 是连续型随机变量.
+
 \textcolor{themeColor}{\selectfont \ding{226} 点概率、概率与概率密度的区别与联系, 见29题注释, 其中对于这道题, 虽然离散型随机变量的分布函数可以表示为狄拉克函数的积分, 但狄拉克函数代表的是离散测度, 而非Lebesgue测度, 故不能推出是连续型随机变量.}
 
 \vspace{2.5cm-5em}
@@ -4021,7 +4072,7 @@ F_X(y), & a \leq y < b \\
 
 由协方差的线性性:
 $$\mathrm{Cov}(X+bY,X-bY)=\mathrm{Var}(X)-b^2 \mathrm{Var}(Y)=\sigma_{1}^2-b^2 \sigma_{2}^2=0 \Longrightarrow b=\pm\frac{\sigma_1}{\sigma_2}.$$
-\textcolor{themeColor}{\selectfont \ding{226} 二元正态分布的定义, 见课本P93. 课本上关于二元和多元正态分布的解释比较少, 我会在习题课及讲义里进行详细的补充和推导, 不然这部分内容不好理解. 其中$\rho$代表$X$与$Y$的相关系数, 定义见课本P146; $\mathrm{Cov}$代表协方差, 定义及性质见课本P144. 两者的关系是$Cox(X,Y)=\rho_{X,Y}\sigma_{X}\sigma_{Y}$. 而独立可以推出协方差等于0, 但反之未必成立. 这里协方差等于0能推出独立是由多元正态分布的定义决定的.}
+\textcolor{themeColor}{\selectfont \ding{226} 二元正态分布的定义, 见课本P93. 课本上关于二元和多元正态分布的解释比较少, 我会在习题课及讲义里进行详细的补充和推导, 不然这部分内容不好理解. 其中$\rho$代表$X$与$Y$的相关系数, 定义见课本P146; $\mathrm{Cov}$代表协方差, 定义及性质见课本P144. 两者的关系是$Cov(X,Y)=\rho_{X,Y}\sigma_{X}\sigma_{Y}$. 而独立可以推出协方差等于0, 但反之未必成立. 这里协方差等于0能推出独立是由多元正态分布的定义决定的.}
 
 \vspace{2.5cm-5em}
 
@@ -4046,18 +4097,34 @@ $$P(XY<0)=1-2P(X>0,Y>0)=\pi^{-1}\arccos \rho.$$
 \[
 \mathrm{Cov}(X, Z) = \mathrm{Cov}\left(X, \frac{Y - \rho X}{\sqrt{1 - \rho^2}}\right) = \frac{1}{\sqrt{1 - \rho^2}} \left( \mathrm{Cov}(X, Y) - \rho \, \mathrm{Var}(X) \right) = \frac{1}{\sqrt{1 - \rho^2}} \left( \rho - \rho \cdot 1 \right) = 0
 \]
+又因为$(X,Z)$是二维正态随机向量$(X,Y)$的线性变换, 所以$(X,Z)$仍服从二维正态分布. 因此, $\mathrm{Cov}(X,Z)=0$可以推出$X$与$Z$相互独立.
+
 (2) 由对称性, $P(XY<0)=2P(X>0,Y<0)=1-2P(X>0,Y>0)$.
 
-$Z=\frac{Y-\rho X}{\sqrt{1-\rho^2}}$为$X$, $Y$的线性组合, 且$E[Z]=\frac{1}{\sqrt{1-\rho^2}}E[Y]-\frac{\rho}{\sqrt{1-\rho^2}}E[X]=0$, $\mathrm{Var}(Z)=\frac{1}{\sqrt{1-\rho^2}}\mathrm{Var}(Y)-\frac{\rho^2}{\sqrt{1-\rho^2}}\mathrm{Var}(x)=1$ $\Longrightarrow$ $Z\sim N(0,1)$. 故:
+$Z=\frac{Y-\rho X}{\sqrt{1-\rho^2}}$为$X$, $Y$的线性组合, 且$E[Z]=\frac{1}{\sqrt{1-\rho^2}}E[Y]-\frac{\rho}{\sqrt{1-\rho^2}}E[X]=0$,
+\[
+\begin{aligned}
+\mathrm{Var}(Z)
+&=\frac{\mathrm{Var}(Y-\rho X)}{1-\rho^2}\\
+&=\frac{\mathrm{Var}(Y)+\rho^2\mathrm{Var}(X)
+-2\rho\,\mathrm{Cov}(X,Y)}{1-\rho^2}\\
+&=\frac{1+\rho^2-2\rho^2}{1-\rho^2}=1.
+\end{aligned}
+\Longrightarrow
+Z\sim N(0,1).
+\]
+故:
 $$
 \begin{aligned}
 P(X>0,Y>0)=P(X>0,\rho X+\sqrt{1-\rho^2}Z>0)&=P(X>0,Z>-\frac{\rho X}{\sqrt{1-\rho^2}})\\
 &\xlongequal{\text{独立}}\int_{0}^{+\infty}\phi(x)\int_{-\frac{\rho X}{\sqrt{1-\rho^2}}}^{+\infty}\phi(z)\mathrm{d}z\mathrm{d}x\\
-&=\pi^{-1}\arccos \rho.
+&=\frac{1}{4}+\frac{1}{2\pi}\arcsin\rho\\
+&=\frac{1}{2}-\frac{1}{2\pi}\arccos\rho.
 \end{aligned}
 $$
+因此, $P(XY<0) = 1-2P(X>0,Y>0) = 1-2\left(\frac{1}{2}-\frac{1}{2\pi}\arccos\rho\right) = \frac{1}{\pi}\arccos\rho$.
 
-\textcolor{themeColor}{\selectfont \ding{226} 二元正态分布的定义, 见课本P93. 课本上关于二元和多元正态分布的解释比较少, 我会在习题课及讲义里进行详细的补充和推导, 不然这部分内容不好理解. 其中$\rho$代表$X$与$Y$的相关系数, 定义见课本P146; $\mathrm{Cov}$代表协方差, 定义及性质见课本P144. 两者的关系是$Cox(X,Y)=\rho_{X,Y}\sigma_{X}\sigma_{Y}$. 而独立可以推出协方差等于0, 但反之未必成立. 这里协方差等于0能推出独立是由多元正态分布的定义决定的. 这里的期望($E$)以及方差($\mathrm{Var}$)都是后面的内容, 包括直接判断$Z$服从的分布类型等, 放在这里还是太超纲了, 想要在这一章仅凭定义就做出来不太现实, 建议可以后面学完了再回头看.}
+\textcolor{themeColor}{\selectfont \ding{226} 二元正态分布的定义, 见课本P93. 课本上关于二元和多元正态分布的解释比较少, 我会在习题课及讲义里进行详细的补充和推导, 不然这部分内容不好理解. 其中$\rho$代表$X$与$Y$的相关系数, 定义见课本P146; $\mathrm{Cov}$代表协方差, 定义及性质见课本P144. 两者的关系是$Cov(X,Y)=\rho_{X,Y}\sigma_{X}\sigma_{Y}$. 而独立可以推出协方差等于0, 但反之未必成立. 这里协方差等于0能推出独立是由多元正态分布的定义决定的. 这里的期望($E$)以及方差($\mathrm{Var}$)都是后面的内容, 包括直接判断$Z$服从的分布类型等, 放在这里还是太超纲了, 想要在这一章仅凭定义就做出来不太现实, 建议可以后面学完了再回头看.}
 
 \vspace{2.5cm-5em}
 
@@ -4084,7 +4151,7 @@ $$
     \left\{
 \begin{array}{l}
 \displaystyle P(X_1 = N_1, \dots, X_n = N_n) = \binom{N}{N_1}\binom{N-N_1}{N_2}\cdots\binom{N-\sum\limits_{k=1}^{n-1}N_{k}}{N_n}p_1^{N_1} \cdots p_n^{N_n} = \frac{N!}{N_1! \cdots N_n!} p_1^{N_1} \cdots p_n^{N_n}\\
-X_l\sim B(N,N_l) \Longrightarrow P(X_l=N_l)=\binom{N}{N_l}p_l^{N_l}(1-p_l)^{N-N_l}
+X_l\sim B(N,p_l) \Longrightarrow P(X_l=N_l)=\binom{N}{N_l}p_l^{N_l}(1-p_l)^{N-N_l}
 \end{array}
     \right.
 $$
@@ -4096,7 +4163,9 @@ $$
 =&\frac{(N-N_l)!}{N_1!\cdots N_{l-1}!\cdots N_{l+1}!\cdots N_n!}\left(\frac{p_1}{1-p_l}\right)^{N_1}\cdots\left(\frac{p_{l-1}}{1-p_l}\right)^{N_{l-1}}\left(\frac{p_{l+1}}{1-p_l}\right)^{N_{l+1}}\cdots\left(\frac{p_n}{1-p_l}\right)^{N_n}
 \end{aligned}
 $$
-故$\displaystyle(X_1,X_2,\cdots,N-N_l-\sum\limits_{1\leq k\leq n,k\neq l}X_{k},\cdots,X_n)\sim M(N-N_{l},\frac{p_1}{1-p_l},\cdots,1-\frac{\sum\limits_{1\leq k\leq n,k\neq l}p_{k}}{1-p_l},\cdots,\frac{p_n}{1-p_l})$. 对$n=3$, 自然成立.
+故在给定$X_l=N_l$的条件下, $(X_1,\cdots,X_{l-1},X_{l+1},\cdots,X_n)\sim M(N-N_l,\frac{p_1}{1-p_l},\cdots,\frac{p_{l-1}}{1-p_l},\frac{p_{l+1}}{1-p_l},\cdots,\frac{p_n}{1-p_l})$. 
+
+进一步将第$i$, $j$, $l$类以外的其他类别合并为一类, 并记$Z=\sum_{k\neq i,j,l}X_k=N-N_l-X_i-X_j$, 则由上述一般结论可得$(X_i,X_j,Z)\sim M(N-N_l,\frac{p_i}{1-p_l},\frac{p_j}{1-p_l},1-\frac{p_i+p_j}{1-p_l})$.
 
 (2)
 将 \( A_1, A_2, \ldots, A_j \) 合并为一个新事件 \( B \), 其概率为 \( p = p_1 + p_2 + \cdots + p_j \). 其余事件 \( A_{j+1}, \ldots, A_n \) 合并为 \( B^c \), 其概率为 \( 1 - p \).
@@ -4135,7 +4204,7 @@ $$
     \left\{
 \begin{array}{l}
     \frac{93}{16}=5.8125,\ p=0.5\\
-    \frac{89088}{15625}\approx5.6973,\ p=0.6
+    \frac{89020}{15625}\approx5.6973,\ p=0.6
 \end{array}
     \right.
 $$
@@ -4170,10 +4239,10 @@ $$
 $$E(X)=\displaystyle\int_{0}^{\infty}xf(x)\mathrm{d}x=\int_{0}^{\infty}\int_{0}^{x}f(x)\mathrm{d}t\mathrm{d}x=\int_{0}^{\infty}\int_{t}^{\infty}f(x)\mathrm{d}x\mathrm{d}t=\int_{0}^{\infty}P(X>t)\mathrm{d}t=\int_{0}^{\infty}(1-F(t))\mathrm{d}t.$$
 (3)
 
-由于一般随机变量的密度函数不一定存在, 故记数学期望为(Lebesgue-Stieltjes积分):
+由于一般随机变量的密度函数不一定存在, 故记数学期望为(Lebesgue积分):
 $$E(X)=\int_{\Omega}X(\omega)\mathrm{d}P(\omega)$$
 若随机变量非负, 再利用示性函数:
-$$E(X)=\int_{\Omega}\left(\int_{0}^{\infty}I_{\{X(\omega)>t\}}\mathrm{d}t\right)\mathrm{d}P(\omega) \xlongequal{Tonelli}\int_{0}^{\infty}\left(\int_{\Omega}I_{\{X(\omega>t)\}}\mathrm{d}P(\omega)\right)\mathrm{d}t=\int_{0}^{\infty}P(X>t)\mathrm{d}t=\int_{0}^{\infty}(1-F(t))\mathrm{d}t$$
+$$E(X)=\int_{\Omega}\left(\int_{0}^{\infty}I_{\{X(\omega)>t\}}\mathrm{d}t\right)\mathrm{d}P(\omega) \xlongequal{Tonelli}\int_{0}^{\infty}\left(\int_{\Omega}I_{\{X(\omega)>t\}}\mathrm{d}P(\omega)\right)\mathrm{d}t=\int_{0}^{\infty}P(X>t)\mathrm{d}t=\int_{0}^{\infty}(1-F(t))\mathrm{d}t$$
 \textcolor{themeColor}{\selectfont \ding{226}
 Tonelli定理:\\
 设 $(X, \mathcal{A}, \mu)$ 和 $(Y, \mathcal{B}, \nu)$ 是$\sigma$有限的测度空间, 且函数 $f: X \times Y \to [0, \infty]$ 在 $\mathcal{A} \otimes \mathcal{B}$上非负可测, 则有:
@@ -4198,7 +4267,7 @@ E(X)
 &\xlongequal{Fubini} \int_{0}^{\infty} \left( \int_{x}^{\infty} f(t) \, dt \right) dx - \int_{-\infty}^{0} \left( \int_{-\infty}^{x} f(t) \, dt \right) dx \\
 &= \int_{0}^{\infty} (1 - F(x)) \, dx - \int_{-\infty}^{0} F(x) \, dx.
 \end{align*}
-同理, 对于一般的离散型随机变量, 我们有:
+同理, 对于数学期望存在的一般整值随机变量, 我们有:
 \[
 E(X) = \sum_{k=1}^{\infty} P(X \geq k) - \sum_{k=-\infty}^{-1} P(X \leq k)
 \]
@@ -4217,8 +4286,8 @@ E(X) = \sum_{k=1}^{\infty} P(X \geq k) - \sum_{k=-\infty}^{-1} P(X \leq k)
 
 解: 
 
-记$X=0.5 X_{1}+0.5 X_{2}$, 其中$X_{1}\sim N(0,1)$, $X_{2}\sim N(4,4)$. 故由期望的线性性:
-$$E(X)=0.5 E(X_{1})+0.5 E(X_{2})=0.5\times0+0.5\times4=2$$
+由题给分布函数可知, $X$的分布是$N(0,1)$与$N(4,4)$的等权混合, 故$E(X)=0.5\times0+0.5\times4=2$.
+
 \textcolor{themeColor}{\selectfont \ding{226}
 标准化变换: $X\sim N(\mu,\sigma^2)$ $\Longleftrightarrow$ $F(x)=\Phi(\frac{x-\mu}{\sigma})$, 见课本P71.}
 
@@ -4354,9 +4423,9 @@ $$
 
 解: 
 
-记$X$为单个盲盒内食品的价格(成本), 则盲盒的平均价格(成本)为:
+记$X$为单个盲盒内食品的价格, 则盲盒的平均价格为:
 $$E(X)=0.2\times5+0.3\times10+0.3\times15+0.1\times20+0.1\times50=15.5$$
-从而盲盒的售价为$\frac{x-15.5}{x}=18\%$ $\Longrightarrow$ $x\approx18.90$ (元). 平均每天的毛利润为$1500\times18.90\times0.18=5103$ (元). 每天增加的利润为$\Delta=5103-1000\times15\times0.2=2103$ (元).
+从而盲盒营销模式下平均每天的毛利润为$1500\times E(X)\times18\%=1500\times15.5\times0.18=4185$ (元). 传统营销模式下平均每天的毛利润为$1000\times15\times0.2=3000$ (元). 故平均每天增加的利润为$\Delta=4185-3000=1185$ (元).
 
 \vspace{2.5cm-5em}
 
@@ -4443,9 +4512,26 @@ $n=1$时, $P(A_1)=\frac{a}{a+b}$; 假设$n=k$时, $P(A_k)=\frac{a}{a+b}$,
 解: 
 
 归一化条件解得$C$:
-$$\sum\limits_{k=1}^{\infty}P(X=k)=C\sum\limits_{k=1}^{\infty}\frac{1}{k!}=Ce=1 \Longrightarrow C=\frac{1}{e}$$
+$$
+\sum\limits_{k=0}^{\infty}P(X=k)
+=C\sum\limits_{k=0}^{\infty}\frac{1}{k!}
+=Ce=1
+\Longrightarrow C=\frac{1}{e}.
+$$
 再求二阶原点矩:
-$$E(X^2)=\frac{1}{e}\sum\limits_{k=1}^{\infty}\frac{k^2}{k!}=\frac{1}{e}\sum\limits_{k=1}^{\infty}\frac{k+k(k-1)}{k!}=\frac{1}{e}\sum\limits_{k=1}^{\infty}\left(\frac{1}{(k-1)!}+\frac{1}{(k-2)!}\right)=2$$
+$$
+E(X^2)
+=\frac{1}{e}\sum\limits_{k=0}^{\infty}\frac{k^2}{k!}
+=\frac{1}{e}\left[
+\sum\limits_{k=1}^{\infty}\frac{k}{k!}
++\sum\limits_{k=2}^{\infty}\frac{k(k-1)}{k!}
+\right]
+=\frac{1}{e}\left[
+\sum\limits_{k=1}^{\infty}\frac{1}{(k-1)!}
++\sum\limits_{k=2}^{\infty}\frac{1}{(k-2)!}
+\right]
+=2.
+$$
 
 \vspace{2.5cm-5em}
 
@@ -4579,7 +4665,7 @@ $$
 (1) $P(\text{sgn}=1)=P(0<X\leq1)=\displaystyle\frac{1}{3}$, $P(\text{sgn}=0)=P(X=0)=0$, $P(\text{sgn}=-1)=P(-2\leq x<0)=\displaystyle\frac{2}{3}$ $\Longrightarrow$ $E(\text{sgn}(X))=-\displaystyle\frac{1}{3}$, $E(\left[\text{sgn}(X)\right]^2)=1$.
 
 故方差为:
-$$\mathrm{Var}(X)=E(X^2)-\left[E(X)\right]^2=\frac{8}{9}$$
+$$\mathrm{Var}(\text{sgn}(X))=E(X^2)-\left[E(X)\right]^2=\frac{8}{9}$$
 (2)
 
 注意到$\text{sgn}(X)\cdot X=|X|$, 则由佚名统计学家公式:
@@ -4608,7 +4694,7 @@ $$f(x)=\displaystyle\frac{1}{\pi(1+x^2)},\quad -\infty<x<\infty.$$
 $$
 \begin{array}{ll}
 E(\min\{|X|,1\})=\displaystyle\int_{-\infty}^{+\infty}\min\{|X|,1\}\cdot\frac{1}{\pi(1+x^2)}\mathrm{d}x & =\displaystyle 2\int_{0}^{+\infty}\min\{X,1\}\cdot\frac{1}{\pi(1+x^2)}\mathrm{d}x\\
-& =\displaystyle 2\left[\int_{0}^{+\infty}x\cdot\frac{1}{\pi(1+x^2)}\mathrm{d}x+\int_{0}^{+\infty}1\cdot\frac{1}{\pi(1+x^2)}\mathrm{d}x\right]\\
+& =\displaystyle 2\left[\int_{0}^{1}x\cdot\frac{1}{\pi(1+x^2)}\mathrm{d}x+\int_{1}^{+\infty}1\cdot\frac{1}{\pi(1+x^2)}\mathrm{d}x\right]\\
 & =\displaystyle \frac{1}{2}+\frac{\ln 2}{\pi}.
 \end{array}
 $$
@@ -4635,9 +4721,9 @@ $$
 
 从而:
 $$f_{Y}(y)=f_{X}(1)\cdot f_{Y|X=1}(y)+f_{X}(2)\cdot f_{Y|X=2}(y)=\frac{1}{2}I_{(0,1)}+\frac{1}{4}I_{(0,2)} \Longrightarrow f_{Y}(y)=\frac{3}{4}I_{(0,1)}+\frac{1}{4}I_{[1,2)}$$
-$$\Longrightarrow F_{Y}(y)=\left(\frac{3}{4}y\right)I_{(0,1)}+\left(\frac{1}{2}+\frac{1}{4}y\right)I_{[1,2)}$$
+$$\Longrightarrow F_{Y}(y)=\left(\frac{3}{4}y\right)I_{(0,1)}+\left(\frac{1}{2}+\frac{1}{4}y\right)I_{[1,2)}+I_{[2,+\infty)}(y).$$
 (2)
-$$E(Y)=\displaystyle\int_{0}^{1}y\cdot\frac{3}{4}\mathrm{d}y+\int_{1}^{2}y\cdot\frac{1}{4}\mathrm{d}y=\frac{3}{4}$$
+$$E(Y)=\displaystyle\int_{0}^{1}y\cdot\frac{3}{4}\mathrm{d}y+\int_{1}^{2}y\cdot\frac{1}{4}\mathrm{d}y=\frac{3}{4}.$$
 
 \vspace{2.5cm-5em}
 
@@ -4666,7 +4752,7 @@ $$U=\displaystyle\frac{X+Y+|X-Y|}{2}=\frac{X+Y+Z}{2} \qquad V=\frac{X+Y-|X-Y|}{2
 $$E(U)=\frac{1}{2}\left[E(X)+E(Y)+E(Z)\right]=1+\frac{1}{2\sqrt{\pi}} \qquad E(V)=\frac{1}{2}\left[E(X)+E(Y)-E(Z)\right]=1-\frac{1}{2\sqrt{\pi}}$$
 \textcolor{themeColor}{\selectfont \ding{226} 数学期望的性质, 见课本P127; 方差的性质, 见课本P136.}
 
-\textcolor{themeColor}{\selectfont \ding{226} 正态组合的线性封闭性: 正态分布的线性组合仍为正态分布 (无论独立与否), 课本上似乎只有独立条件下的证明, 见课本P196.}
+\textcolor{themeColor}{\selectfont \ding{226} 正态组合的线性封闭性: 联合正态向量的线性组合仍为正态分布 (无论独立与否), 课本上似乎只有独立条件下的证明, 见课本P196.}
 
 \textcolor{themeColor}{\selectfont \ding{226} 推广的密度函数变换公式, 见课本P74的注.}
 
@@ -4687,7 +4773,7 @@ $$E(U)=\frac{1}{2}\left[E(X)+E(Y)+E(Z)\right]=1+\frac{1}{2\sqrt{\pi}} \qquad E(V
 
 解: 
 
-(1) 显然有$X_{2}|X_{1}=k\sim B(m-k,\displaystyle\frac{p_2}{1-p_1})$, $k\geq2$ $\Longrightarrow$ $E(X_2|X_1=k)=(m-k)\displaystyle\frac{p_2}{1-p_1}$, $\mathrm{Var}(X_2|X_1=k)=(m-k)\displaystyle\frac{p_2}{1-p_1}\left(1-\frac{p_2}{1-p_1}\right)$.
+(1) 显然有$X_{2}|X_{1}=k\sim B(m-k,\displaystyle\frac{p_2}{1-p_1})$ $\Longrightarrow$ $E(X_2|X_1=k)=(m-k)\displaystyle\frac{p_2}{1-p_1}$, $\mathrm{Var}(X_2|X_1=k)=(m-k)\displaystyle\frac{p_2}{1-p_1}\left(1-\frac{p_2}{1-p_1}\right)$.
 
 (2) 由期望的线性性: $E(X_1+X_2)=E(X_1)+E(X_2)=m(p_1+p_2)$.
 
@@ -4729,12 +4815,17 @@ $$
 \ding{173} 根据概率卷积证明$X+Y\sim B(2n,p)$:
 $$
     \begin{array}{ll}
-P(X+Y=m)=\displaystyle\sum\limits_{k=1}^{m}P(X=k)P(Y=m-k) & =\displaystyle\sum\limits_{k=0}^{m}\binom{n}{k}p^{k}(1-p)^{n-k}\binom{n}{m-k}p^{m-k}(1-p)^{n-(m-k)}\\
+P(X+Y=m)=\displaystyle\sum\limits_{k=0}^{m}P(X=k)P(Y=m-k) & =\displaystyle\sum\limits_{k=0}^{m}\binom{n}{k}p^{k}(1-p)^{n-k}\binom{n}{m-k}p^{m-k}(1-p)^{n-(m-k)}\\
 & =\displaystyle p^{m}(1-p)^{2n-m}\sum\limits_{k=0}^{m}\binom{n}{k}\binom{n}{m-k}\\
 & \xlongequal{Vandermonde} \displaystyle p^{m}(1-p)^{2n-m}\binom{2n}{m}
     \end{array}
 $$
-综上所述: $\displaystyle P(X=k|X+Y=m)=\frac{P(X=k,Y=m-k)}{P(X+Y=m)}=\frac{\binom{n}{k}\binom{n}{m-k}}{\binom{2n}{m}}$.
+综上所述, 对$0\leq m\leq2n$及$\max\{0,m-n\}\leq k\leq\min\{n,m\}$,
+$
+P(X=k|X+Y=m)
+=\frac{P(X=k,Y=m-k)}{P(X+Y=m)}
+=\frac{\binom{n}{k}\binom{n}{m-k}}{\binom{2n}{m}}.
+$
 
 \ding{172}$^{'}$ $X|X+Y=m$服从超几何分布, 即$X|X+Y=m\sim H(2n,n,m)$, 故$E(X|X+Y=m)=\displaystyle\frac{mn}{2n}=\frac{m}{2}$.
 
@@ -4817,7 +4908,7 @@ $$R(\omega)=\displaystyle\frac{E[\omega X+(1-\omega)Y]}{\sqrt{\mathrm{Var}(\omeg
 $$E[\omega X+(1-\omega)Y]=\omega E(X)+(1-\omega)E(Y)=\mu(2-\omega)$$
 $$\mathrm{Var}(\omega X+(1-\omega)Y)=\omega^2 \mathrm{Var}(X)+(1-\omega)^2 \mathrm{Var}(Y)+2\omega(1-\omega)\rho\sqrt{\mathrm{Var}(X)\mathrm{Var}(Y)}$$
 $$\Longrightarrow R(\omega)=\displaystyle\frac{\mu(2-\omega)}{\sigma\sqrt{(4-\sqrt{3})\omega^2-(6-\sqrt{3})\omega+3}}$$
-求导计算得$\omega^{*}=\displaystyle\frac{42-2\sqrt{3}}{73}$.
+当$\mu>0$时, 求导计算得$\omega^{*}=\displaystyle\frac{42-2\sqrt{3}}{73}$; 当$\mu=0$时, $R(\omega)\equiv0$, 故任意$\omega\in[0,1]$均为最优解; 当$\mu<0$时, $R(\omega)$在$\omega=1$处达到最大, 故$\omega^{*}=1$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 数学期望的性质, 见课本P127; 方差与协方差, 见课本P144.}
 
@@ -4838,7 +4929,7 @@ $$(X+Y-3\mu)_{+}=\max\{X+Y-3\mu,0\}.$$
 
 解: 
 
-$E(X+Y)=E(X)+E(Y)=3\mu$, $\mathrm{Var}(X+Y)=\mathrm{Var}(X)+\mathrm{Var}(Y)+2\mathrm{Cov}(X,Y)\sqrt{\mathrm{Var}(X)\mathrm{Var}(Y)}=4\sigma^2$ $\Longrightarrow$ $X+Y\sim N(3\mu,4\sigma^2)$.
+$E(X+Y)=E(X)+E(Y)=3\mu$, $\mathrm{Var}(X+Y)=\mathrm{Var}(X)+\mathrm{Var}(Y)+2\rho\sqrt{\mathrm{Var}(X)\mathrm{Var}(Y)}=\sigma^2+2\sigma^2+2\times\frac{\sqrt{2}}{4}\times\sqrt{\sigma^2\cdot2\sigma^2}=4\sigma^2$ $\Longrightarrow$ $X+Y\sim N(3\mu,4\sigma^2)$.
 
 (1)
 $$E((X+Y-3\mu)_+)=\displaystyle\int_{0}^{\infty}z\cdot \frac{1}{\sqrt{2\pi}\cdot2\sigma}e^{-z^2/(8\sigma^2)}\mathrm{d}z=\sigma\sqrt{\frac{2}{\pi}}$$
@@ -4847,7 +4938,7 @@ $$E(((X+Y-3\mu)_+)^2)=\displaystyle\int_{0}^{\infty}z^2\cdot \frac{1}{\sqrt{2\pi
 $$\Longrightarrow \mathrm{Var}((X+Y-3\mu)_+)=E(((X+Y-3\mu)_+)^2)-E((X+Y-3\mu)_+)^2=2\sigma^2\left(1-\frac{1}{\pi}\right)$$
 \textcolor{themeColor}{\selectfont \ding{226} 数学期望的性质, 见课本P127; 方差与协方差, 见课本P144.}
 
-\textcolor{themeColor}{\selectfont \ding{226} 正态组合的线性封闭性: 正态分布的线性组合仍为正态分布 (无论独立与否), 课本上似乎只有独立条件下的证明, 见课本P196.}
+\textcolor{themeColor}{\selectfont \ding{226} 正态组合的线性封闭性: 联合正态向量的线性组合仍为正态分布 (无论独立与否), 课本上似乎只有独立条件下的证明, 见课本P196.}
 
 \textcolor{themeColor}{\selectfont \ding{226}
 方差的性质, 见课本P136.}
@@ -4917,7 +5008,7 @@ $$E(X_1)=E(X_2)=E(X_3)=0 \Longrightarrow E(X_1+X_2+X_3)=0$$
 $$E(X_1^2)=E(X_2^2)=E(X_3^2),\ E(X_1^2+X_2^2+X_3^2)=E(1)=1 \Longrightarrow E(X_1^2)=E(X_2^2)=E(X_3^2)=\frac{1}{3}$$
 $$\mathrm{Var}(X_1+X_2+X_3)=\mathrm{Var}(X_1)+\mathrm{Var}(X_2)+\mathrm{Var}(X_3)+2\mathrm{Cov}(X_1,X_2)+2\mathrm{Cov}(X_1,X_3)+2\mathrm{Cov}(X_2,X_3)$$
 同样由对称性:
-$$E(X_i X_j)=0 \Longrightarrow \mathrm{Cov}(X_i,X_j)=E(X_i X_j)-E(X_i)E(X_j)=0,\quad i,j=1,2,3$$
+$$E(X_i X_j)=0, i\neq j \Longrightarrow \mathrm{Cov}(X_i,X_j)=E(X_i X_j)-E(X_i)E(X_j)=0,\quad i,j=1,2,3$$
 综上, $\mathrm{Var}(X_1+X_2+X_3)=1$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 数学期望的性质, 见课本P127; 方差与协方差, 见课本P144.}
@@ -4940,7 +5031,7 @@ $$E(X_i X_j)=0 \Longrightarrow \mathrm{Cov}(X_i,X_j)=E(X_i X_j)-E(X_i)E(X_j)=0,\
 解: 
 
 (1)
-$$\displaystyle M_{X}(s)=E(e^{sX})=\sum\limits_{k=0}^{n}e^{sk}\binom{n}{k}p^{k}(1-p)^{n-k}=\sum\limits_{k=0}^{n}\binom{n}{k}\left(p e^{t}\right)^{k}(1-p)^{n-k}=\left(1-p+p e^{t}\right)^{n}$$
+$$\displaystyle M_{X}(s)=E(e^{sX})=\sum\limits_{k=0}^{n}e^{sk}\binom{n}{k}p^{k}(1-p)^{n-k}=\sum\limits_{k=0}^{n}\binom{n}{k}\left(p e^{s}\right)^{k}(1-p)^{n-k}=\left(1-p+p e^{s}\right)^{n}$$
 (2)
 $$\displaystyle M_{X}(s)=E(e^{sX})=\sum\limits_{k=0}^{\infty}e^{sk}\frac{\lambda^k}{k!}e^{-\lambda}=e^{-\lambda}\sum\limits_{k=0}^{\infty}\frac{\left(\lambda e^{s}\right)^{k}}{k!}=e^{\lambda\left(e^s-1\right)}$$
 (3)
@@ -5123,7 +5214,7 @@ P(Y=k)=P(Y\leq k)-P(Y\leq k-1) & =P(\max\{X_1,X_2\}\leq k)-P(\max\{X_1,X_2\}\leq
 $$
 $$\Longrightarrow E(Y)=\frac{161}{36} \qquad \mathrm{Var}(Y)=\frac{2555}{1296}$$
 (2)
-$$E(XY)=\displaystyle\frac{1}{36}\left(\sum\limits_{1\leq X_2\leq X_1\leq 6}X_1^2+\sum\limits_{1\leq X_1<X_2\leq 6}X_1 X_2\right)=\frac{1127}{72} \Longrightarrow \mathrm{Cov}(X,Y)=E(XY)-E(X)E(Y)=\frac{35}{24}$$
+$$E(XY)=\displaystyle\frac{1}{36}\left(\sum\limits_{1\leq X_2\leq X_1\leq 6}X_1^2+\sum\limits_{1\leq X_1<X_2\leq 6}X_1 X_2\right)=\frac{154}{9} \Longrightarrow \mathrm{Cov}(X,Y)=E(XY)-E(X)E(Y)=\frac{35}{24}$$
 
 \vspace{2.5cm-5em}
 
@@ -5148,7 +5239,7 @@ $$\mathrm{Cov}(\alpha X+\beta Y,\alpha X-\beta Y)=\alpha^2 \mathrm{Var}(X)-\beta
 
 \textcolor{themeColor}{\selectfont \ding{226} 协方差的性质, 见课本P144.}
 
-\textcolor{themeColor}{\selectfont \ding{226} 正态组合的线性封闭性: 正态分布的线性组合仍为正态分布 (无论独立与否), 课本上似乎只有独立条件下的证明, 见课本P196.}
+\textcolor{themeColor}{\selectfont \ding{226} 正态组合的线性封闭性: 联合正态向量的线性组合仍为正态分布 (无论独立与否), 课本上似乎只有独立条件下的证明, 见课本P196.}
 
 \vspace{2.5cm-5em}
 
@@ -5210,10 +5301,10 @@ $$
     \begin{array}{ll}
 \mathrm{Var}(S)=E(\mathrm{Var}(S|N))+\mathrm{Var}(E(S|N)) & =E(\mathrm{Var}(\sum\limits_{i=1}^{N}Y_{i}|N))+\mathrm{Var}(E(\sum\limits_{i=1}^{N}Y_{i}|N))\\
 & =E(N \cdot \mathrm{Var}(Y))+\mathrm{Var}(N \cdot E(Y))\\
-& =\mathrm{Var}(Y)E(N)+\left[E(Y)\right]^2 \mathrm{Var}(N)\approx3980747
+& =\mathrm{Var}(Y)E(N)+\left[E(Y)\right]^2 \mathrm{Var}(N)\approx3980630.71
     \end{array}
 $$
-故$\sigma_{S}=\sqrt{\mathrm{Var}(S)}\approx1995.18$.
+故$\sigma_{S}=\sqrt{\mathrm{Var}(S)}\approx1995.15$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 全期望公式, 见课本P131.}
 
@@ -5402,7 +5493,7 @@ P \left( \left| X_n + Y_n - (X + Y) \right| > \varepsilon \right)
 &= P \left( \left| (X_n - X) + (Y_n - Y) \right| > \varepsilon \right) \\
 &\le P \left( \left\{ \left| X_n - X \right| > \frac{\varepsilon}{2} \right\} \cup \left\{ \left| Y_n - Y \right| > \frac{\varepsilon}{2} \right\} \right) \\
 &\le P \left( \left| X_n - X \right| > \frac{\varepsilon}{2} \right) + P \left( \left| Y_n - Y \right| > \frac{\varepsilon}{2} \right) \\
-&\to 0. \quad (\varepsilon\to0)
+&\to 0. \quad (n\to\infty)
 \end{align*}
 
 \vspace{2.5cm-5em}
@@ -5475,29 +5566,35 @@ $$t-c\in\mathbb{C}\left(F_{X}\right) \Longrightarrow \lim\limits_{n\to\infty}P(X
 
 \vspace{2.5cm-5em}
 
-(2) 对$\forall$ $t\in\mathbb{C}\left(F_{cX}\right)$, 不妨令$c>0$,
+(2) 由于$X_n\xrightarrow{\mathcal{L}}X$, 故$\{X_n\}$依概率有界, 即对任意$\eta>0$, 存在$M>0$, 使得当$n$充分大时, $P(|X_n|>M)<\eta$. 因此, 对任意$\varepsilon>0$,
 $$
-    \left\{
-    \begin{array}{l}
-        P(X_n Y_n\leq t)\\
-        = P(X_n Y_n\leq t,|Y_n-c|\leq \varepsilon)+P(X_n Y_n\leq t,|Y_n-c|> \varepsilon)\\
-        \leq P(X_n Y_n\leq t,|Y_n-c|\leq \varepsilon)+P(|Y_n-c|> \varepsilon)\\
-        \leq P(X_n\leq\displaystyle\frac{t}{c-\varepsilon})+P(|Y_n-c|> \varepsilon)\\
-        P(X_n\leq \displaystyle\frac{t}{c+\varepsilon})\\
-        = P((c+\varepsilon)X_n\leq t,|Y_n-c|\leq \varepsilon)+P((c+\varepsilon)X_n\leq t,|Y_n-c|>\varepsilon)\\
-        \leq P((c+\varepsilon)X_n\leq t,|Y_n-c|\leq \varepsilon)+P(|Y_n-c|>\varepsilon)\\
-        \leq P(X_n Y_n\leq t)+P(|Y_n-c|>\varepsilon)
-    \end{array}
-    \right.
+P\left(|X_n(Y_n-c)|>\varepsilon\right)
+\leq P(|X_n|>M)
++P\left(|Y_n-c|>\frac{\varepsilon}{M}\right).
 $$
-$$\Longrightarrow P(X_n\leq \displaystyle\frac{t}{c+\varepsilon})-P(|Y_n-c|>\varepsilon) \leq P(X_n Y_n\leq t) \leq P(X_n\leq\displaystyle\frac{t}{c-\varepsilon})+P(|Y_n-c|> \varepsilon)$$
-由于$X_n\xrightarrow{\mathcal{L}}X$, $Y_n\xrightarrow{P}c$, 令$n\to\infty$:
-$$P(X\leq \displaystyle\frac{t}{c+\varepsilon}) \leq \varliminf\limits_{n\to\infty}P(X_n Y_n\leq t) \leq \varlimsup\limits_{n\to\infty}P(X_n Y_n\leq t) \leq P(X\leq\displaystyle\frac{t}{c-\varepsilon})$$
-再令$\varepsilon\to0$:
-$$\displaystyle\frac{t}{c}\in\mathbb{C}\left(F_{X}\right) \Longrightarrow \lim\limits_{n\to\infty}P(X_n Y_n\leq t)=P(cX\leq t) \Longrightarrow X_n Y_n\xrightarrow{\mathcal{L}}cX$$
-(3) 不妨令$c>0$, 则对$\forall$ $\varepsilon>0$,
-$$\displaystyle P\left(\left|\frac{1}{Y_n}-\frac{1}{c}\right|>\frac{\varepsilon}{c(c-\varepsilon)}\right)=P\left(\left|Y_n-c\right|>\frac{\varepsilon}{c(c-\varepsilon)}\left|c Y_n\right|\right) \leq P\left(\left|Y_n-c\right|>\varepsilon\right) \to 0 \quad (\varepsilon\to0)$$
-即$Y_n\xrightarrow{P}c$ $\Longrightarrow$ $\displaystyle\frac{1}{Y_n}\xrightarrow{P}\frac{1}{c}$, $c\neq0$. 由(2)即得$X_n/Y_n\xrightarrow{\mathcal{L}}X/c$.
+由$Y_n\xrightarrow{P}c$可知, 上式右端第二项趋于$0$; 又由于$\eta$可以任意小, 故$X_n(Y_n-c)\xrightarrow{P}0$. 另一方面, $cX_n\xrightarrow{\mathcal{L}}cX$, 从而由(1),
+$$
+X_nY_n=cX_n+X_n(Y_n-c)\xrightarrow{\mathcal{L}}cX.
+$$
+
+(3) 由于$c\neq0$, 对任意$\varepsilon>0$,
+$$
+\begin{aligned}
+P\left(\left|\frac{1}{Y_n}-\frac{1}{c}\right|>\varepsilon\right)
+&\leq
+P\left(
+|Y_n-c|>
+\min\left\{\frac{|c|}{2},\frac{\varepsilon c^2}{2}\right\}
+\right)
+\to0.
+\end{aligned}
+$$
+故$\frac{1}{Y_n}\xrightarrow{P}\frac{1}{c}$. 再由(2)可得
+$$
+\frac{X_n}{Y_n}
+=X_n\cdot\frac{1}{Y_n}
+\xrightarrow{\mathcal{L}}\frac{X}{c}.
+$$
 
 \vspace{2.5cm-5em}
 
@@ -5515,7 +5612,7 @@ $$\displaystyle P\left(\left|\frac{1}{Y_n}-\frac{1}{c}\right|>\frac{\varepsilon}
 记发生次数为$S_n$, 则$S_n\sim B(n=500,p=0.2)$ $\Longrightarrow$ $E(S_n)=np=100$, $\mathrm{Var}(S_n)=np(1-p)=80$.
 
 \ding{172} 由切比雪夫不等式:
-$$P(|S_n-E(S_n)|\geq 20)\leq \displaystyle\frac{\mathrm{Var}(S_n)}{20^2}=0.2 \Longrightarrow P(80 \leq S_n \leq 120)=1-P(|S_n-E(S_n)|\geq 20)\geq 0.8$$
+$$P(|S_n-E(S_n)|\geq 20)\leq \displaystyle\frac{\mathrm{Var}(S_n)}{20^2}=0.2 \Longrightarrow P(80 \leq S_n \leq 120) \geq P(|S_n-100|<20) \geq 0.8$$
 \ding{173} $n=500>30$, 故可以使用中心极限定理近似估计:
 $$\displaystyle P(80\leq S_n\leq 120)=P\left(\frac{80-E(S_n)}{\sqrt{\mathrm{Var}(S_n)}} \leq \frac{S_n-E(S_n)}{\sqrt{\mathrm{Var}(S_n)}} \leq \frac{120-E(S_n)}{\sqrt{\mathrm{Var}(S_n)}}\right) \approx 2\Phi\left(\sqrt{5}\right)-1\approx0.975$$
 \textcolor{themeColor}{\selectfont \ding{226} 切比雪夫不等式, 见课本P140.}
@@ -5537,9 +5634,19 @@ $$\displaystyle P(80\leq S_n\leq 120)=P\left(\frac{80-E(S_n)}{\sqrt{\mathrm{Var}
 
 解: 
 
-$E(X_i^2)=\alpha_2$, $\mathrm{Var}(X_i^2)=E(X_i^4)-\left[E(X_i^2)\right]^2=\alpha_4-\alpha_2^2$
-由林德伯格-莱维中心极限定理:
-$$\displaystyle\frac{\sum\limits_{i=1}^{n}X_i^2-n E(X_i^2)}{\sqrt{n \mathrm{Var}(X_i^2)}}=\frac{\sum\limits_{i=1}^{n}X_i^2-n \alpha_2}{\sqrt{n(\alpha_4-\alpha_2^2)}} \xrightarrow{\mathcal{L}} N(0,1)$$
+$E(X_i^2)=\alpha_2$, $\mathrm{Var}(X_i^2)=E(X_i^4)-\left[E(X_i^2)\right]^2=\alpha_4-\alpha_2^2$. 
+
+若$\alpha_4-\alpha_2^2=0$, 则$\mathrm{Var}(X_i^2)=0$, 从而$X_i^2=\alpha_2$几乎处处成立, 因此$\sum\limits_{i=1}^{n}X_i^2=n\alpha_2$几乎处处成立.
+
+若$\alpha_4-\alpha_2^2>0$, 则由林德伯格--莱维中心极限定理:
+$$
+\frac{\sum\limits_{i=1}^{n}X_i^2-nE(X_i^2)}
+{\sqrt{n\mathrm{Var}(X_i^2)}}
+=
+\frac{\sum\limits_{i=1}^{n}X_i^2-n\alpha_2}
+{\sqrt{n(\alpha_4-\alpha_2^2)}}
+\xrightarrow{\mathcal{L}}N(0,1).
+$$
 \textcolor{themeColor}{\selectfont \ding{226}
 方差的性质, 见课本P136.}
 
@@ -5655,12 +5762,12 @@ $\Longrightarrow$ $\displaystyle\frac{10}{\sqrt{n/12}} \geq 1.645$ $\Longrightar
 
 解: 
 
-(1) 记组装每件产品的时间为$X_i$, $1\leq i\leq n=100$, 则$E(X_i)=\displaystyle \frac{1}{6}\ (h)$ $\Longrightarrow$ $X_i\sim Exp(6)$ $\Longrightarrow$ $\mathrm{Var}(X_i)=\lambda^2=\displaystyle\frac{1}{36}$.
+(1) 记组装每件产品的时间为$X_i$, $1\leq i\leq n=100$, 则$E(X_i)=\displaystyle \frac{1}{6}\ (h)$ $\Longrightarrow$ $X_i\sim Exp(6)$ $\Longrightarrow$ $\mathrm{Var}(X_i)=\displaystyle\frac{1}{\lambda^2}=\displaystyle\frac{1}{36}$.
 
 记组装$n$件产品的时间为$S$, 则$\displaystyle E(S)=nE(X_i)=\frac{50}{3}$, $\displaystyle \mathrm{Var}(S)=n\mathrm{Var}(X_i)=\frac{25}{9}$. 由中心极限定理:
-$$\displaystyle P(15\leq S\leq 20)=P\left(\frac{15-50/3}{\sqrt{25/9}} \leq \frac{S-E(S)}{\mathrm{Var}(S)} \leq \frac{20-50/3}{\sqrt{25/9}}\right) \approx \Phi(2)-\Phi(-1) \approx 0.819$$
+$$\displaystyle P(15\leq S\leq 20)=P\left(\frac{15-50/3}{\sqrt{25/9}} \leq \frac{S-E(S)}{\sqrt{\mathrm{Var}(S)}} \leq \frac{20-50/3}{\sqrt{25/9}}\right) \approx \Phi(2)-\Phi(-1) \approx 0.819$$
 (2)
-$$\displaystyle P(S\leq 16)=P\left(\frac{S-E(S)}{\mathrm{Var}(S)} \leq \frac{16-n/6}{\sqrt{36/n}}\right) \approx \Phi\left(\frac{16-n/6}{\sqrt{n}/6}\right) \geq 0.95$$
+$$\displaystyle P(S\leq 16)=P\left(\frac{S-E(S)}{\sqrt{\mathrm{Var}(S)}} \leq \frac{16-n/6}{\sqrt{n}/6}\right) \approx \Phi\left(\frac{16-n/6}{\sqrt{n}/6}\right) \geq 0.95$$
 $\Longrightarrow$ $\displaystyle \frac{16-n/6}{\sqrt{n}/6} \geq 1.645$ $\Longrightarrow$ $n_{max}=81$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 中心极限定理, 见课本P160/4.27.}
@@ -5678,21 +5785,45 @@ $$P(X=k)=\displaystyle e^{-2}\frac{2^k}{k!},\quad k=0,1,2,\cdots.$$
 
 \vspace{\dimexpr2.5cm-5em\relax}
 
-解: 
+解:
 
-记每次索赔金额为$Y_{i}\sim U[1000,5000]$, $1\leq i\leq X$, 每辆车总索赔次数为$S=\sum\limits_{i=1}^{2400}X_i$. 则$E(X)=\lambda=2$, $\mathrm{Var}(X)=\lambda=2$, $E(Y)=3000$, $\mathrm{Var}(Y)=\displaystyle\frac{4000000}{3}$. 由全期望公式:
-$$E(S)=E(E(S|X))=E(E(\sum\limits_{i=1}^{X}Y_i))=E(X\cdot E(Y))=E(X)E(Y)=6000$$
+记一辆车一年内的事故数为$X\sim P(2)$, 第$j$次事故的索赔额为$Y_j\sim U[1000,5000]$, 并假设各事故的索赔额相互独立且与$X$独立. 记该车辆一年的总赔付额为$L=\sum\limits_{j=1}^{X}Y_j$.
+
+则$E(X)=\mathrm{Var}(X)=2$, $E(Y_j)=3000$, $\mathrm{Var}(Y_j)=\displaystyle\frac{4000000}{3}$. 由全期望公式:
+$$
+E(L)=E[E(L|X)]=E[XE(Y_j)]=E(X)E(Y_j)=6000.
+$$
 由条件方差公式:
 $$
-    \begin{array}{ll}
-\mathrm{Var}(S)=E[\mathrm{Var}(S|X)]+\mathrm{Var}(E[S|X]) & =E[\mathrm{Var}(\sum\limits_{i=1}^{X}Y_i)]+\mathrm{Var}(E[\sum\limits_{i=1}^{X}Y_i])\\
-& =E[X\cdot \mathrm{Var}(Y)]+\mathrm{Var}(X\cdot E[Y])\\
-& =E(X)\mathrm{Var}(Y)+\mathrm{Var}(X)\left[E(X)\right]^2 \approx 20666666.67
-    \end{array}
+\begin{aligned}
+\mathrm{Var}(L)
+&=E[\mathrm{Var}(L|X)]+\mathrm{Var}(E[L|X])\\
+&=E[X\mathrm{Var}(Y_j)]+\mathrm{Var}[XE(Y_j)]\\
+&=E(X)\mathrm{Var}(Y_j)+\mathrm{Var}(X)[E(Y_j)]^2\\
+&=\frac{62000000}{3}\approx20666666.67.
+\end{aligned}
 $$
-记$n$辆车的总赔付额为$S_n$, 则由中心极限定理: $\displaystyle \frac{S_n-nE(S)}{\sqrt{n\mathrm{Var}(S)}}\sim N(0,1)$ $\Longrightarrow$
-$$P(2400\times5000-S\geq 2000000)=P(S\leq 10000000) \approx 1-\Phi(19.75) \approx 0$$
-即该公司几乎不可能平均每年盈利200万元.
+
+记第$i$辆车一年的总赔付额为$L_i$, 2400辆车的总赔付额为$S_{2400}=\sum\limits_{i=1}^{2400}L_i$. 则
+$$
+E(S_{2400})=2400E(L)=14400000,
+\qquad
+\mathrm{Var}(S_{2400})=2400\mathrm{Var}(L)=49600000000.
+$$
+由中心极限定理:
+$$
+\begin{aligned}
+P(2400\times5000-S_{2400}\geq2000000)
+&=P(S_{2400}\leq10000000)\\
+&\approx\Phi\left(
+\frac{10000000-14400000}{\sqrt{49600000000}}
+\right)\\
+&=\Phi(-19.76)
+=1-\Phi(19.76)
+\approx0.
+\end{aligned}
+$$
+即该公司平均每年盈利不少于200万元的概率几乎为$0$.
 
 \textcolor{themeColor}{\selectfont \ding{226} 全期望公式, 见课本P131.}
 
@@ -5771,11 +5902,11 @@ $$\left(E[XY]\right)^2 \leq E[X^2]E[Y^2]$$
 
 解: 
 $$\displaystyle X\in[0,1] \Longrightarrow X^2 \leq X \Longrightarrow \mathrm{Var}(X)=E(X^2)-\left[E(X)\right]^2 \leq E(X)-\left[E(X)\right]^2 \leq \frac{1}{4}$$
-等号成立当且仅当$\displaystyle E(X^2)=E(X)=\frac{1}{2}$, 即$X$服从$\{0,1\}$上的两点分布.
+等号成立当且仅当$\displaystyle E(X^2)=E(X)=\frac{1}{2}$, 即$X$服从$\{0,1\}$上的等概率两点分布.
 
 推广到一般情况, 归一化即可:
 $$X=a+(b-a)Y \Longrightarrow \mathrm{Var}(X)=(b-a)^2\mathrm{Var}(Y) \leq \displaystyle\frac{(b-a)^2}{4}$$
-等号成立当且仅当$Y$服从$\{0,1\}$上的两点分布, 即$X$服从$\{a,b\}$上的两点分布.
+等号成立当且仅当$Y$服从$\{0,1\}$上的等概率两点分布, 即$X$服从$\{a,b\}$上的等概率两点分布.
 
 \vspace{2.5cm-5em}
 
@@ -5794,9 +5925,13 @@ $$X=a+(b-a)Y \Longrightarrow \mathrm{Var}(X)=(b-a)^2\mathrm{Var}(Y) \leq \displa
 
 解: 
 
-(1)
-$$\displaystyle g(b):=E(|X-b|)=\int_{-\infty}^{b}(b-x)f_{X}(x)\mathrm{d}x + \int_{b}^{+\infty}(x-b)f_{X}(x)\mathrm{d}x \Longrightarrow g'(b)=\int_{-\infty}^{b}f_{X}(x)\mathrm{d}x - \int_{b}^{+\infty}f_{X}(x)\mathrm{d}x$$
-令$g'(b)=0$ $\Longrightarrow$ $\displaystyle \int_{-\infty}^{b}f_{X}(x)\mathrm{d}x = \int_{b}^{+\infty}f_{X}(x)\mathrm{d}x$, 即中位数的定义. 且$g''(b)=2f_{X}(b) \geq 0$ $\Longrightarrow$ $E(|X-m|)\leq E(|X-b|)$.
+(1) 由中位数的定义, $P(X\leq m)\geq\frac{1}{2}$且$P(X\geq m)\geq\frac{1}{2}$.
+
+若$b>m$, 则$|X-b|-|X-m|\geq(b-m)(2I_{\{X\leq m\}}-1)$. 两边取期望可得$E(|X-b|)-E(|X-m|)\geq(b-m)[2P(X\leq m)-1]\geq0$.
+
+若$b<m$, 则$|X-b|-|X-m|\geq(m-b)(2I_{\{X\geq m\}}-1)$. 两边取期望可得$E(|X-b|)-E(|X-m|)\geq(m-b)[2P(X\geq m)-1]\geq0$.
+
+当$b=m$时结论显然成立. 综上, 对任意$b\in\mathbb{R}$均有$E(|X-m|)\leq E(|X-b|)$.
 
 (2) 由(1)及Cauchy-Schwarz不等式 (取$X'=|X-\mu|$, $Y'=1$):
 $$\displaystyle |m-\mu| = |E(X-m)| \leq E(|X-m|) \leq E(|X-\mu|) \leq \sqrt{E(|X-\mu|^2)} = \sqrt{\mathrm{Var}(X)} = \sigma$$
@@ -7544,7 +7679,7 @@ $$
 \mathrm{Var}(a\overline{X_1}+b\overline{X_2}+c\overline{X_3})
 \geq \frac{\sigma^2(a+b+c)^2}{n_1+n_2+n_3}.
 $$
-当且仅当$\displaystyle\frac{a}{n_1}=\frac{b}{n_2}=\frac{c}{n_3}$时, \(\text{Var}(a\overline{X_1} + b\overline{X_2} + c\overline{X_3})\) 取得最小值.
+当且仅当$\displaystyle\frac{a}{n_1}=\frac{b}{n_2}=\frac{c}{n_3}$ $\Longleftrightarrow$ $a=\frac{n_1}{n_1+n_2+n_3}$, $b=\frac{n_2}{n_1+n_2+n_3}$, $c=\frac{n_3}{n_1+n_2+n_3}$时, \(\text{Var}(a\overline{X_1} + b\overline{X_2} + c\overline{X_3})\) 取得最小值.
 
 \textcolor{themeColor}{\selectfont \ding{226} 无偏估计量, 见课本P216/定义6.2.}
 
@@ -9173,7 +9308,7 @@ $$
 $$
 L(\theta) =
 \prod_{i=1}^n \frac{1}{c\theta - \theta} I_{[\theta, c\theta]}(X_i)
-= \frac{1}{(c-1)^n \theta^n} I_{[\theta, \min X_i]} \cdot I_{[\max X_i, c\theta]}
+= \frac{1}{(c-1)^n \theta^n} I_{[X_{(n)}/c, X_{(1)}]}(\theta)
 $$
 $$
 \left.
@@ -10029,7 +10164,7 @@ $$
         \qitem
 设 \((X_1, X_2, \cdots, X_n)\) 为来自指数分布总体
 $$
-f(x, \theta) = e^{-(x - \mu)}, \quad x \geq \mu, -\infty < \mu < \infty
+f(x; \mu) = e^{-(x - \mu)}, \quad x \geq \mu, -\infty < \mu < \infty
 $$
 的简单样本.  
 
@@ -10758,8 +10893,6 @@ $$
     \begin{shaded}
         \qitem
 设 \((X_1, X_2, \cdots, X_n)\) 为来自均匀分布总体 \(U(\theta - 1, \theta + 1)\) 的简单随机样本. \(\theta\) 的矩估计为 \(\hat{\theta} = \overline{X}\). 证明: 当 \(n \to \infty\) 时, \(\sqrt{3n}(\hat{\theta} - \theta) \overset{\mathcal{L}}{\longrightarrow} N(0, 1)\).
-
-上式说明在一定条件下两者是等价的. 但是理论证明, 平均绝对误差估计比均方误差估计更稳健 (robustness), 即当实际模型与理论模型有点偏差或样本变化时, 由平均绝对误差模型得到的参数估计值不会变动很大.
     \end{shaded}
     \end{bbox}
 
@@ -10887,7 +11020,7 @@ $$
     \begin{bbox}
     \begin{shaded}
         \qitem$^*$
-设某个传染病患者的密接者有 200 人, 密接者被感染的概率为 3\%, 如果每个密接者都做核酸检测, 需要做 200 次. 为了减少核酸检测的次数, 可以采用混检的方法, 即把若干人的被检样本混在一起做核酸检测. 先设把 200 人分为 20 组, 每组 10 人. 问平均而言, 最多需要做多少次核酸检测才能检测出全部感染者? 方差为多少? 如果 5 人一组, 分为 40 组 (个人怀疑原题这里有误), 平均要做多少次检测? 你认为几人一组进行混检才能使检测次数最少? 试推广到一般情况.
+设某个传染病患者的密接者有 200 人, 密接者被感染的概率为 3\%, 如果每个密接者都做核酸检测, 需要做 200 次. 为了减少核酸检测的次数, 可以采用混检的方法, 即把若干人的被检样本混在一起做核酸检测. 先设把 200 人分为 20 组, 每组 10 人. 问平均而言, 最多需要做多少次核酸检测才能检测出全部感染者? 方差为多少? 如果 5 人一组, 分为 40 组, 平均要做多少次检测? 你认为几人一组进行混检才能使检测次数最少? 试推广到一般情况.
     \end{shaded}
     \end{bbox}
 
@@ -17132,7 +17265,7 @@ $$
 
 \section*{致谢}
 
-在此感谢``唐洋阳PB23010365''对题干的检查校对, ``黄俊博PB24261872''、``蓝昱韬PB23010339''对答案的修正, 以及``洪子墨PB23061164''、``蓝昱韬PB23010339''对版面、格式等提的感受和建议.
+在此感谢``唐洋阳PB23010365''对题干的检查校对, ``刘双峰PB24081563''、``黄俊博PB24261872''、``蓝昱韬PB23010339''对答案的修正, 以及``洪子墨PB23061164''、``蓝昱韬PB23010339''对版面、格式等提的感受和建议.
 
 
 \end{document}
